@@ -1,0 +1,31 @@
+features (3514, 2221) (6s)
+primary pathway counts (train, dead): {'none': np.int64(348), 'lung': np.int64(66), 'prostate': np.int64(80), 'cardiac': np.int64(340), 'pneumonia': np.int64(133), 'stroke': np.int64(123), 'colorectal': np.int64(76), 'alzheimer': np.int64(33)}
+(a) direct GBM 2-config                          OOF mAP=0.2104 (terminal10 0.416 / pathway15 0.327) | val mAP=0.2557 (terminal10 0.499)  [921s]
+death gate OOF AUROC=0.997 val AUROC=0.998
+(b) two-stage independent sigmoids (15 pathway targets) OOF mAP=0.2060 (terminal10 0.413 / pathway15 0.315) | val mAP=0.2471 (terminal10 0.492)  [1177s]
+(c) competing-risks pathway softmax              OOF mAP=0.1930 (terminal10 0.364 / pathway15 0.281) | val mAP=0.2400 (terminal10 0.469)  [1231s]
+(a)+(c) average                                  OOF mAP=0.2114 (terminal10 0.417 / pathway15 0.330) | val mAP=0.2505 (terminal10 0.487)  [1231s]
+(a)+(b)+(c) average                              OOF mAP=0.2115 (terminal10 0.421 / pathway15 0.330) | val mAP=0.2516 (terminal10 0.494)  [1231s]
+pathway softmax OOF accuracy on dead train: 0.485 | majority baseline: 0.29
+                                         cond  oof_direct  oof_twostage  oof_pathway  oof_abc  val_direct  val_pathway  val_abc
+126906006                Neoplasm of prostate       0.721         0.714        0.709    0.720       0.901        0.883    0.866
+162573006   Suspected lung cancer (situation)       0.265         0.258        0.257    0.265       0.258        0.276    0.250
+22298006                Myocardial Infarction       0.635         0.637        0.494    0.646       0.767        0.643    0.759
+22325002              Abnormal gait (finding)       0.075         0.027        0.035    0.066       0.113        0.085    0.115
+230690007                              Stroke       0.206         0.222        0.230    0.236       0.308        0.278    0.294
+233604007                           Pneumonia       0.421         0.425        0.424    0.425       0.567        0.736    0.663
+254637007  Non-small cell lung cancer (disord       0.235         0.211        0.238    0.231       0.179        0.192    0.179
+26929004       Alzheimer's disease (disorder)       0.189         0.104        0.061    0.143       0.228        0.071    0.144
+314994000  Metastasis from malignant tumor of       0.468         0.460        0.373    0.474       0.516        0.637    0.516
+424132000  Non-small cell carcinoma of lung         0.235         0.213        0.237    0.235       0.166        0.192    0.171
+68496003                       Polyp of colon       0.203         0.221        0.204    0.227       0.218        0.130    0.201
+713197008              Recurrent rectal polyp       0.172         0.200        0.179    0.200       0.277        0.159    0.276
+723857007  Silent micro-hemorrhage of brain (       0.075         0.027        0.035    0.066       0.113        0.085    0.115
+88805009   Chronic congestive heart failure (       0.399         0.407        0.251    0.396       0.424        0.246    0.391
+92691004   Carcinoma in situ of prostate (dis       0.610         0.602        0.483    0.622       0.936        0.730    0.865
+tabular v3 final (stacked)                       OOF mAP=0.2141 (terminal10 0.423 / pathway15 0.333) | val mAP=0.2521 (terminal10 0.489)  [1233s]
+tabular v3                   val mAP=0.2521  macroAUROC=0.7668
+transformer x3               val mAP=0.2543  macroAUROC=0.7579
+blend 50/50                  val mAP=0.2823  macroAUROC=0.7677
+blend 50/50 + dup-avg        val mAP=0.2821  macroAUROC=0.7677
+wrote predictions_v3.csv (1234s)

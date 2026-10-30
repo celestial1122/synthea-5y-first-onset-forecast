@@ -1,0 +1,44 @@
+X (3156, 1687) 4s
+rep0: 5-fold CV over 3156 -> OOF mAP all=0.2089 | on val patients=0.2441 | on train patients=0.2087  [184s]
+rep1: 5-fold CV over 3156 -> OOF mAP all=0.2117 | on val patients=0.2465 | on train patients=0.2110  [380s]
+                              cond  val_pos  oof_on_val  oof_on_train    gap
+2      Acute bronchitis (disorder)       61       0.244         0.306 -0.062
+15  Pathological fracture due to o       14       0.230         0.289 -0.059
+14         Osteoporosis (disorder)       12       0.104         0.151 -0.047
+0       Viral sinusitis (disorder)       99       0.415         0.460 -0.045
+13               Anemia (disorder)       15       0.124         0.164 -0.040
+1   Acute viral pharyngitis (disor       72       0.244         0.276 -0.032
+19  Acute bacterial sinusitis (dis        5       0.014         0.037 -0.023
+7                  Sprain of ankle       16       0.038         0.053 -0.015
+8           Coronary Heart Disease       15       0.097         0.110 -0.013
+3   Chronic congestive heart failu       29       0.386         0.396 -0.010
+23         Whiplash injury to neck        8       0.017         0.024 -0.007
+24  Alzheimer's disease (disorder)       13       0.165         0.168 -0.003
+34           Laceration of forearm        7       0.023         0.026 -0.003
+18            Sinusitis (disorder)        9       0.032         0.034 -0.002
+25   Fracture subluxation of wrist       10       0.025         0.027 -0.002
+33                 Sprain of wrist        8       0.027         0.025  0.002
+22  Non-small cell lung cancer (di        9       0.233         0.230  0.003
+36              Laceration of foot        7       0.022         0.018  0.004
+30            Fracture of clavicle        8       0.039         0.030  0.009
+21  Non-small cell carcinoma of lu        9       0.245         0.234  0.011
+35  Metastasis from malignant tumo        6       0.533         0.515  0.018
+20  Suspected lung cancer (situati       10       0.277         0.252  0.025
+39  Fetus with unknown complicatio        5       0.204         0.171  0.033
+32               Fracture of ankle        8       0.060         0.027  0.033
+38  Silent micro-hemorrhage of bra       11       0.092         0.053  0.039
+37         Abnormal gait (finding)       11       0.092         0.053  0.039
+10  Streptococcal sore throat (dis       22       0.093         0.049  0.044
+6                   Polyp of colon       18       0.243         0.196  0.047
+11             Fracture of forearm       16       0.136         0.088  0.048
+16             Atrial Fibrillation       14       0.121         0.070  0.051
+29                     Prediabetes       10       0.130         0.077  0.053
+12            Neoplasm of prostate       11       0.790         0.725  0.065
+27          Recurrent rectal polyp       10       0.277         0.166  0.111
+26                Normal pregnancy       10       0.636         0.520  0.116
+5            Myocardial Infarction       19       0.702         0.585  0.117
+31  Body mass index 30+ - obesity        11       0.633         0.511  0.122
+28  Concussion with no loss of con        7       0.169         0.027  0.142
+9                        Pneumonia       17       0.537         0.379  0.158
+4                           Stroke       35       0.363         0.195  0.168
+17  Carcinoma in situ of prostate         8       0.952         0.634  0.318

@@ -1,0 +1,41 @@
+,cond,own+death_lr,own+death_gbm,own+death+others_lr,own+death+others_gbm,best_single
+444814009,Viral sinusitis (disorder),0.425,0.45,0.477,0.47,0.478
+195662009,Acute viral pharyngitis (disorde,0.301,0.293,0.312,0.284,0.299
+10509002,Acute bronchitis (disorder),0.312,0.301,0.304,0.293,0.306
+88805009,Chronic congestive heart failure,0.406,0.415,0.381,0.384,0.407
+230690007,Stroke,0.235,0.215,0.229,0.219,0.218
+22298006,Myocardial Infarction,0.629,0.588,0.612,0.608,0.636
+68496003,Polyp of colon,0.189,0.204,0.161,0.198,0.202
+44465007,Sprain of ankle,0.06,0.051,0.058,0.05,0.059
+53741008,Coronary Heart Disease,0.152,0.129,0.151,0.144,0.156
+233604007,Pneumonia,0.413,0.485,0.479,0.486,0.459
+43878008,Streptococcal sore throat (disor,0.05,0.057,0.056,0.058,0.06
+65966004,Fracture of forearm,0.084,0.087,0.09,0.116,0.091
+126906006,Neoplasm of prostate,0.729,0.663,0.728,0.73,0.727
+271737000,Anemia (disorder),0.247,0.189,0.225,0.15,0.249
+64859006,Osteoporosis (disorder),0.211,0.189,0.17,0.166,0.218
+443165006,Pathological fracture due to ost,0.252,0.356,0.262,0.347,0.304
+49436004,Atrial Fibrillation,0.091,0.091,0.098,0.085,0.075
+92691004,Carcinoma in situ of prostate (d,0.614,0.501,0.528,0.516,0.612
+36971009,Sinusitis (disorder),0.03,0.032,0.062,0.039,0.035
+75498004,Acute bacterial sinusitis (disor,0.061,0.045,0.05,0.039,0.048
+162573006,Suspected lung cancer (situation,0.258,0.224,0.249,0.198,0.255
+424132000,Non-small cell carcinoma of lung,0.234,0.182,0.219,0.172,0.242
+254637007,Non-small cell lung cancer (diso,0.243,0.187,0.222,0.175,0.248
+39848009,Whiplash injury to neck,0.027,0.074,0.034,0.045,0.033
+26929004,Alzheimer's disease (disorder),0.316,0.264,0.302,0.21,0.345
+263102004,Fracture subluxation of wrist,0.041,0.051,0.045,0.051,0.031
+72892002,Normal pregnancy,0.536,0.454,0.509,0.479,0.565
+713197008,Recurrent rectal polyp,0.166,0.137,0.16,0.158,0.172
+62106007,Concussion with no loss of consc,0.025,0.033,0.028,0.026,0.027
+15777000,Prediabetes,0.08,0.078,0.097,0.099,0.094
+58150001,Fracture of clavicle,0.035,0.047,0.035,0.046,0.033
+162864005,Body mass index 30+ - obesity (f,0.538,0.504,0.523,0.393,0.588
+16114001,Fracture of ankle,0.04,0.046,0.039,0.031,0.039
+70704007,Sprain of wrist,0.016,0.022,0.021,0.022,0.024
+283371005,Laceration of forearm,0.018,0.019,0.018,0.019,0.025
+314994000,Metastasis from malignant tumor ,0.43,0.3,0.354,0.3,0.473
+284551006,Laceration of foot,0.017,0.018,0.018,0.017,0.023
+22325002,Abnormal gait (finding),0.066,0.058,0.084,0.049,0.107
+723857007,Silent micro-hemorrhage of brain,0.064,0.059,0.08,0.049,0.107
+156073000,Fetus with unknown complication,0.103,0.079,0.101,0.07,0.178

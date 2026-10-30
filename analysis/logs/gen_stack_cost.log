@@ -1,0 +1,46 @@
+     cond  n_pos  base_oof  stack_oof   gain  base_val  stack_val                                                   top_feats
+424132000     77     0.303      0.840  0.537     0.171      0.797          cost_post_cov:0.30; score:0.27; cost_life_cov:0.20
+254637007     76     0.307      0.839  0.532     0.171      0.789          cost_post_cov:0.30; score:0.27; cost_life_cov:0.20
+162573006     84     0.331      0.806  0.476     0.254      0.805          score:0.31; cost_post_cov:0.28; cost_life_cov:0.18
+233604007    133     0.427      0.498  0.071     0.752      0.594         score:0.73; cost_pre_cov:0.03; cost_life_total:0.03
+230690007    206     0.831      0.848  0.017     0.920      0.933    score:0.35; gen_n_var_alleles:0.20; gen_n_var_rsids:0.10
+ 44465007    141     0.049      0.065  0.017     0.089      0.060        score:0.13; cost_life_cov:0.09; cost_life_total:0.08
+ 49436004     92     0.070      0.085  0.015     0.286      0.159      score:0.28; cost_post_cov:0.07; gen_n_var_alleles:0.06
+ 88805009    229     0.432      0.439  0.007     0.457      0.443          score:0.66; cost_post_cov:0.06; cost_life_cov:0.03
+ 39848009     75     0.048      0.054  0.005     0.025      0.023          score:0.18; cost_post_cov:0.08; cost_life_cov:0.08
+ 70704007     56     0.018      0.022  0.004     0.036      0.091       score:0.16; cost_pre_cov:0.13; cost_pre_per_year:0.08
+284551006     45     0.018      0.020  0.003     0.162      0.024           cost_life_cov:0.11; cost_pre_cov:0.10; score:0.09
+283371005     50     0.020      0.019 -0.001     0.017      0.027           cost_pre_cov:0.13; score:0.12; cost_life_cov:0.08
+ 62106007     69     0.026      0.026 -0.001     0.024      0.039   score:0.14; cost_pre_cov:0.10; cost_post_vs_pre_rate:0.09
+ 16114001     58     0.042      0.040 -0.002     0.051      0.023          score:0.16; cost_life_exp:0.11; cost_life_cov:0.08
+ 15777000     61     0.083      0.080 -0.003     0.101      0.067        score:0.39; cost_life_cov:0.08; cost_life_total:0.08
+195662009    591     0.289      0.284 -0.004     0.274      0.296   cost_life_cov:0.08; cost_post_cov:0.08; cost_pre_cov:0.07
+ 36971009     88     0.041      0.036 -0.005     0.024      0.037           score:0.10; cost_life_cov:0.09; cost_pre_exp:0.08
+156073000     29     0.126      0.118 -0.007     0.526      0.118        score:0.37; cost_life_exp:0.10; cost_life_total:0.09
+ 75498004     88     0.048      0.040 -0.008     0.027      0.032         score:0.13; cost_pre_cov:0.10; cost_life_total:0.08
+ 22298006    153     0.752      0.743 -0.009     0.830      0.695 score:0.64; gen_rs_rs2383207:0.04; gen_gene_CDKN2B-AS1:0.03
+ 10509002    499     0.293      0.282 -0.011     0.293      0.254          score:0.25; cost_post_cov:0.07; cost_life_cov:0.06
+263102004     73     0.040      0.028 -0.012     0.027      0.028  score:0.15; cost_post_vs_pre_rate:0.09; cost_life_cov:0.07
+314994000     50     0.484      0.472 -0.012     0.549      0.817        score:0.62; cost_life_exp:0.05; cost_life_total:0.04
+ 43878008    133     0.068      0.047 -0.021     0.053      0.100           score:0.15; cost_life_cov:0.10; cost_pre_cov:0.07
+ 68496003    144     0.200      0.178 -0.022     0.297      0.183           score:0.48; cost_pre_cov:0.07; cost_life_cov:0.05
+ 58150001     61     0.057      0.035 -0.023     0.031      0.036           score:0.21; cost_pre_cov:0.09; cost_life_cov:0.08
+ 65966004    117     0.098      0.073 -0.024     0.115      0.120           score:0.25; cost_life_cov:0.07; cost_pre_cov:0.06
+ 26929004     75     0.332      0.290 -0.042     0.287      0.235          score:0.48; cost_life_cov:0.06; cost_post_cov:0.06
+444814009    741     0.475      0.424 -0.051     0.411      0.470           score:0.10; cost_pre_cov:0.09; cost_life_cov:0.08
+271737000    111     0.227      0.175 -0.051     0.266      0.272           score:0.32; cost_life_cov:0.12; cost_pre_cov:0.08
+ 53741008    137     0.295      0.239 -0.056     0.200      0.165           score:0.41; cost_pre_cov:0.05; cost_post_exp:0.04
+713197008     69     0.224      0.168 -0.056     0.470      0.238           score:0.52; cost_pre_cov:0.07; cost_life_cov:0.05
+126906006    111     0.752      0.693 -0.059     0.962      0.897        score:0.76; cost_life_total:0.03; cost_life_cov:0.03
+443165006     94     0.306      0.243 -0.064     0.359      0.394          score:0.56; cost_life_cov:0.07; cost_post_cov:0.05
+ 64859006     98     0.277      0.206 -0.071     0.175      0.163          score:0.48; cost_life_cov:0.08; cost_post_cov:0.06
+ 22325002     41     0.231      0.159 -0.072     0.438      0.187          score:0.29; cost_life_exp:0.05; cost_life_cov:0.04
+723857007     41     0.231      0.159 -0.072     0.438      0.187          score:0.29; cost_life_exp:0.05; cost_life_cov:0.04
+ 72892002     70     0.602      0.527 -0.075     0.600      0.636        score:0.60; cost_life_exp:0.10; cost_life_total:0.05
+162864005     60     0.576      0.480 -0.096     0.578      0.627        score:0.59; cost_life_exp:0.08; cost_life_total:0.07
+ 92691004     88     0.652      0.551 -0.102     0.890      0.814        score:0.73; cost_life_total:0.04; cost_life_exp:0.03
+
+base       : OOF 0.2671  val 0.3158  val AUROC 0.7594
+stack all  : OOF 0.2834  val 0.3219  val AUROC 0.7635
+stack sel  : OOF 0.3087  val 0.3532  val AUROC 0.7597   selected 7 targets: ['230690007', '44465007', '233604007', '49436004', '162573006', '424132000', '254637007']
+[29s]

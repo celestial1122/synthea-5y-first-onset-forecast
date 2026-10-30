@@ -1,0 +1,41 @@
+,ppds_gcr:screen200_d3_all,gstack:genc2_only,screen_gcr:k200
+Viral sinusitis (disorder),0.67,0.0,0.33
+Acute viral pharyngitis (disor,0.0,1.0,0.0
+Acute bronchitis (disorder),0.0,0.0,1.0
+Chronic congestive heart failu,0.0,0.75,0.25
+Stroke,0.12,0.88,0.0
+Myocardial Infarction,0.2,0.2,0.6
+Polyp of colon,0.86,0.0,0.14
+Sprain of ankle,0.0,0.12,0.88
+Coronary Heart Disease,0.6,0.2,0.2
+Pneumonia,0.0,0.2,0.8
+Streptococcal sore throat (dis,0.33,0.0,0.67
+Fracture of forearm,1.0,0.0,0.0
+Neoplasm of prostate,0.67,0.0,0.33
+Anemia (disorder),1.0,0.0,0.0
+Osteoporosis (disorder),0.8,0.2,0.0
+Pathological fracture due to o,1.0,0.0,0.0
+Atrial Fibrillation,0.83,0.0,0.17
+Carcinoma in situ of prostate ,0.0,0.0,1.0
+Sinusitis (disorder),0.25,0.75,0.0
+Acute bacterial sinusitis (dis,0.0,0.5,0.5
+Suspected lung cancer (situati,0.0,0.25,0.75
+Non-small cell carcinoma of lu,0.0,0.0,1.0
+Non-small cell lung cancer (di,0.0,0.12,0.88
+Whiplash injury to neck,0.0,1.0,0.0
+Alzheimer's disease (disorder),1.0,0.0,0.0
+Fracture subluxation of wrist,0.0,1.0,0.0
+Normal pregnancy,0.33,0.67,0.0
+Recurrent rectal polyp,0.33,0.33,0.33
+Concussion with no loss of con,0.25,0.0,0.75
+Prediabetes,0.0,0.0,1.0
+Fracture of clavicle,0.0,0.67,0.33
+Body mass index 30+ - obesity ,0.67,0.0,0.33
+Fracture of ankle,0.33,0.33,0.33
+Sprain of wrist,0.0,0.0,1.0
+Laceration of forearm,0.12,0.88,0.0
+Metastasis from malignant tumo,0.14,0.14,0.71
+Laceration of foot,1.0,0.0,0.0
+Abnormal gait (finding),0.75,0.25,0.0
+Silent micro-hemorrhage of bra,0.75,0.25,0.0
+Fetus with unknown complicatio,0.5,0.5,0.0

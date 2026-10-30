@@ -1,0 +1,103 @@
+train n=2791; died 0.430; death in window 0.430; among those, |end - deathdate| <= 1 day: 0.069, median exposure 0.997
+window oracle: 187 first-in-window tokens, 208 count tokens [3s]
+RESULT random  : AP=prevalence among at-risk: mAP=0.0575 | acc 0.0873 / term 0.0392 / chain 0.0400
+RESULT base     feats  2317: OOF mAP=0.2068 | acc 0.0961 / term 0.4148 / chain 0.1787 [205s]
+RESULT odeath   feats  2320: OOF mAP=0.2328 | acc 0.0957 / term 0.5033 / chain 0.1896 [398s]
+RESULT owin     feats  2719: OOF mAP=0.7741 | acc 0.5332 / term 0.9614 / chain 0.8902 [590s]
+RESULT owinsib  feats  2758: OOF mAP=0.7899 | acc 0.5709 / term 0.9653 / chain 0.8919 [790s]
+RESULT lc25     feats  2317: OOF mAP=0.1627 | acc 0.0919 / term 0.3026 / chain 0.1401 [857s]
+RESULT lc50     feats  2317: OOF mAP=0.1821 | acc 0.0925 / term 0.3468 / chain 0.1620 [978s]
+RESULT lc75     feats  2317: OOF mAP=0.1965 | acc 0.0942 / term 0.3897 / chain 0.1700 [1145s]
+                                         cond    grp  pos  prevalence   base  odeath   owin  owinsib   lc25   lc50   lc75
+62106007   Concussion with no loss of conscio    acc   69       0.025  0.025   0.025  0.047    0.047  0.022  0.022  0.024
+70704007                      Sprain of wrist    acc   56       0.021  0.027   0.026  0.056    0.053  0.021  0.020  0.021
+39848009              Whiplash injury to neck    acc   75       0.028  0.025   0.026  0.119    0.116  0.024  0.027  0.029
+75498004   Acute bacterial sinusitis (disorde    acc   88       0.033  0.040   0.037  0.177    0.277  0.042  0.046  0.038
+44465007                      Sprain of ankle    acc  141       0.053  0.055   0.056  0.221    0.236  0.059  0.057  0.050
+36971009                 Sinusitis (disorder)    acc   88       0.033  0.034   0.033  0.314    0.430  0.031  0.033  0.032
+284551006                  Laceration of foot    acc   45       0.016  0.018   0.017  0.376    0.536  0.021  0.018  0.018
+195662009  Acute viral pharyngitis (disorder)    acc  591       0.283  0.285   0.292  0.525    0.530  0.277  0.272  0.275
+283371005               Laceration of forearm    acc   50       0.018  0.022   0.023  0.600    0.764  0.019  0.018  0.020
+444814009          Viral sinusitis (disorder)    acc  741       0.449  0.468   0.461  0.710    0.718  0.462  0.463  0.470
+43878008   Streptococcal sore throat (disorde    acc  133       0.051  0.053   0.052  0.866    0.869  0.056  0.058  0.058
+10509002          Acute bronchitis (disorder)    acc  499       0.229  0.306   0.306  0.987    0.987  0.251  0.268  0.292
+263102004       Fracture subluxation of wrist    acc   73       0.027  0.026   0.025  1.000    1.000  0.038  0.026  0.025
+58150001                 Fracture of clavicle    acc   61       0.022  0.031   0.031  1.000    1.000  0.031  0.033  0.030
+16114001                    Fracture of ankle    acc   58       0.021  0.026   0.026  1.000    1.000  0.026  0.027  0.029
+15777000                          Prediabetes  chain   61       0.037  0.079   0.077  0.339    0.341  0.060  0.098  0.077
+162864005  Body mass index 30+ - obesity (fin  chain   60       0.043  0.515   0.510  0.515    0.520  0.373  0.483  0.478
+156073000     Fetus with unknown complication  chain   29       0.011  0.110   0.124  0.635    0.649  0.068  0.094  0.123
+26929004       Alzheimer's disease (disorder)  chain   75       0.030  0.174   0.183  0.896    0.896  0.104  0.109  0.144
+64859006              Osteoporosis (disorder)  chain   98       0.040  0.130   0.136  0.978    0.977  0.083  0.111  0.129
+443165006  Pathological fracture due to osteo  chain   94       0.035  0.270   0.268  0.992    0.997  0.262  0.295  0.283
+53741008               Coronary Heart Disease  chain  137       0.055  0.107   0.153  0.999    0.999  0.098  0.099  0.103
+230690007                              Stroke  chain  206       0.086  0.186   0.277  1.000    1.000  0.160  0.164  0.197
+68496003                       Polyp of colon  chain  144       0.057  0.195   0.194  1.000    1.000  0.136  0.163  0.169
+65966004                  Fracture of forearm  chain  117       0.044  0.078   0.078  1.000    1.000  0.059  0.074  0.076
+271737000                   Anemia (disorder)  chain  111       0.065  0.135   0.143  1.000    1.000  0.131  0.143  0.144
+49436004                  Atrial Fibrillation  chain   92       0.036  0.074   0.067  1.000    1.000  0.070  0.073  0.063
+72892002                     Normal pregnancy  chain   70       0.027  0.512   0.510  1.000    1.000  0.360  0.423  0.463
+22325002              Abnormal gait (finding)  chain   41       0.016  0.057   0.062  1.000    1.000  0.069  0.050  0.050
+723857007  Silent micro-hemorrhage of brain (  chain   41       0.016  0.057   0.062  1.000    1.000  0.069  0.050  0.050
+314994000  Metastasis from malignant tumor of   term   50       0.018  0.482   0.480  0.645    0.686  0.242  0.352  0.401
+233604007                           Pneumonia   term  133       0.048  0.439   0.849  0.981    0.980  0.441  0.432  0.459
+713197008              Recurrent rectal polyp   term   69       0.026  0.143   0.159  0.992    0.987  0.093  0.097  0.123
+126906006                Neoplasm of prostate   term  111       0.043  0.731   0.744  0.996    1.000  0.566  0.656  0.707
+88805009   Chronic congestive heart failure (   term  229       0.083  0.406   0.513  1.000    1.000  0.224  0.305  0.365
+22298006                Myocardial Infarction   term  153       0.055  0.624   0.755  1.000    1.000  0.513  0.566  0.594
+92691004   Carcinoma in situ of prostate (dis   term   88       0.034  0.613   0.610  1.000    1.000  0.447  0.516  0.586
+162573006   Suspected lung cancer (situation)   term   84       0.030  0.247   0.326  1.000    1.000  0.183  0.210  0.229
+424132000  Non-small cell carcinoma of lung     term   77       0.028  0.228   0.314  1.000    1.000  0.157  0.168  0.219
+254637007  Non-small cell lung cancer (disord   term   76       0.027  0.234   0.283  1.000    1.000  0.160  0.166  0.215
+{
+ "prevalence": {
+  "all": 0.05751512705444535,
+  "acc": 0.08725431276507618,
+  "term": 0.03919399653868255,
+  "chain": 0.03999002835432304
+ },
+ "base": {
+  "all": 0.20677319629645385,
+  "acc": 0.09614732760925054,
+  "term": 0.4148421857417567,
+  "chain": 0.1786864053534554
+ },
+ "odeath": {
+  "all": 0.2328344503021306,
+  "acc": 0.0957435951471776,
+  "term": 0.5032901555915015,
+  "chain": 0.18962150193083638
+ },
+ "owin": {
+  "all": 0.7741308417476829,
+  "acc": 0.5331974765102574,
+  "term": 0.961432867319575,
+  "chain": 0.8901961899371799
+ },
+ "owinsib": {
+  "all": 0.7898566088423337,
+  "acc": 0.5708817802551367,
+  "term": 0.9652772813242919,
+  "chain": 0.8918843224415586
+ },
+ "lc25": {
+  "all": 0.16267073320535,
+  "acc": 0.09193481615505836,
+  "term": 0.30256773388228514,
+  "chain": 0.14014198313768492
+ },
+ "lc50": {
+  "all": 0.18213272606505324,
+  "acc": 0.09249600812888771,
+  "term": 0.34681383150102035,
+  "chain": 0.1619820403772407
+ },
+ "lc75": {
+  "all": 0.19651821692743718,
+  "acc": 0.09421424231776353,
+  "term": 0.3897290649391788,
+  "chain": 0.17001495952928308
+ }
+}
+done [1145s]
+exit 0

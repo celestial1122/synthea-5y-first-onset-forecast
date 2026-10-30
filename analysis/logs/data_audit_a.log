@@ -1,0 +1,93 @@
+####################################################################################################
+A1. COHORT BY SPLIT
+####################################################################################################
+split    n  age_med  age_q10  age_q90  female  white  anchor_med  anchor_q25  alive_band  died  events_med  events_q90  hist_years_med  first_event_age_med  cond_med
+train 2791   64.282   26.201   89.522   0.440  0.846    2015.723    1999.074       0.545 0.430       189.0       483.0          43.102               18.149       6.0
+  val  365   65.106   24.793   88.781   0.452  0.819    2015.613    2000.805       0.551 0.425       189.0       483.2          44.181               18.149       6.0
+ test  358   63.437   23.274   89.520   0.450  0.830    2015.727    1998.336       0.528   NaN       194.0       461.8          42.980               18.149       6.0
+
+age at anchor < 1 year: 4 | age < 18: 165 | first recorded event after age 5 (late record start): 2871
+race: {'white': 0.841, 'black': 0.09, 'asian': 0.066, 'native': 0.003, 'other': 0.001}
+ethnicity: {'nonhispanic': 0.904, 'hispanic': 0.096}
+
+####################################################################################################
+A2. COVARIATE SHIFT: can a classifier tell test from train? val from train? (5-fold AUROC on history features)
+####################################################################################################
+  train vs test    AUROC=0.477  top: last_2093-3=130; first_OBS:72166-2|Former smoker=121; rec_COND:444814009=121; min_2085-9=108; last_2085-9=104; first_COND:195662009=104
+  train vs val     AUROC=0.494  top: last_786-4=141; first_MED:313782=134; rec_IMM:113=125; last_21000-5=121; m5_718-7=118; max_786-4=113
+  val vs test      AUROC=0.488  top: min_4544-3=155; m5_2085-9=137; last_786-4=113; first_OBS:72166-2|Never smoker=111; last_787-2=110; max_2093-3=94
+  train half A/B (null) AUROC=0.483  top: min_2339-0=115; max_2069-3=110; rec_CARE:91251008=99; min_2093-3=96; m5_9279-1=96; last_2093-3=96
+
+####################################################################################################
+A3. TABLES: rows, coverage, pre/post anchor, codes (train_val)
+####################################################################################################
+  table    rows  patients  pre_anchor  distinct_codes  codes_ge20pat  rows_per_patient_pre
+   COND   32146      3152       0.695             147            105                   6.0
+    MED  338790      3075       0.727             157             75                  26.0
+   PROC  122250      3132       0.389             159             94                   5.0
+    OBS 1337152      3156       0.409             155            118                 100.0
+    ENC  259435      3156       0.633              46             38                  27.0
+    IMM   31745      3030       0.497              15             10                   5.0
+   CARE   12698      3058       0.680              34             28                   3.0
+ALLERGY     619       253       1.000              15             10                   1.0
+ DEVICE     497       471       0.473               4              3                   1.0
+imaging_studies (not used by the project): rows=5709 pre-anchor=1275 patients(pre)=879 modalities={'Computed Tomography': 1889, 'Ultrasound': 1517, 'Digital Radiography': 1201, 'Computed Radiography': 776, 'Magnetic Resonance': 326}
+encounter classes (pre-anchor): {'wellness': 0.391, 'ambulatory': 0.286, 'outpatient': 0.211, 'urgentcare': 0.061, 'emergency': 0.036, 'inpatient': 0.015}
+
+####################################################################################################
+A4. TIME STRUCTURE: wellness cadence, event density by era, record gaps
+####################################################################################################
+wellness visit gap (years) quantiles: {0.1: 1.02, 0.25: 1.02, 0.5: 1.02, 0.75: 1.02, 0.9: 1.02}
+pre-anchor events per calendar decade: {1910: 634, 1920: 2025, 1930: 7913, 1940: 15757, 1950: 27777, 1960: 44119, 1970: 85667, 1980: 116517, 1990: 165040, 2000: 152777, 2010: 434865}
+largest encounter gap per patient (years) quantiles: {0.5: 10.6, 0.9: 31.0, 0.99: 47.4} | patients with a gap > 10y: 1610
+
+####################################################################################################
+A5. CALENDAR-ERA MARKERS: codes whose availability depends on year (potential death/anchor proxies)
+####################################################################################################
+tokens (>=100 patients) that FIRST appear in 2005 or later -> pure era markers:
+   OBS:DALY                     DALY                                            first_year=2011 patients=1957
+   OBS:QOLS                     QOLS                                            first_year=2011 patients=1957
+   OBS:QALY                     QALY                                            first_year=2011 patients=1957
+   IMM:114                      meningococcal MCV4P                             first_year=2005 patients=224
+   IMM:121                      zoster                                          first_year=2006 patients=125
+(5 such tokens of 227); tokens that DISAPPEAR before 2000 (last year < 2000):
+anchor year from token PRESENCE only (no QoL, no counts): CV R2=0.567  MAE=7.4 years
+death-in-window from token PRESENCE only: CV AUROC=0.874
+
+####################################################################################################
+A6. NUMERIC OBSERVATIONS: units, ranges, coverage
+####################################################################################################
+                                   desc  patients   rows    units     p01     med     p99
+code                                                                                     
+72514-3  Pain severity - 0-10 verbal nu      3052  29838  {score}    0.00    3.00    6.00
+8462-4         Diastolic Blood Pressure      3040  20767   mm[Hg]   40.00   82.00   90.00
+8302-2                      Body Height      3040  20230       cm  125.53  170.60  191.40
+8867-4                       Heart rate      3040  20230     /min   60.00   80.00  100.00
+8480-6          Systolic Blood Pressure      3040  20767   mm[Hg]  101.00  149.00  175.00
+9279-1                 Respiratory rate      3040  20230     /min   12.00   14.00   16.00
+29463-7                     Body Weight      3040  20341       kg   26.98   82.40  113.20
+39156-5                 Body Mass Index      3036  20131    kg/m2   16.90   28.00   36.77
+6690-2   Leukocytes [#/volume] in Blood      2861   3213  10*3/uL    1.41    6.80   10.40
+785-6    MCH [Entitic mass] by Automate      2861   3213       pg   27.00   30.00   32.90
+786-4    MCHC [Mass/volume] by Automate      2861   3213     g/dL   32.90   34.50   36.00
+789-8    Erythrocytes [#/volume] in Blo      2861   3213  10*6/uL    3.90    4.70    5.50
+777-3    Platelets [#/volume] in Blood       2861   3213  10*3/uL  152.92  297.70  446.99
+787-2    MCV [Entitic volume] by Automa      2861   3213       fL   80.10   87.40   94.90
+718-7    Hemoglobin [Mass/volume] in Bl      2861   3225     g/dL    9.52   14.70   17.50
+32207-3  Platelet distribution width [E      2860   3102       fL  154.00  337.55  516.40
+32623-1  Platelet mean volume [Entitic       2860   3102       fL    9.40   10.80   12.30
+21000-5  Erythrocyte distribution width      2860   3102       fL   39.10   42.40   45.90
+4544-3   Hematocrit [Volume Fraction] o      2845   3115        %   29.31   42.60   49.80
+2085-9   High Density Lipoprotein Chole      2623  14193    mg/dL   29.50   62.60   79.60
+2093-3                Total Cholesterol      2623  14193    mg/dL  152.90  188.50  252.00
+18262-6  Low Density Lipoprotein Choles      2623  14193    mg/dL   59.89  100.60  161.70
+2571-8                    Triglycerides      2623  14193    mg/dL  100.90  140.40  368.02
+QALY                               QALY      1957   9736        a    9.00   51.00   96.26
+DALY                               DALY      1957   9736        a    0.00    1.30   37.46
+QOLS                               QOLS      1957   9736  {score}    0.00    1.00    1.00
+2069-3                         Chloride      1674  16994   mmol/L  101.10  106.00  110.90
+2339-0                          Glucose      1674  16994    mg/dL   64.50   88.80  155.10
+49765-1                         Calcium      1674  16994    mg/dL    8.50    9.30   10.20
+38483-4                      Creatinine      1674  16994    mg/dL    0.40    2.30   11.91
+codes with >1 unit: 5
+categorical observation codes: 37 | top: {'72166-2': 3040, '32465-7': 186, '46288-7': 95, '32167-9': 88, '20454-5': 88, '5794-3': 88}

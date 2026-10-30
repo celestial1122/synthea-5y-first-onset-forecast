@@ -1,0 +1,22 @@
+vocab 350 numeric 59
+official-vs-landmark label agreement on train: 0.99964
+official anchors only (baseline)                                       val mAP=0.2567 macroAUROC=0.7743 (rows=2791) [41s]
+  landmark -1y: 2787 patients, positives=4988 [43s]
+  landmark -2y: 2786 patients, positives=5158 [45s]
+  landmark -3y: 2784 patients, positives=5155 [46s]
+  landmark -4y: 2780 patients, positives=5171 [48s]
+  landmark -5y: 2779 patients, positives=5065 [49s]
+  landmark -6y: 2778 patients, positives=4265 [50s]
+  landmark -7y: 2772 patients, positives=3416 [51s]
+  landmark -8y: 2768 patients, positives=2564 [52s]
+  landmark -9y: 2768 patients, positives=1698 [53s]
+  landmark -10y: 2767 patients, positives=956 [54s]
+official + landmarks up to -3y, uniform weight                         val mAP=0.2473 macroAUROC=0.7688 (rows=11148) [126s]
+official + landmarks up to -10y, uniform weight                        val mAP=0.2524 macroAUROC=0.7682 (rows=30560) [268s]
+official + landmarks -10y, official rows weight 5                      val mAP=0.2499 macroAUROC=0.7650 (rows=30560) [412s]
+official + landmarks -10y, with 'official' indicator feature (val=1)   val mAP=0.2560 macroAUROC=0.7644 (rows=30560) [543s]
+
+Death-in-window from pre-anchor history only: val AUROC=0.983  AP=0.982 (prevalence 0.425)
+top death predictors: last_DALY=12249; max_DALY=6952; last_QALY=5498; last_QOLS=4237; min_DALY=3490; max_QOLS=2804; min_QALY=1796; max_QALY=979; rec_ENC:wellness=852; m5_QALY=628
+Death-in-window with anchor_year added:          val AUROC=0.998
+done 545s

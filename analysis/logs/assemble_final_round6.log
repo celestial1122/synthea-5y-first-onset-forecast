@@ -1,0 +1,34 @@
+candidates: ['lgb_clean', 'l1_lam0.003', 'pp_x5', 'pp_yearly', 'pp_lgb', 'xgb_v5avg', 'lgb_sweep_avg', 'tf_hybrid', 'stack_own+death+others_gbm', 'stack_own+death+others_lr', 'stack_own+death_gbm', 'stack_own+death_lr', 'ppds:d3_all_S1', 'ppds:d3_all_S2', 'ppds:d3_all', 'ppds:d6_all', 'ppds:screen200_d3_all', 'ppds:screen400_d3_all', 'ppds:xgbavg3_all', 'blocks_S1', 'pplgb:nl16_S3_all', 'pplgb:nl8_S1_all', 'pplgb:nl8_S3_all', 'pplgb:nl8_all_all', 'screen:k200', 'screen:k60']
+
+single candidates (OOF mAP / val mAP):
+  lgb_clean    OOF=0.2092  val=0.2551
+  l1_lam0.003  OOF=0.1888  val=0.2607
+  pp_x5        OOF=0.2199  val=0.2520  (terminal targets filled from lgb_clean)
+  pp_yearly    OOF=0.2188  val=0.2680  (terminal targets filled from lgb_clean)
+  pp_lgb       OOF=0.2183  val=0.2639  (terminal targets filled from lgb_clean)
+  xgb_v5avg    OOF=0.1967  val=0.2282
+  lgb_sweep_avg OOF=0.2097  val=0.2546
+  tf_hybrid    OOF=0.1733  val=0.2518
+  stack_own+death+others_gbm OOF=0.1998  val=0.2503
+  stack_own+death+others_lr OOF=0.2144  val=0.2600
+  stack_own+death_gbm OOF=0.2044  val=0.2649
+  stack_own+death_lr OOF=0.2186  val=0.2667
+  ppds:d3_all_S1 OOF=0.1626  val=0.2032
+  ppds:d3_all_S2 OOF=0.2147  val=0.2436
+  ppds:d3_all  OOF=0.2220  val=0.2675
+  ppds:d6_all  OOF=0.2219  val=0.2623
+  ppds:screen200_d3_all OOF=0.2233  val=0.2648
+  ppds:screen400_d3_all OOF=0.2221  val=0.2716
+  ppds:xgbavg3_all OOF=0.2227  val=0.2650
+  blocks_S1    OOF=0.1558  val=0.1960
+  pplgb:nl16_S3_all OOF=0.2148  val=0.2515
+  pplgb:nl8_S1_all OOF=0.1635  val=0.2061
+  pplgb:nl8_S3_all OOF=0.2183  val=0.2516
+  pplgb:nl8_all_all OOF=0.2207  val=0.2588
+  screen:k200  OOF=0.2134  val=0.2609
+  screen:k60   OOF=0.2055  val=0.2620
+
+greedy ensemble: cross-fitted OOF mAP=0.2381 | val mAP=0.2832  val macroAUROC=0.7771
+average weight per candidate: {'lgb_clean': np.float64(0.019), 'l1_lam0.003': np.float64(0.042), 'pp_x5': np.float64(0.041), 'pp_yearly': np.float64(0.007), 'pp_lgb': np.float64(0.016), 'xgb_v5avg': np.float64(0.005), 'lgb_sweep_avg': np.float64(0.01), 'tf_hybrid': np.float64(0.007), 'stack_own+death+others_gbm': np.float64(0.042), 'stack_own+death+others_lr': np.float64(0.085), 'stack_own+death_gbm': np.float64(0.108), 'stack_own+death_lr': np.float64(0.066), 'ppds:d3_all_S1': np.float64(0.061), 'ppds:d3_all_S2': np.float64(0.021), 'ppds:d3_all': np.float64(0.006), 'ppds:d6_all': np.float64(0.032), 'ppds:screen200_d3_all': np.float64(0.033), 'ppds:screen400_d3_all': np.float64(0.04), 'ppds:xgbavg3_all': np.float64(0.016), 'blocks_S1': np.float64(0.029), 'pplgb:nl16_S3_all': np.float64(0.046), 'pplgb:nl8_S1_all': np.float64(0.086), 'pplgb:nl8_S3_all': np.float64(0.031), 'pplgb:nl8_all_all': np.float64(0.012), 'screen:k200': np.float64(0.051), 'screen:k60': np.float64(0.088)}
+by group (cross-fitted OOF vs lgb_clean): {'acc': (0.1043, 0.0964), 'term': (0.4601, 0.4146), 'chain': (0.2239, 0.1851)}
+wrote predictions_final.csv

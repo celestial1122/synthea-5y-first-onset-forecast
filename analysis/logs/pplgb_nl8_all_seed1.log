@@ -1,0 +1,7 @@
+nl8 block all: rows 56770, feats 2294, targets 40 [1s]
+  fold 0 done [307s]
+  fold 1 done [607s]
+  fold 2 done [908s]
+  fold 3 done [1211s]
+  fold 4 done [1518s]
+RESULT nl8_all_all_seed1: OOF mAP(targets run)=0.2201 | acc 0.0917 / term 0.4184 / chain 0.2163 | val 0.2630 [1518s]

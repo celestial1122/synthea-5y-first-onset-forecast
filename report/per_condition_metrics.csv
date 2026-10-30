@@ -1,0 +1,41 @@
+code,condition,group,prevalence_train,AP_train_oof,AUROC_train_oof,AP_val,AUROC_val
+444814009,Viral sinusitis (disorder),accident,0.2655,0.4504,0.7825,0.4373,0.7736
+195662009,Acute viral pharyngitis (disorder),accident,0.2118,0.2875,0.6596,0.246,0.6154
+10509002,Acute bronchitis (disorder),accident,0.1788,0.2866,0.6681,0.2955,0.6501
+88805009,Chronic congestive heart failure (disorder),terminal,0.082,0.4762,0.9049,0.4398,0.9028
+230690007,Stroke,chain,0.0738,0.8447,0.9471,0.9302,0.9821
+22298006,Myocardial Infarction,terminal,0.0548,0.7538,0.9535,0.7919,0.9776
+68496003,Polyp of colon,chain,0.0516,0.1971,0.8623,0.2116,0.8807
+44465007,Sprain of ankle,accident,0.0505,0.0615,0.5539,0.0412,0.4573
+53741008,Coronary Heart Disease,chain,0.0491,0.2437,0.7788,0.1099,0.7634
+233604007,Pneumonia,terminal,0.0477,0.4794,0.9637,0.7679,0.9872
+43878008,Streptococcal sore throat (disorder),accident,0.0477,0.0497,0.5277,0.1407,0.6291
+65966004,Fracture of forearm,chain,0.0419,0.0865,0.6826,0.118,0.745
+126906006,Neoplasm of prostate,terminal,0.0398,0.7536,0.9878,0.9687,0.999
+271737000,Anemia (disorder),chain,0.0398,0.2001,0.8609,0.2434,0.8137
+64859006,Osteoporosis (disorder),chain,0.0351,0.2113,0.8746,0.2379,0.8737
+443165006,Pathological fracture due to osteoporosis (disorder),chain,0.0337,0.2663,0.9294,0.2662,0.8861
+49436004,Atrial Fibrillation,chain,0.033,0.0689,0.7672,0.2225,0.8677
+92691004,Carcinoma in situ of prostate (disorder),terminal,0.0315,0.5892,0.9792,0.8744,0.9972
+36971009,Sinusitis (disorder),accident,0.0315,0.0301,0.4985,0.0586,0.6439
+75498004,Acute bacterial sinusitis (disorder),accident,0.0315,0.0462,0.501,0.0194,0.5572
+162573006,Suspected lung cancer (situation),terminal,0.0301,0.8196,0.9751,0.8884,0.9938
+424132000,Non-small cell carcinoma of lung  TNM stage 1 (disorder),terminal,0.0276,0.858,0.9765,0.8997,0.9938
+254637007,Non-small cell lung cancer (disorder),terminal,0.0272,0.8688,0.9854,0.8997,0.9938
+39848009,Whiplash injury to neck,accident,0.0269,0.0281,0.4678,0.0167,0.3048
+26929004,Alzheimer's disease (disorder),chain,0.0269,0.3014,0.9077,0.2232,0.888
+263102004,Fracture subluxation of wrist,accident,0.0262,0.0324,0.5808,0.0404,0.48
+72892002,Normal pregnancy,chain,0.0251,0.5936,0.9844,0.7727,0.9935
+713197008,Recurrent rectal polyp,terminal,0.0247,0.2049,0.9011,0.4492,0.9127
+62106007,Concussion with no loss of consciousness,accident,0.0247,0.0287,0.5374,0.0417,0.6165
+15777000,Prediabetes,chain,0.0219,0.0861,0.8824,0.094,0.8565
+58150001,Fracture of clavicle,accident,0.0219,0.034,0.652,0.0863,0.6282
+162864005,Body mass index 30+ - obesity (finding),chain,0.0215,0.5386,0.9784,0.6708,0.9887
+16114001,Fracture of ankle,accident,0.0208,0.0733,0.6611,0.0372,0.6075
+70704007,Sprain of wrist,accident,0.0201,0.0192,0.4584,0.0278,0.5441
+283371005,Laceration of forearm,accident,0.0179,0.021,0.5355,0.029,0.5208
+314994000,Metastasis from malignant tumor of prostate (disorder),terminal,0.0179,0.5136,0.9734,0.5045,0.9907
+284551006,Laceration of foot,accident,0.0161,0.0199,0.5357,0.015,0.3125
+22325002,Abnormal gait (finding),chain,0.0147,0.3321,0.8984,0.2572,0.9384
+723857007,Silent micro-hemorrhage of brain (disorder),chain,0.0147,0.3321,0.8984,0.2572,0.9384
+156073000,Fetus with unknown complication,chain,0.0104,0.1679,0.9572,0.3677,0.9689

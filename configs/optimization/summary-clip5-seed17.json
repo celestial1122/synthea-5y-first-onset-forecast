@@ -1,0 +1,23 @@
+{
+  "name": "summary-clip5-seed17",
+  "family": "summary-clip5",
+  "prepared_dir": "artifacts\\optimization\\prepared_summary_clip5",
+  "output_dir": "artifacts/optimization/runs/summary-clip5-seed17",
+  "model_type": "summary_mlp",
+  "seed": 17,
+  "d_model": 128,
+  "n_heads": 4,
+  "n_layers": 3,
+  "dropout": 0.35,
+  "batch_size": 64,
+  "epochs": 70,
+  "pretrain_epochs": 0,
+  "learning_rate": 0.001,
+  "pretrain_learning_rate": 0.0005,
+  "weight_decay": 0.03,
+  "patience": 12,
+  "device": "auto",
+  "amp": true,
+  "wandb_mode": "offline",
+  "wandb_project": "patient-timeline-forecast"
+}

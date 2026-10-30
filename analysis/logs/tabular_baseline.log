@@ -1,0 +1,82 @@
+token features kept: 350 (support>=20 train patients)
+numeric observation codes kept: 59
+feature matrix: (3514, 1688) (3s)
+
+=== OFFICIAL VAL (train on official train) ===
+LightGBM (all features incl. anchor_year)                    mAP=0.2548 macroAUROC=0.7704
+LogReg L2 (all features incl. anchor_year)                   mAP=0.2226 macroAUROC=0.7519
+avg(LightGBM, LogReg)                                        mAP=0.2577 macroAUROC=0.7716
+LightGBM (NO anchor_year)                                    mAP=0.2565 macroAUROC=0.7738
+LogReg L2 (NO anchor_year)                                   mAP=0.2205 macroAUROC=0.7512
+avg(LightGBM, LogReg) (NO anchor_year)                       mAP=0.2552 macroAUROC=0.7714
+LightGBM static only (age, sex, history size, race)          mAP=0.1556 macroAUROC=0.7307
+
+per-condition AP on val:
+                                         cond  val_pos  transformer_C0R0  lgb_static  lgb_noanchor  lr_noanchor  ens_noanchor  lgb_anchor  ens_anchor
+444814009          Viral sinusitis (disorder)       99             0.444       0.449         0.439        0.486         0.473       0.434       0.466
+195662009  Acute viral pharyngitis (disorder)       72             0.273       0.326         0.232        0.246         0.238       0.245       0.243
+10509002          Acute bronchitis (disorder)       61             0.246       0.231         0.288        0.293         0.325       0.268       0.323
+88805009   Chronic congestive heart failure (       29             0.296       0.207         0.419        0.280         0.381       0.467       0.419
+230690007                              Stroke       35             0.248       0.224         0.358        0.222         0.277       0.347       0.289
+22298006                Myocardial Infarction       19             0.487       0.194         0.679        0.527         0.653       0.714       0.663
+68496003                       Polyp of colon       18             0.144       0.142         0.249        0.116         0.149       0.252       0.155
+44465007                      Sprain of ankle       16             0.065       0.075         0.041        0.059         0.051       0.044       0.053
+53741008               Coronary Heart Disease       15             0.085       0.097         0.095        0.095         0.092       0.104       0.097
+233604007                           Pneumonia       17             0.581       0.187         0.667        0.635         0.671       0.686       0.697
+43878008   Streptococcal sore throat (disorde       22             0.073       0.060         0.103        0.113         0.100       0.074       0.095
+65966004                  Fracture of forearm       16             0.089       0.094         0.216        0.242         0.282       0.193       0.284
+126906006                Neoplasm of prostate       11             0.687       0.223         0.914        0.733         0.919       0.848       0.919
+271737000                   Anemia (disorder)       15             0.140       0.171         0.173        0.097         0.115       0.182       0.123
+64859006              Osteoporosis (disorder)       12             0.151       0.166         0.117        0.092         0.096       0.108       0.097
+443165006  Pathological fracture due to osteo       14             0.190       0.323         0.311        0.253         0.275       0.361       0.284
+49436004                  Atrial Fibrillation       14             0.159       0.113         0.117        0.060         0.082       0.111       0.081
+92691004   Carcinoma in situ of prostate (dis        8             0.442       0.183         0.929        0.357         0.643       0.959       0.683
+36971009                 Sinusitis (disorder)        9             0.031       0.034         0.033        0.041         0.037       0.031       0.036
+75498004   Acute bacterial sinusitis (disorde        5             0.049       0.046         0.023        0.027         0.024       0.021       0.023
+162573006   Suspected lung cancer (situation)       10             0.336       0.071         0.223        0.231         0.251       0.224       0.247
+424132000  Non-small cell carcinoma of lung          9             0.323       0.062         0.237        0.175         0.181       0.172       0.178
+254637007  Non-small cell lung cancer (disord        9             0.298       0.060         0.189        0.175         0.187       0.176       0.184
+39848009              Whiplash injury to neck        8             0.019       0.020         0.021        0.020         0.018       0.018       0.017
+26929004       Alzheimer's disease (disorder)       13             0.183       0.219         0.241        0.363         0.381       0.170       0.370
+263102004       Fracture subluxation of wrist       10             0.053       0.043         0.028        0.031         0.029       0.036       0.032
+72892002                     Normal pregnancy       10             0.501       0.611         0.619        0.654         0.675       0.612       0.686
+713197008              Recurrent rectal polyp       10             0.115       0.054         0.250        0.350         0.387       0.308       0.416
+62106007   Concussion with no loss of conscio        7             0.050       0.022         0.187        0.028         0.046       0.190       0.050
+15777000                          Prediabetes       10             0.179       0.099         0.150        0.131         0.148       0.154       0.173
+58150001                 Fracture of clavicle        8             0.077       0.078         0.038        0.037         0.036       0.034       0.035
+162864005  Body mass index 30+ - obesity (fin       11             0.308       0.390         0.576        0.297         0.507       0.621       0.499
+16114001                    Fracture of ankle        8             0.039       0.048         0.052        0.067         0.056       0.057       0.058
+70704007                      Sprain of wrist        8             0.032       0.030         0.029        0.027         0.027       0.032       0.028
+283371005               Laceration of forearm        7             0.035       0.184         0.019        0.023         0.020       0.021       0.021
+314994000  Metastasis from malignant tumor of        6             0.650       0.067         0.604        0.559         0.682       0.572       0.608
+284551006                  Laceration of foot        7             0.020       0.042         0.028        0.068         0.066       0.027       0.069
+22325002              Abnormal gait (finding)       11             0.219       0.158         0.088        0.123         0.116       0.076       0.107
+723857007  Silent micro-hemorrhage of brain (       11             0.243       0.158         0.088        0.123         0.116       0.076       0.107
+156073000     Fetus with unknown complication        5             0.278       0.261         0.189        0.363         0.395       0.168       0.391
+
+column means: {'transformer_C0R0': 0.221, 'lgb_static': 0.1556, 'lgb_noanchor': 0.2565, 'lr_noanchor': 0.2205, 'ens_noanchor': 0.2552, 'lgb_anchor': 0.2548, 'ens_anchor': 0.2577}
+
+Top LightGBM features (gain) for selected targets, no-anchor model:
+  Body mass index 30+ - obesity (fin   age=813; max_39156-5=419; last_39156-5=357; m5_39156-5=355; last_20565-8=234; last_2069-3=199
+  Prediabetes                          age=452; max_8480-6=333; min_2085-9=199; hist_years=182; m5_8480-6=157; rec_ENC:ambulatory=127
+  Pathological fracture due to osteo   prior_64859006=1599; rec_COND:64859006=1101; cnt_COND:64859006=785; age=312; rec_MED:904419=224; max_8480-6=199
+  Carcinoma in situ of prostate (dis   c1_PROC:410006001=738; max_2857-1=738; c5_PROC:410006001=727; rec_PROC:410006001=595; cnt_PROC:410006001=521; rec_ENC:wellness=441
+  Non-small cell lung cancer (disord   m5_DALY=437; age=342; last_DALY=341; min_DALY=284; max_DALY=272; last_QALY=226
+  Alzheimer's disease (disorder)       age=1502; max_8480-6=319; min_8480-6=256; rec_MED:1362805=235; min_QALY=191; last_2085-9=171
+  Myocardial Infarction                rec_COND:53741008=1480; rec_MED:705129=1302; c5_MED:705129=622; cnt_MED:705129=579; min_QALY=497; c1_MED:705129=420
+  Normal pregnancy                     female=1202; age=1096; m5_QALY=715; max_QALY=520; last_QALY=340; min_QALY=295
+  Pneumonia                            max_72106-8=3572; m5_72106-8=1636; rec_CARE:386257007=1142; last_72106-8=952; cnt_CARE:386257007=844; min_72106-8=773
+
+=== 5-fold OOF CV on official TRAIN (2791 patients), LightGBM no-anchor vs with-anchor  (94s) ===
+  fold 0 done (158s)
+  fold 1 done (227s)
+  fold 2 done (297s)
+  fold 3 done (379s)
+  fold 4 done (464s)
+OOF LightGBM (NO anchor_year)                                mAP=0.2065 macroAUROC=0.7642
+OOF LogReg (NO anchor_year)                                  mAP=0.1573 macroAUROC=0.7189
+OOF avg(LightGBM, LogReg) (NO anchor_year)                   mAP=0.1929 macroAUROC=0.7549
+OOF LightGBM (with anchor_year)                              mAP=0.2084 macroAUROC=0.7662
+
+bootstrap SD of mAP: official val (365) = 0.0133 ; train OOF (2791) = 0.0058
+done 482s

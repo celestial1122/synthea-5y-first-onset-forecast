@@ -1,0 +1,41 @@
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\build_clean_dataset.py:31: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  ev = pd.concat([ev, im], ignore_index=True)
+{
+ "no_qol": false,
+ "n_patients": 3514,
+ "excluded_sources": [
+  "genomics/*_dna.csv (coherent with stroke cohort)",
+  "imaging/*.dcm (coherent with Alzheimer cohort)",
+  "REASONCODE/REASONDESCRIPTION",
+  "STOP as a date feature",
+  "DEATHDATE",
+  "costs/payer/identity columns"
+ ],
+ "events_pre_anchor_after_dedup": 1153930,
+ "rows_total_including_post_anchor": 2248035,
+ "n_features": 2317,
+ "blocks": {
+  "cnt": 360,
+  "c5": 360,
+  "c1": 360,
+  "rec": 360,
+  "first": 360,
+  "last": 59,
+  "max": 59,
+  "min": 59,
+  "m5": 59,
+  "std": 59,
+  "nobs": 59,
+  "trend": 59,
+  "active": 43,
+  "encrate": 6,
+  "static": 15,
+  "prior": 40
+ },
+ "token_vocab": 360,
+ "numeric_codes": 59,
+ "active_med_codes": 43,
+ "min_support_token_patients": 20,
+ "min_support_numeric_patients": 50,
+ "seconds": 5.7
+}

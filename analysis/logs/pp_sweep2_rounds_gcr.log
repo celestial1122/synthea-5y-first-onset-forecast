@@ -1,0 +1,14 @@
+configs ['d3n200', 'd2n800']: rows 56770 (landmark rows 53256, transductive 0), feats 2535, targets 40, indicator=True [2s]
+  fold 0: DMatrix built (45054 rows) [5s]
+  fold 0 done [270s]
+  fold 1: DMatrix built (44684 rows) [274s]
+  fold 1 done [553s]
+  fold 2: DMatrix built (44912 rows) [556s]
+  fold 2 done [816s]
+  fold 3: DMatrix built (45006 rows) [820s]
+  fold 3 done [1080s]
+  fold 4: DMatrix built (44532 rows) [1084s]
+  fold 4 done [1334s]
+RESULT d3n200_all: OOF mAP(targets run)=0.2841 | acc 0.0963 / term 0.5922 / chain 0.2666 | val 0.3488
+RESULT d2n800_all: OOF mAP(targets run)=0.2783 | acc 0.0886 / term 0.5858 / chain 0.2630 | val 0.3438
+done [1334s]

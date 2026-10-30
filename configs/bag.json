@@ -1,0 +1,21 @@
+{
+  "name": "bag-final-seed42",
+  "prepared_dir": "artifacts/prepared",
+  "output_dir": "artifacts/runs/bag-final-seed42",
+  "model_type": "bag",
+  "seed": 42,
+  "d_model": 128,
+  "n_heads": 4,
+  "n_layers": 3,
+  "dropout": 0.15,
+  "batch_size": 64,
+  "epochs": 40,
+  "pretrain_epochs": 0,
+  "learning_rate": 0.003,
+  "weight_decay": 0.001,
+  "patience": 8,
+  "device": "auto",
+  "amp": true,
+  "wandb_mode": "offline",
+  "wandb_project": "patient-timeline-forecast"
+}

@@ -1,0 +1,44 @@
+RESULT screen k=  20 (+42 always): OOF mAP=0.2745 | acc 0.0916 / term 0.6063 / chain 0.2362 | val 0.3411 [127s]
+RESULT screen k=  40 (+42 always): OOF mAP=0.2731 | acc 0.0953 / term 0.6060 / chain 0.2290 | val 0.3426 [254s]
+                                         cond  pos    k20    k40  lgb_clean
+284551006                  Laceration of foot   45  0.025  0.028      0.019
+70704007                      Sprain of wrist   56  0.020  0.020      0.024
+283371005               Laceration of forearm   50  0.019  0.019      0.024
+62106007   Concussion with no loss of conscio   69  0.037  0.027      0.025
+16114001                    Fracture of ankle   58  0.032  0.043      0.025
+39848009              Whiplash injury to neck   75  0.026  0.030      0.028
+263102004       Fracture subluxation of wrist   73  0.032  0.031      0.028
+36971009                 Sinusitis (disorder)   88  0.035  0.031      0.031
+58150001                 Fracture of clavicle   61  0.041  0.045      0.031
+75498004   Acute bacterial sinusitis (disorde   88  0.036  0.035      0.038
+43878008   Streptococcal sore throat (disorde  133  0.051  0.054      0.052
+44465007                      Sprain of ankle  141  0.053  0.057      0.057
+49436004                  Atrial Fibrillation   92  0.066  0.064      0.070
+723857007  Silent micro-hemorrhage of brain (   41  0.214  0.152      0.072
+22325002              Abnormal gait (finding)   41  0.214  0.152      0.072
+15777000                          Prediabetes   61  0.072  0.070      0.083
+65966004                  Fracture of forearm  117  0.084  0.076      0.085
+156073000     Fetus with unknown complication   29  0.168  0.150      0.113
+53741008               Coronary Heart Disease  137  0.120  0.183      0.118
+271737000                   Anemia (disorder)  111  0.134  0.132      0.148
+64859006              Osteoporosis (disorder)   98  0.163  0.131      0.150
+713197008              Recurrent rectal polyp   69  0.209  0.195      0.168
+26929004       Alzheimer's disease (disorder)   75  0.249  0.239      0.188
+230690007                              Stroke  206  0.791  0.791      0.199
+68496003                       Polyp of colon  144  0.182  0.190      0.202
+424132000  Non-small cell carcinoma of lung     77  0.868  0.875      0.232
+254637007  Non-small cell lung cancer (disord   76  0.873  0.884      0.233
+443165006  Pathological fracture due to osteo   94  0.295  0.252      0.253
+162573006   Suspected lung cancer (situation)   84  0.827  0.828      0.254
+195662009  Acute viral pharyngitis (disorder)  591  0.281  0.290      0.280
+10509002          Acute bronchitis (disorder)  499  0.239  0.269      0.306
+88805009   Chronic congestive heart failure (  229  0.429  0.416      0.403
+233604007                           Pneumonia  133  0.423  0.435      0.420
+314994000  Metastasis from malignant tumor of   50  0.317  0.304      0.473
+444814009          Viral sinusitis (disorder)  741  0.447  0.450      0.478
+72892002                     Normal pregnancy   70  0.526  0.586      0.507
+162864005  Body mass index 30+ - obesity (fin   60  0.265  0.265      0.517
+92691004   Carcinoma in situ of prostate (dis   88  0.679  0.686      0.612
+22298006                Myocardial Infarction  153  0.729  0.721      0.633
+126906006                Neoplasm of prostate  111  0.708  0.716      0.718
+done [254s]

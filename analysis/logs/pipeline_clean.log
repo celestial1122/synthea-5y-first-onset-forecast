@@ -1,0 +1,45 @@
+clean structured tables (primary)              OOF mAP=0.2092 (acc 0.096 / term 0.415 / chain 0.185) | val mAP=0.2551 AUROC=0.7739  [777s]
+sensitivity: without QALY/DALY/QOLS            OOF mAP=0.2007 (acc 0.096 / term 0.386 / chain 0.182) | val mAP=0.2464 AUROC=0.7629  [1563s]
+NOT USED: + 'has DNA file' (coherence leak)    OOF mAP=0.2315 (acc 0.096 / term 0.419 / chain 0.242) | val mAP=0.2761 AUROC=0.7827  [2360s]
+                                         cond  oof_clean  val_clean  oof_noqol  oof_with_dna_leak
+444814009          Viral sinusitis (disorder)      0.478      0.439      0.476              0.477
+195662009  Acute viral pharyngitis (disorder)      0.280      0.227      0.278              0.276
+10509002          Acute bronchitis (disorder)      0.306      0.295      0.304              0.307
+88805009   Chronic congestive heart failure (      0.403      0.424      0.309              0.413
+230690007                              Stroke      0.199      0.317      0.174              0.674
+22298006                Myocardial Infarction      0.633      0.766      0.609              0.658
+68496003                       Polyp of colon      0.202      0.209      0.186              0.200
+44465007                      Sprain of ankle      0.057      0.043      0.059              0.057
+53741008               Coronary Heart Disease      0.118      0.080      0.093              0.128
+233604007                           Pneumonia      0.420      0.562      0.414              0.426
+43878008   Streptococcal sore throat (disorde      0.052      0.081      0.054              0.053
+65966004                  Fracture of forearm      0.085      0.232      0.088              0.087
+126906006                Neoplasm of prostate      0.718      0.878      0.682              0.723
+271737000                   Anemia (disorder)      0.148      0.180      0.130              0.145
+64859006              Osteoporosis (disorder)      0.150      0.112      0.150              0.150
+443165006  Pathological fracture due to osteo      0.253      0.362      0.252              0.254
+49436004                  Atrial Fibrillation      0.070      0.169      0.065              0.068
+92691004   Carcinoma in situ of prostate (dis      0.612      0.918      0.610              0.605
+36971009                 Sinusitis (disorder)      0.031      0.033      0.029              0.030
+75498004   Acute bacterial sinusitis (disorde      0.038      0.023      0.036              0.040
+162573006   Suspected lung cancer (situation)      0.254      0.263      0.243              0.254
+424132000  Non-small cell carcinoma of lung        0.232      0.178      0.218              0.232
+254637007  Non-small cell lung cancer (disord      0.233      0.180      0.217              0.229
+39848009              Whiplash injury to neck      0.028      0.025      0.027              0.028
+26929004       Alzheimer's disease (disorder)      0.188      0.230      0.188              0.193
+263102004       Fracture subluxation of wrist      0.028      0.043      0.029              0.028
+72892002                     Normal pregnancy      0.507      0.656      0.525              0.514
+713197008              Recurrent rectal polyp      0.168      0.224      0.138              0.168
+62106007   Concussion with no loss of conscio      0.025      0.264      0.026              0.025
+15777000                          Prediabetes      0.083      0.107      0.080              0.082
+58150001                 Fracture of clavicle      0.031      0.043      0.031              0.030
+162864005  Body mass index 30+ - obesity (fin      0.517      0.611      0.530              0.522
+16114001                    Fracture of ankle      0.025      0.043      0.025              0.024
+70704007                      Sprain of wrist      0.024      0.033      0.024              0.024
+283371005               Laceration of forearm      0.024      0.018      0.024              0.025
+314994000  Metastasis from malignant tumor of      0.473      0.516      0.420              0.485
+284551006                  Laceration of foot      0.019      0.025      0.020              0.019
+22325002              Abnormal gait (finding)      0.072      0.116      0.074              0.247
+723857007  Silent micro-hemorrhage of brain (      0.072      0.116      0.074              0.247
+156073000     Fetus with unknown complication      0.113      0.161      0.115              0.113
+wrote predictions_clean.csv (2360s)

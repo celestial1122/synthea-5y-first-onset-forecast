@@ -1,0 +1,13 @@
+mode pdfeat: rows 56770, official train 2791 (dying 1199), gate aligned (train gate>0.5 vs died agreement 0.9871) [0s]
+  fold 0: expert-A rows 45054 [5s]
+  fold 0 done [128s]
+  fold 1: expert-A rows 44684 [132s]
+  fold 1 done [270s]
+  fold 2: expert-A rows 44912 [273s]
+  fold 2 done [401s]
+  fold 3: expert-A rows 45006 [405s]
+  fold 3 done [534s]
+  fold 4: expert-A rows 44532 [537s]
+  fold 4 done [661s]
+RESULT pdfeat_d3_all: OOF mAP=0.2219 | acc 0.0934 / term 0.4207 / chain 0.2178 | val 0.2738 [661s]
+both done

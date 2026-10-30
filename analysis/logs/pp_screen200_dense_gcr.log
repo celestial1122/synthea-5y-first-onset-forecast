@@ -1,0 +1,8 @@
+screen [200] cfg d3: rows 56770, feats 2535, always-on 75 [2s]
+  fold 0 done [102s]
+  fold 1 done [201s]
+  fold 2 done [302s]
+  fold 3 done [403s]
+  fold 4 done [502s]
+RESULT screen200_d3_all_dense: OOF mAP=0.2894 | acc 0.0948 / term 0.6100 / chain 0.2703 | val 0.3577 [502s]
+done [502s]

@@ -1,0 +1,83 @@
+numeric codes: 59
+  10834-0      Globulin [Mass/volume] in Serum by calculation
+  14959-1      Microalbumin Creatinine Ratio
+  1742-6       Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+  1751-7       Albumin [Mass/volume] in Serum or Plasma
+  18262-6      Low Density Lipoprotein Cholesterol
+  1920-8       Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+  1975-2       Bilirubin.total [Mass/volume] in Serum or Plasma
+  19926-5      FEV1/FVC
+  20505-4      Bilirubin.total [Mass/volume] in Urine by Test strip
+  20565-8      Carbon Dioxide
+  20570-8      Hematocrit [Volume Fraction] of Blood
+  2069-3       Chloride
+  2085-9       High Density Lipoprotein Cholesterol
+  2093-3       Total Cholesterol
+  21000-5      Erythrocyte distribution width [Entitic volume] by Automated count
+  2339-0       Glucose
+  2571-8       Triglycerides
+  2857-1       Prostate specific Ag [Mass/volume] in Serum or Plasma
+  2885-2       Protein [Mass/volume] in Serum or Plasma
+  29463-7      Body Weight
+  2947-0       Sodium
+  32207-3      Platelet distribution width [Entitic volume] in Blood by Automated count
+  32623-1      Platelet mean volume [Entitic volume] in Blood by Automated count
+  33756-8      Polyp size greatest dimension by CAP cancer protocols
+  33914-3      Estimated Glomerular Filtration Rate
+  38265-5      DXA [T-score] Bone density
+  38483-4      Creatinine
+  39156-5      Body Mass Index
+  4544-3       Hematocrit [Volume Fraction] of Blood by Automated count
+  4548-4       Hemoglobin A1c/Hemoglobin.total in Blood
+  49765-1      Calcium
+  57905-2      Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method
+  5792-7       Glucose [Mass/volume] in Urine by Test strip
+  5797-6       Ketones [Mass/volume] in Urine by Test strip
+  5803-2       pH of Urine by Test strip
+  5804-0       Protein [Mass/volume] in Urine by Test strip
+  5811-5       Specific gravity of Urine by Test strip
+  59576-9      Body mass index (BMI) [Percentile] Per age and gender
+  6298-4       Potassium
+  6299-2       Urea Nitrogen
+  6690-2       Leukocytes [#/volume] in Blood by Automated count
+  6768-6       Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma
+  718-7        Hemoglobin [Mass/volume] in Blood
+  72106-8      Total score [MMSE]
+  72514-3      Pain severity - 0-10 verbal numeric rating [Score] - Reported
+  777-3        Platelets [#/volume] in Blood by Automated count
+  785-6        MCH [Entitic mass] by Automated count
+  786-4        MCHC [Mass/volume] by Automated count
+  787-2        MCV [Entitic volume] by Automated count
+  789-8        Erythrocytes [#/volume] in Blood by Automated count
+  8302-2       Body Height
+  8310-5       Body temperature
+  8462-4       Diastolic Blood Pressure
+  8480-6       Systolic Blood Pressure
+  8867-4       Heart rate
+  9279-1       Respiratory rate
+  DALY         DALY
+  QALY         QALY
+  QOLS         QOLS
+
+univariate AP on at-risk official train rows (vs full GBM OOF, prevalence):
+  Body mass index 30+ - obesity (fin prev=0.043 GBM=0.505 | last_bmi=0.075, max_bmi=0.064, proj_bmi_2.5y=0.117, bmi_minus_age_penalty=0.075
+  Prediabetes                        prev=0.037 GBM=0.082 | last_a1c=0.038, max_a1c=0.038, last_bmi=0.041, age=0.024
+  Normal pregnancy                   prev=0.027 GBM=0.506 | age_band=0.021, female=0.070, -age=0.141
+  Alzheimer's disease (disorder)     prev=0.030 GBM=0.187 | age=0.056
+  Osteoporosis (disorder)            prev=0.040 GBM=0.144 | age*female=0.094, age=0.084
+  Anemia (disorder)                  prev=0.065 GBM=0.134 | age=0.044, n_cond=0.051, encrate_ambulatory=0.079
+  Coronary Heart Disease             prev=0.055 GBM=0.113 | age=0.084, male=0.072, last_sbp=0.088, max_sbp=0.086, last_chol=0.060, last_ldl=0.065, -last_hdl=0.066
+  Stroke                             prev=0.086 GBM=0.190 | age=0.181, male=0.090, last_sbp=0.159, max_sbp=0.167, last_chol=0.103, last_ldl=0.108, -last_hdl=0.111
+  Atrial Fibrillation                prev=0.036 GBM=0.068 | age=0.082, male=0.038, last_sbp=0.090, max_sbp=0.092, last_chol=0.040, last_ldl=0.046, -last_hdl=0.046
+  Myocardial Infarction              prev=0.055 GBM=0.630 | age=0.053, male=0.082, last_sbp=0.052, max_sbp=0.053, last_chol=0.059, last_ldl=0.064, -last_hdl=0.057
+  Chronic congestive heart failure ( prev=0.083 GBM=0.395 | age=0.087, male=0.088, last_sbp=0.089, max_sbp=0.088, last_chol=0.100, last_ldl=0.097, -last_hdl=0.097
+
+subset-GBM OOF (depth 3, 300 trees) vs full GBM:
+  Body mass index 30+ - obesity (fin subset(   8 feats) OOF=0.398  full GBM=0.505  pp_yearly=0.573  [3s]
+  Prediabetes                        subset(   8 feats) OOF=0.091  full GBM=0.082  pp_yearly=0.094  [3s]
+  Normal pregnancy                   subset( 118 feats) OOF=0.582  full GBM=0.506  pp_yearly=0.565  [4s]
+  Alzheimer's disease (disorder)     subset(  48 feats) OOF=0.270  full GBM=0.187  pp_yearly=0.345  [5s]
+  Osteoporosis (disorder)            subset( 141 feats) OOF=0.196  full GBM=0.144  pp_yearly=0.207  [6s]
+  Coronary Heart Disease             subset(  59 feats) OOF=0.108  full GBM=0.113  pp_yearly=0.143  [9s]
+  Stroke                             subset(  56 feats) OOF=0.180  full GBM=0.190  pp_yearly=0.183  [10s]
+  Anemia (disorder)                  subset( 107 feats) OOF=0.149  full GBM=0.134  pp_yearly=0.240  [11s]

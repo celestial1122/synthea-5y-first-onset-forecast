@@ -1,0 +1,462 @@
+
+$ build_clean_dataset.py
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\build_clean_dataset.py:31: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  ev = pd.concat([ev, im], ignore_index=True)
+{
+ "no_qol": false,
+ "n_patients": 3514,
+ "excluded_sources": [
+  "genomics/*_dna.csv (coherent with stroke cohort)",
+  "imaging/*.dcm (coherent with Alzheimer cohort)",
+  "REASONCODE/REASONDESCRIPTION",
+  "STOP as a date feature",
+  "DEATHDATE",
+  "costs/payer/identity columns"
+ ],
+ "events_pre_anchor_after_dedup": 1153930,
+ "rows_total_including_post_anchor": 2248035,
+ "n_features": 2324,
+ "blocks": {
+  "cnt": 360,
+  "c5": 360,
+  "c1": 360,
+  "rec": 360,
+  "first": 360,
+  "last": 60,
+  "max": 60,
+  "min": 60,
+  "m5": 60,
+  "std": 60,
+  "nobs": 60,
+  "trend": 60,
+  "active": 43,
+  "encrate": 6,
+  "static": 15,
+  "prior": 40
+ },
+ "token_vocab": 360,
+ "numeric_codes": 60,
+ "active_med_codes": 43,
+ "min_support_token_patients": 20,
+ "min_support_numeric_patients": 50,
+ "seconds": 5.5
+}
+  [6s]
+
+$ build_genomics_features.py
+dicom: files 200 | with date 200 | dated on/before anchor 169 | split of all dicom holders: {'train': 196, 'test': 2, 'val': 2}
+saved (3514, 216) -> C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\clean\genomics_features.parquet  has_dna by split: {'test': 88, 'train': 713, 'val': 87}  [14s]
+gen cols: 214 | rs cols: 161 | gene cols: 49
+  [15s]
+
+$ death_model.py
+death model OOF AUROC 0.9977 | died share train 0.430 [5s]
+  [7s]
+
+$ build_cost_features.py
+identity total: enc_total                  corr 0.2397  median ratio 0.005  IQR 0.002-0.011
+identity total: enc_total+med_total        corr 0.2066  median ratio 0.040  IQR 0.009-0.189
+identity total: enc_total+med+proc+imm     corr 0.1777  median ratio 0.166  IQR 0.047-0.558
+identity total: enc_base+med+proc+imm      corr 0.1777  median ratio 0.166  IQR 0.047-0.558
+identity coverage: enc_cov                corr 0.6018  median ratio 0.260
+identity coverage: enc_cov+med_cov        corr 0.9809  median ratio 0.434
+saved (3514, 13); post_total quantiles train: [19799.0, 1151738.0, 1570075.0] test: [-7406.0, 1021759.0, 1559317.0]
+
+AUROC vs death-in-window: life_total 0.589  post_total 0.532  post_share 0.398  post_per_year 0.532
+                                 cond  pos  cost_life_total  cost_life_cov  cost_post_total  cost_post_cov  cost_post_share  cost_post_vs_pre_rate   best
+code                                                                                                                                                     
+162573006  Suspected lung cancer (sit   84            0.763          0.816            0.655          0.832            0.443                  0.459  0.832
+254637007  Non-small cell lung cancer   76            0.798          0.812            0.679          0.826            0.462                  0.477  0.826
+424132000  Non-small cell carcinoma o   77            0.801          0.809            0.676          0.822            0.458                  0.473  0.822
+230690007                      Stroke  206            0.659          0.766            0.613          0.787            0.458                  0.504  0.787
+443165006  Pathological fracture due    94            0.656          0.741            0.587          0.735            0.420                  0.468  0.741
+26929004   Alzheimer's disease (disor   75            0.665          0.730            0.624          0.734            0.462                  0.508  0.734
+723857007  Silent micro-hemorrhage of   41            0.716          0.695            0.675          0.683            0.503                  0.551  0.716
+22325002      Abnormal gait (finding)   41            0.716          0.695            0.675          0.683            0.503                  0.551  0.716
+64859006      Osteoporosis (disorder)   98            0.628          0.706            0.565          0.707            0.449                  0.493  0.707
+49436004          Atrial Fibrillation   92            0.612          0.680            0.584          0.677            0.480                  0.521  0.680
+126906006        Neoplasm of prostate  111            0.662          0.502            0.530          0.481            0.370                  0.390  0.662
+92691004   Carcinoma in situ of prost   88            0.660          0.526            0.518          0.507            0.362                  0.383  0.660
+162864005  Body mass index 30+ - obes   60            0.304          0.261            0.368          0.289            0.640                  0.592  0.640
+233604007                   Pneumonia  133            0.600          0.623            0.549          0.588            0.387                  0.429  0.623
+16114001            Fracture of ankle   58            0.617          0.613            0.555          0.596            0.437                  0.457  0.617
+314994000  Metastasis from malignant    50            0.616          0.437            0.527          0.419            0.390                  0.403  0.616
+68496003               Polyp of colon  144            0.605          0.487            0.616          0.496            0.535                  0.555  0.616
+263102004  Fracture subluxation of wr   73            0.581          0.611            0.562          0.603            0.480                  0.501  0.611
+65966004          Fracture of forearm  117            0.582          0.610            0.553          0.604            0.466                  0.490  0.610
+713197008      Recurrent rectal polyp   69            0.580          0.474            0.597          0.488            0.511                  0.529  0.597
+58150001         Fracture of clavicle   61            0.567          0.580            0.568          0.583            0.484                  0.511  0.583
+53741008       Coronary Heart Disease  137            0.579          0.567            0.526          0.571            0.440                  0.452  0.579
+88805009   Chronic congestive heart f  229            0.546          0.550            0.525          0.554            0.462                  0.481  0.554
+36971009         Sinusitis (disorder)   88            0.522          0.507            0.553          0.510            0.535                  0.542  0.553
+70704007              Sprain of wrist   56            0.546          0.523            0.524          0.519            0.526                  0.522  0.546
+44465007              Sprain of ankle  141            0.471          0.512            0.489          0.507            0.543                  0.541  0.543
+43878008   Streptococcal sore throat   133            0.490          0.462            0.507          0.474            0.538                  0.523  0.538
+283371005       Laceration of forearm   50            0.452          0.449            0.481          0.456            0.537                  0.531  0.537
+15777000                  Prediabetes   61            0.363          0.326            0.398          0.336            0.536                  0.494  0.536
+284551006          Laceration of foot   45            0.517          0.533            0.495          0.513            0.418                  0.432  0.533
+75498004   Acute bacterial sinusitis    88            0.410          0.432            0.442          0.429            0.528                  0.504  0.528
+10509002   Acute bronchitis (disorder  499            0.490          0.513            0.486          0.516            0.498                  0.496  0.516
+444814009  Viral sinusitis (disorder)  741            0.493          0.501            0.505          0.502            0.506                  0.507  0.507
+195662009  Acute viral pharyngitis (d  591            0.480          0.496            0.485          0.499            0.502                  0.499  0.502
+39848009      Whiplash injury to neck   75            0.459          0.461            0.453          0.471            0.501                  0.490  0.501
+62106007   Concussion with no loss of   69            0.492          0.458            0.475          0.462            0.482                  0.468  0.492
+72892002             Normal pregnancy   70            0.204          0.315            0.248          0.356            0.490                  0.379  0.490
+22298006        Myocardial Infarction  153            0.489          0.401            0.488          0.400            0.484                  0.467  0.489
+271737000           Anemia (disorder)  111            0.419          0.316            0.441          0.317            0.478                  0.452  0.478
+156073000  Fetus with unknown complic   29            0.276          0.398            0.277          0.441            0.278                  0.232  0.441
+[4s]
+  [5s]
+
+$ build_cost_features_v2.py
+cost_life_cov: cross-fitted R^2 on train 0.750
+cost_life_exp: cross-fitted R^2 on train 0.438
+cost_life_total: cross-fitted R^2 on train 0.456
+saved (3514, 25)
+                               cond  pos  cost_life_cov  cost_post_cov  cost_resid_cov  cost_resid_total  cost_pre_5y  resid_died  resid_alive
+254637007  Non-small cell lung canc   76          0.812          0.826           0.857             0.661        0.553       0.861        0.953
+424132000  Non-small cell carcinoma   77          0.809          0.822           0.853             0.662        0.555       0.857        0.953
+162573006  Suspected lung cancer (s   84          0.816          0.832           0.842             0.631        0.557       0.847        0.953
+230690007                    Stroke  206          0.766          0.787           0.692             0.539        0.547       0.653        0.796
+314994000  Metastasis from malignan   50          0.563          0.581           0.666             0.505        0.597       0.352          NaN
+22325002    Abnormal gait (finding)   41          0.695          0.683           0.651             0.567        0.568       0.570        0.725
+723857007  Silent micro-hemorrhage    41          0.695          0.683           0.651             0.567        0.568       0.570        0.725
+126906006      Neoplasm of prostate  111          0.502          0.519           0.635             0.539        0.606       0.376        0.326
+233604007                 Pneumonia  133          0.623          0.588           0.600             0.515        0.647       0.414          NaN
+92691004   Carcinoma in situ of pro   88          0.526          0.507           0.595             0.527        0.620       0.419        0.326
+72892002           Normal pregnancy   70          0.685          0.644           0.594             0.617        0.520       0.452        0.615
+156073000  Fetus with unknown compl   29          0.602          0.559           0.582             0.528        0.825       0.590        0.579
+22298006      Myocardial Infarction  153          0.599          0.600           0.569             0.519        0.544       0.437        0.847
+263102004  Fracture subluxation of    73          0.611          0.603           0.569             0.543        0.542       0.554        0.583
+713197008    Recurrent rectal polyp   69          0.526          0.512           0.564             0.552        0.529       0.461        0.382
+26929004   Alzheimer's disease (dis   75          0.730          0.734           0.550             0.529        0.555       0.545        0.553
+271737000         Anemia (disorder)  111          0.684          0.683           0.548             0.524        0.504       0.415        0.491
+284551006        Laceration of foot   45          0.533          0.513           0.546             0.559        0.613       0.480        0.432
+283371005     Laceration of forearm   50          0.551          0.544           0.536             0.509        0.534       0.602        0.503
+75498004   Acute bacterial sinusiti   88          0.568          0.571           0.533             0.550        0.513       0.412        0.488
+16114001          Fracture of ankle   58          0.613          0.596           0.531             0.532        0.562       0.460        0.474
+162864005  Body mass index 30+ - ob   60          0.739          0.711           0.531             0.511        0.643       0.440        0.545
+36971009       Sinusitis (disorder)   88          0.507          0.510           0.530             0.524        0.504       0.542        0.522
+43878008   Streptococcal sore throa  133          0.538          0.526           0.527             0.514        0.529       0.475        0.472
+53741008     Coronary Heart Disease  137          0.567          0.571           0.527             0.509        0.520       0.464        0.502
+49436004        Atrial Fibrillation   92          0.680          0.677           0.527             0.511        0.506       0.516        0.539
+444814009  Viral sinusitis (disorde  741          0.501          0.502           0.526             0.512        0.507       0.467        0.478
+62106007   Concussion with no loss    69          0.542          0.538           0.525             0.510        0.521       0.485        0.565
+88805009   Chronic congestive heart  229          0.550          0.554           0.523             0.504        0.506       0.486        0.622
+64859006    Osteoporosis (disorder)   98          0.706          0.707           0.521             0.521        0.547       0.497        0.464
+70704007            Sprain of wrist   56          0.523          0.519           0.520             0.527        0.516       0.555        0.489
+58150001       Fracture of clavicle   61          0.580          0.583           0.520             0.502        0.563       0.515        0.430
+443165006  Pathological fracture du   94          0.741          0.735           0.518             0.520        0.573       0.506        0.531
+68496003             Polyp of colon  144          0.513          0.504           0.516             0.573        0.509       0.480        0.510
+195662009  Acute viral pharyngitis   591          0.504          0.501           0.515             0.513        0.501       0.545        0.493
+44465007            Sprain of ankle  141          0.512          0.507           0.508             0.508        0.540       0.555        0.470
+15777000                Prediabetes   61          0.674          0.664           0.508             0.511        0.556       0.489        0.493
+10509002   Acute bronchitis (disord  499          0.513          0.516           0.507             0.502        0.505       0.521        0.494
+39848009    Whiplash injury to neck   75          0.539          0.529           0.507             0.535        0.516       0.476        0.509
+65966004        Fracture of forearm  117          0.610          0.604           0.501             0.508        0.549       0.536        0.468
+[35s]
+  [37s]
+
+$ pp_build.py
+official rows: 3514 x 2294 [5s]
+  landmark -2y (train): 2785 rows, positives 5157 [7s]
+  landmark -4y (train): 2745 rows, positives 5126 [8s]
+  landmark -6y (train): 2521 rows, positives 3923 [9s]
+  landmark -8y (train): 2477 rows, positives 2351 [10s]
+  landmark -10y (train): 2437 rows, positives 898 [11s]
+  landmark -12y (train): 2399 rows, positives 750 [12s]
+  landmark -14y (train): 2358 rows, positives 701 [13s]
+  landmark -16y (train): 2320 rows, positives 635 [14s]
+  landmark -18y (train): 2262 rows, positives 570 [15s]
+  landmark -20y (train): 2214 rows, positives 470 [15s]
+  landmark -22y (train): 2152 rows, positives 444 [16s]
+  landmark -24y (train): 2094 rows, positives 407 [17s]
+  landmark -26y (train): 2043 rows, positives 418 [18s]
+  landmark -28y (train): 1982 rows, positives 405 [19s]
+  landmark -30y (train): 1919 rows, positives 403 [20s]
+  landmark -32y (train): 1844 rows, positives 367 [21s]
+  landmark -34y (train): 1760 rows, positives 357 [21s]
+  landmark -36y (train): 1693 rows, positives 350 [22s]
+  landmark -38y (train): 1616 rows, positives 329 [23s]
+  landmark -40y (train): 1529 rows, positives 330 [24s]
+  landmark -42y (train): 1450 rows, positives 311 [24s]
+  landmark -44y (train): 1365 rows, positives 266 [25s]
+  landmark -46y (train): 1286 rows, positives 247 [26s]
+  landmark -48y (train): 1190 rows, positives 241 [27s]
+  landmark -50y (train): 1120 rows, positives 215 [27s]
+  landmark -52y (train): 1045 rows, positives 188 [28s]
+  landmark -54y (train): 956 rows, positives 167 [29s]
+  landmark -56y (train): 886 rows, positives 147 [29s]
+  landmark -58y (train): 808 rows, positives 125 [30s]
+saved 56770 rows x 2294 features -> C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\ppds  [33s]  (official train rows 2791, landmark rows 53256)
+  [34s]
+
+$ pp_join_extra.py ppds ppds_gcr clean/genomics_features.parquet clean/cost_features_v2.parquet
+ppds + ['genomics_features.parquet', 'cost_features_v2.parquet'] -> ppds_gcr: (56770, 2536) [4s]
+  [4s]
+
+$ pp_screen.py 200 --ds ppds_gcr
+screen [200] cfg d3: rows 56770, feats 2535, always-on 44 [2s]
+Traceback (most recent call last):
+  File "C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\pp_screen.py", line 40, in <module>
+    wandb.init(project=os.environ["WANDB_PROJECT"], name=f"memberA_pp_xgb_screen{KS[0]}_{args.ds}{'_s'+str(args.seed) if args.seed else ''}", config=dict(member="A", model="xgboost person-period + per-target screening", cfg=args.cfg, rounds=NR, K=KS, ds=args.ds, seed=args.seed, n_rows=int(len(Xv)), n_feats=int(Xv.shape[1]), **{k_: v for k_, v in params.items() if isinstance(v, (int, float, str))}))
+                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'seed'
+Traceback (most recent call last):
+  File "C:\Users\NEW PC\Desktop\research_intern_coding_test\reproduce.py", line 41, in <module>
+    {"features": features, "members": members, "assemble": assemble, "evaluate": evaluate, "all": lambda: (features(), members(), assemble(), evaluate())}[stage]()
+  File "C:\Users\NEW PC\Desktop\research_intern_coding_test\reproduce.py", line 41, in <lambda>
+    {"features": features, "members": members, "assemble": assemble, "evaluate": evaluate, "all": lambda: (features(), members(), assemble(), evaluate())}[stage]()
+                                                                                                                       ^^^^^^^^^
+  File "C:\Users\NEW PC\Desktop\research_intern_coding_test\reproduce.py", line 29, in members
+    run(["pp_screen.py", "200", "--ds", "ppds_gcr"])                 # member A
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\NEW PC\Desktop\research_intern_coding_test\reproduce.py", line 20, in run
+    subprocess.run([PY, "-X", "utf8", *cmd], cwd=str(cwd), env=e, check=True); print(f"  [{time.time()-t0:.0f}s]", flush=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Apps\Miniconda3\envs\quantbuddy\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\NEW PC\\Desktop\\research_intern_coding_test\\.venv\\Scripts\\python.exe', '-X', 'utf8', 'pp_screen.py', '200', '--ds', 'ppds_gcr']' returned non-zero exit status 1.
+REPRODUCE_EXIT=1
+
+$ pp_screen.py 200 --ds ppds_gcr
+screen [200] cfg d3: rows 56770, feats 2535, always-on 44 [2s]
+wandb: Tracking run with wandb version 0.31.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\wandb\offline-run-20261030_180321-jwxbzvu8
+wandb: View this run in the terminal with `wandb leet`
+  fold 0 done [116s]
+  fold 1 done [227s]
+  fold 2 done [339s]
+  fold 3 done [451s]
+  fold 4 done [562s]
+wandb: 
+wandb: Run history:
+wandb: curves/fold0_train_logloss █▇▆▆▅▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   curves/fold0_val_logloss █▇▆▅▄▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: curves/fold1_train_logloss █▇▆▆▅▃▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   curves/fold1_val_logloss █▅▄▃▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: curves/fold2_train_logloss █▄▄▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   curves/fold2_val_logloss █▇▇▆▅▃▃▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: curves/fold3_train_logloss ██▇▅▅▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   curves/fold3_val_logloss █▇▅▄▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: curves/fold4_train_logloss █▇▅▅▃▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   curves/fold4_val_logloss █▇▅▄▄▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                         +1 ...
+wandb: 
+wandb: Run summary:
+wandb: curves/fold0_train_logloss 0.04087
+wandb:   curves/fold0_val_logloss 0.1469
+wandb: curves/fold1_train_logloss 0.04106
+wandb:   curves/fold1_val_logloss 0.14689
+wandb: curves/fold2_train_logloss 0.04119
+wandb:   curves/fold2_val_logloss 0.14731
+wandb: curves/fold3_train_logloss 0.04126
+wandb:   curves/fold3_val_logloss 0.14804
+wandb: curves/fold4_train_logloss 0.04121
+wandb:   curves/fold4_val_logloss 0.14784
+wandb:                         +9 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\wandb\offline-run-20261030_180321-jwxbzvu8
+wandb: Find logs at: .\wandb\offline-run-20261030_180321-jwxbzvu8\logs
+RESULT screen200_d3_all: OOF mAP=0.2952 | acc 0.0950 / term 0.6148 / chain 0.2823 | val 0.3535 [562s]
+done [562s]
+  [564s]
+
+$ screen_gbm.py 200
+wandb: Tracking run with wandb version 0.31.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\wandb\offline-run-20261030_181245-wc1mdk52
+wandb: View this run in the terminal with `wandb leet`
+RESULT screen k= 200 (+42 always): OOF mAP=0.2832 | acc 0.0970 / term 0.6300 / chain 0.2381 | val 0.3443 [136s]
+wandb: 
+wandb: Run history:
+wandb: curves/fold0_train_logloss ██▇▇▇▆▅▅▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb:   curves/fold0_val_logloss █▇▆▅▃▂▁▁▁▁▁▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▆▆▆▆▆▆▇▇▇▇█
+wandb: curves/fold1_train_logloss ██▇▇▇▆▆▆▅▅▄▄▄▄▄▄▃▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▁▁▁▁▁
+wandb:   curves/fold1_val_logloss █▆▄▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▃▃▃▃▃▄▄▄
+wandb: curves/fold2_train_logloss ██▇▆▅▅▅▄▄▄▄▃▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb:   curves/fold2_val_logloss █▅▄▃▃▂▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂▂▂▂▃▃▃▃▃▃▃▃▃▃▃▄▄▄▄▄
+wandb: curves/fold3_train_logloss █▇▇▆▆▅▅▅▅▄▄▄▄▄▄▄▃▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁
+wandb:   curves/fold3_val_logloss ▆▅▅▃▁▁▁▁▁▁▂▂▂▂▃▃▃▃▃▃▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▆▇▇█
+wandb: curves/fold4_train_logloss ██▇▇▇▆▆▆▅▅▅▅▅▄▄▄▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▁▁▁▁▁▁▁
+wandb:   curves/fold4_val_logloss ▇▆▅▃▃▁▁▁▁▁▁▁▂▂▂▂▂▂▂▃▃▃▄▄▄▅▅▅▅▆▆▆▆▆▆▇▇▇▇█
+wandb:                         +1 ...
+wandb: 
+wandb: Run summary:
+wandb: curves/fold0_train_logloss 0.0677
+wandb:   curves/fold0_val_logloss 0.16099
+wandb: curves/fold1_train_logloss 0.06711
+wandb:   curves/fold1_val_logloss 0.15793
+wandb: curves/fold2_train_logloss 0.06794
+wandb:   curves/fold2_val_logloss 0.1577
+wandb: curves/fold3_train_logloss 0.06704
+wandb:   curves/fold3_val_logloss 0.16011
+wandb: curves/fold4_train_logloss 0.06748
+wandb:   curves/fold4_val_logloss 0.15847
+wandb:                         +9 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\wandb\offline-run-20261030_181245-wc1mdk52
+wandb: Find logs at: .\wandb\offline-run-20261030_181245-wc1mdk52\logs
+                                         cond  pos   k200  lgb_clean
+284551006                  Laceration of foot   45  0.021      0.019
+70704007                      Sprain of wrist   56  0.020      0.024
+283371005               Laceration of forearm   50  0.018      0.024
+62106007   Concussion with no loss of conscio   69  0.034      0.025
+16114001                    Fracture of ankle   58  0.072      0.025
+39848009              Whiplash injury to neck   75  0.023      0.028
+263102004       Fracture subluxation of wrist   73  0.026      0.028
+36971009                 Sinusitis (disorder)   88  0.030      0.031
+58150001                 Fracture of clavicle   61  0.029      0.031
+75498004   Acute bacterial sinusitis (disorde   88  0.036      0.038
+43878008   Streptococcal sore throat (disorde  133  0.050      0.052
+44465007                      Sprain of ankle  141  0.065      0.057
+49436004                  Atrial Fibrillation   92  0.069      0.070
+723857007  Silent micro-hemorrhage of brain (   41  0.136      0.072
+22325002              Abnormal gait (finding)   41  0.136      0.072
+15777000                          Prediabetes   61  0.098      0.083
+65966004                  Fracture of forearm  117  0.080      0.085
+156073000     Fetus with unknown complication   29  0.106      0.113
+53741008               Coronary Heart Disease  137  0.206      0.118
+271737000                   Anemia (disorder)  111  0.135      0.148
+64859006              Osteoporosis (disorder)   98  0.131      0.150
+713197008              Recurrent rectal polyp   69  0.165      0.168
+26929004       Alzheimer's disease (disorder)   75  0.178      0.188
+230690007                              Stroke  206  0.794      0.199
+68496003                       Polyp of colon  144  0.193      0.202
+424132000  Non-small cell carcinoma of lung     77  0.879      0.232
+254637007  Non-small cell lung cancer (disord   76  0.881      0.233
+443165006  Pathological fracture due to osteo   94  0.245      0.253
+162573006   Suspected lung cancer (situation)   84  0.833      0.254
+195662009  Acute viral pharyngitis (disorder)  591  0.281      0.280
+10509002          Acute bronchitis (disorder)  499  0.290      0.306
+88805009   Chronic congestive heart failure (  229  0.424      0.403
+233604007                           Pneumonia  133  0.491      0.420
+314994000  Metastasis from malignant tumor of   50  0.534      0.473
+444814009          Viral sinusitis (disorder)  741  0.461      0.478
+72892002                     Normal pregnancy   70  0.550      0.507
+162864005  Body mass index 30+ - obesity (fin   60  0.513      0.517
+92691004   Carcinoma in situ of prostate (dis   88  0.599      0.612
+22298006                Myocardial Infarction  153  0.749      0.633
+126906006                Neoplasm of prostate  111  0.745      0.718
+done [136s]
+  [138s]
+
+$ gen_only.py cost2
+wandb: Tracking run with wandb version 0.31.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\wandb\offline-run-20261030_181503-6r60ubmi
+wandb: View this run in the terminal with `wandb leet`
+wandb: 
+wandb: Run history:
+wandb: curves/train_logloss █▆▆▆▆▆▅▅▅▅▄▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁
+wandb:   curves/val_logloss █▆▆▅▅▄▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                round ▁▁▂▂▂▂▂▂▂▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇██
+wandb: 
+wandb: Run summary:
+wandb: curves/train_logloss 0.09145
+wandb:   curves/val_logloss 0.15489
+wandb:              oof_mAP 0.26031
+wandb:                round 300
+wandb:              val_mAP 0.30811
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\wandb\offline-run-20261030_181503-6r60ubmi
+wandb: Find logs at: .\wandb\offline-run-20261030_181503-6r60ubmi\logs
+     code   oof   val
+444814009 0.435 0.516
+195662009 0.290 0.261
+ 10509002 0.235 0.292
+ 88805009 0.454 0.414
+230690007 0.844 0.943
+ 22298006 0.692 0.663
+ 68496003 0.165 0.156
+ 44465007 0.057 0.046
+ 53741008 0.178 0.144
+233604007 0.477 0.686
+ 43878008 0.048 0.106
+ 65966004 0.077 0.173
+126906006 0.454 0.567
+271737000 0.173 0.131
+ 64859006 0.168 0.236
+443165006 0.211 0.547
+ 49436004 0.075 0.152
+ 92691004 0.310 0.492
+ 36971009 0.032 0.059
+ 75498004 0.046 0.023
+162573006 0.795 0.926
+424132000 0.872 0.881
+254637007 0.859 0.878
+ 39848009 0.031 0.017
+ 26929004 0.248 0.166
+263102004 0.034 0.043
+ 72892002 0.628 0.772
+713197008 0.130 0.246
+ 62106007 0.024 0.042
+ 15777000 0.081 0.074
+ 58150001 0.036 0.063
+162864005 0.214 0.442
+ 16114001 0.050 0.021
+ 70704007 0.017 0.160
+283371005 0.033 0.034
+314994000 0.261 0.189
+284551006 0.018 0.086
+ 22325002 0.247 0.159
+723857007 0.247 0.159
+156073000 0.168 0.359
+genc2_only: OOF mAP 0.2603 | val 0.3081  [38s]
+  [40s]
+
+$ assemble_final.py --rank --cf-reps 5 --only ppds_gcr:screen200_d3_all,screen_gcr:k200,gstack:genc2_only
+wandb: Tracking run with wandb version 0.31.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\wandb\offline-run-20261030_181547-zxipabeq
+wandb: View this run in the terminal with `wandb leet`
+wandb: 
+wandb: Run summary:
+wandb:          oof_acc 0.09791
+wandb:        oof_chain 0.29802
+wandb: oof_crossfit_mAP 0.3064
+wandb:         oof_term 0.6317
+wandb:          val_mAP 0.34999
+wandb:   val_macroAUROC 0.78685
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\wandb\offline-run-20261030_181547-zxipabeq
+wandb: Find logs at: .\wandb\offline-run-20261030_181547-zxipabeq\logs
+candidates: ['ppds_gcr:screen200_d3_all', 'gstack:genc2_only', 'screen_gcr:k200']
+
+single candidates (OOF mAP / val mAP):
+  ppds_gcr:screen200_d3_all OOF=0.2952  val=0.3535
+  gstack:genc2_only OOF=0.2603  val=0.3081
+  screen_gcr:k200 OOF=0.2832  val=0.3443
+
+greedy ensemble: cross-fitted OOF mAP=0.3064 | val mAP=0.3500  val macroAUROC=0.7869
+average weight per candidate: {'ppds_gcr:screen200_d3_all': np.float64(0.413), 'gstack:genc2_only': np.float64(0.266), 'screen_gcr:k200': np.float64(0.321)}
+by group (cross-fitted OOF vs lgb_clean): {'acc': (0.0979, 0.0979), 'term': (0.6317, 0.6317), 'chain': (0.298, 0.298)}
+wrote predictions_final.csv
+exported assembly -> C:\Users\NEW PC\Desktop\research_intern_coding_test\export\assembly
+  [10s]
+
+$ -m ehr_forecast validate-submission --predictions predictions.csv
+{
+  "path": "C:\\Users\\NEW PC\\Desktop\\research_intern_coding_test\\predictions.csv",
+  "n_patients": 358,
+  "n_targets": 40,
+  "probability_min": 0.0,
+  "probability_max": 0.9994625582228591,
+  "sha256": "2861a7327de35f060e65b998cc72d62b7212e3c2153880c235dc38fa7377f128",
+  "valid": true
+}
+  [2s]
+
+predictions.csv written and validated
+
+$ evaluate_submission.py
+train_oof all-patients convention: macro AUROC 0.7858  mAP 0.3064  (accident 0.098 / chain 0.298 / terminal 0.632)
+val       all-patients convention: macro AUROC 0.7869  mAP 0.3500  (accident 0.102 / chain 0.332 / terminal 0.748)
+val mAP bootstrap 95% CI: [0.3379, 0.3894]
+  [7s]
+REPRODUCE_STAGES_DONE

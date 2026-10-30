@@ -1,0 +1,40 @@
+{
+ "rules": "Build the cleaned, leak-audited patient-level dataset (our representation of the raw tables).\n\nRules (see docs/data_audit.md):\n  * inputs: the 10 structured tables incl. imaging_studies; events strictly before the anchor (calendar date)\n  * genomics / DICOM side files are NOT used (generated coherently with diagnoses -> target leakage)\n  * STOP dates later than the anchor are blanked in train/val to mimic the test truncation; \"active at anchor\" = STOP blank\n  * REASONCODE columns are not used (redundant with conditions; 2-3% reference later-dated diagnoses)\n  * same-day duplicate rows (patient, date, table, code, value) are collapsed\n  * numeric observations keyed by code (unit checked in the audit); raw last/min/max/trend, no quantile binning\n  * optional --no-qol drops the QALY/DALY/QOLS bookkeeping observations (sensitivity analysis)\nOutputs analysis/clean/{X.parquet, manifest.json}; row order = ehr_load pats order; column groups documented in manifest.\n",
+ "no_qol": true,
+ "n_patients": 3514,
+ "excluded_sources": [
+  "genomics/*_dna.csv (coherent with stroke cohort)",
+  "imaging/*.dcm (coherent with Alzheimer cohort)",
+  "REASONCODE/REASONDESCRIPTION",
+  "STOP as a date feature",
+  "DEATHDATE",
+  "costs/payer/identity columns"
+ ],
+ "events_pre_anchor_after_dedup": 1153930,
+ "rows_total_including_post_anchor": 2248035,
+ "n_features": 2296,
+ "blocks": {
+  "cnt": 360,
+  "c5": 360,
+  "c1": 360,
+  "rec": 360,
+  "first": 360,
+  "last": 56,
+  "max": 56,
+  "min": 56,
+  "m5": 56,
+  "std": 56,
+  "nobs": 56,
+  "trend": 56,
+  "active": 43,
+  "encrate": 6,
+  "static": 15,
+  "prior": 40
+ },
+ "token_vocab": 360,
+ "numeric_codes": 56,
+ "active_med_codes": 43,
+ "min_support_token_patients": 20,
+ "min_support_numeric_patients": 50,
+ "seconds": 6.0
+}

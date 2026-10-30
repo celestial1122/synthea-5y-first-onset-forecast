@@ -1,0 +1,46 @@
+cost_life_cov: cross-fitted R^2 on train 0.748
+cost_life_exp: cross-fitted R^2 on train 0.436
+cost_life_total: cross-fitted R^2 on train 0.459
+saved (3514, 25)
+                               cond  pos  cost_life_cov  cost_post_cov  cost_resid_cov  cost_resid_total  cost_pre_5y  resid_died  resid_alive
+254637007  Non-small cell lung canc   76          0.812          0.826           0.845             0.643        0.553       0.847        0.940
+424132000  Non-small cell carcinoma   77          0.809          0.822           0.841             0.643        0.555       0.844        0.940
+162573006  Suspected lung cancer (s   84          0.816          0.832           0.829             0.616        0.557       0.833        0.940
+230690007                    Stroke  206          0.766          0.787           0.681             0.530        0.547       0.640        0.784
+314994000  Metastasis from malignan   50          0.563          0.581           0.657             0.508        0.597       0.355          NaN
+126906006      Neoplasm of prostate  111          0.502          0.519           0.632             0.536        0.606       0.373        0.357
+22325002    Abnormal gait (finding)   41          0.695          0.683           0.629             0.536        0.568       0.524        0.720
+723857007  Silent micro-hemorrhage    41          0.695          0.683           0.629             0.536        0.568       0.524        0.720
+233604007                 Pneumonia  133          0.623          0.588           0.595             0.521        0.647       0.415          NaN
+92691004   Carcinoma in situ of pro   88          0.526          0.507           0.595             0.546        0.620       0.413        0.357
+22298006      Myocardial Infarction  153          0.599          0.600           0.581             0.522        0.544       0.424        0.798
+72892002           Normal pregnancy   70          0.685          0.644           0.580             0.598        0.520       0.456        0.600
+156073000  Fetus with unknown compl   29          0.602          0.559           0.563             0.558        0.825       0.577        0.558
+263102004  Fracture subluxation of    73          0.611          0.603           0.562             0.532        0.542       0.564        0.548
+713197008    Recurrent rectal polyp   69          0.526          0.512           0.555             0.553        0.529       0.472        0.352
+26929004   Alzheimer's disease (dis   75          0.730          0.734           0.551             0.540        0.555       0.536        0.571
+43878008   Streptococcal sore throa  133          0.538          0.526           0.546             0.505        0.529       0.443        0.466
+16114001          Fracture of ankle   58          0.613          0.596           0.544             0.502        0.562       0.455        0.454
+271737000         Anemia (disorder)  111          0.684          0.683           0.543             0.532        0.504       0.429        0.481
+53741008     Coronary Heart Disease  137          0.567          0.571           0.535             0.520        0.520       0.463        0.477
+284551006        Laceration of foot   45          0.533          0.513           0.532             0.554        0.613       0.487        0.449
+75498004   Acute bacterial sinusiti   88          0.568          0.571           0.529             0.532        0.513       0.423        0.488
+64859006    Osteoporosis (disorder)   98          0.706          0.707           0.529             0.526        0.547       0.489        0.450
+44465007            Sprain of ankle  141          0.512          0.507           0.522             0.501        0.540       0.566        0.489
+68496003             Polyp of colon  144          0.513          0.504           0.522             0.553        0.509       0.481        0.478
+49436004        Atrial Fibrillation   92          0.680          0.677           0.522             0.516        0.506       0.519        0.523
+36971009       Sinusitis (disorder)   88          0.507          0.510           0.521             0.533        0.504       0.526        0.521
+10509002   Acute bronchitis (disord  499          0.513          0.516           0.521             0.503        0.505       0.538        0.505
+39848009    Whiplash injury to neck   75          0.539          0.529           0.519             0.522        0.516       0.490        0.547
+195662009  Acute viral pharyngitis   591          0.504          0.501           0.517             0.519        0.501       0.555        0.487
+283371005     Laceration of forearm   50          0.551          0.544           0.516             0.508        0.534       0.570        0.489
+444814009  Viral sinusitis (disorde  741          0.501          0.502           0.516             0.516        0.507       0.472        0.494
+62106007   Concussion with no loss    69          0.542          0.538           0.515             0.507        0.521       0.480        0.547
+15777000                Prediabetes   61          0.674          0.664           0.512             0.513        0.556       0.540        0.461
+162864005  Body mass index 30+ - ob   60          0.739          0.711           0.511             0.525        0.643       0.408        0.530
+65966004        Fracture of forearm  117          0.610          0.604           0.511             0.517        0.549       0.528        0.451
+88805009   Chronic congestive heart  229          0.550          0.554           0.510             0.509        0.506       0.493        0.603
+70704007            Sprain of wrist   56          0.523          0.519           0.509             0.525        0.516       0.549        0.473
+58150001       Fracture of clavicle   61          0.580          0.583           0.506             0.524        0.563       0.507        0.476
+443165006  Pathological fracture du   94          0.741          0.735           0.504             0.516        0.573       0.497        0.513
+[43s]

@@ -1,0 +1,7 @@
+X (3514, 2038) 5s
+base       OOF mAP=0.2094 (+group-avg 0.2093) | val mAP=0.2560 (+group-avg 0.2564)  [266s]
+shallow    OOF mAP=0.2095 (+group-avg 0.2086) | val mAP=0.2533 (+group-avg 0.2573)  [475s]
+stumps     OOF mAP=0.2038 (+group-avg 0.2037) | val mAP=0.2559 (+group-avg 0.2563)  [738s]
+deeper     OOF mAP=0.2078 (+group-avg 0.2074) | val mAP=0.2525 (+group-avg 0.2523)  [1096s]
+lowcol     OOF mAP=0.2042 (+group-avg 0.2039) | val mAP=0.2486 (+group-avg 0.2502)  [1386s]
+cfg-ensemble OOF mAP=0.2110 (+group-avg 0.2104) | val mAP=0.2568 (+group-avg 0.2555)

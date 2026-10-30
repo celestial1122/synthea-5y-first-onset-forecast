@@ -1,0 +1,41 @@
+,cond,oof_tab,oof_tf,oof_final,val_final
+444814009,Viral sinusitis (disorder),0.478,0.454,0.476,0.446
+195662009,Acute viral pharyngitis (disorder),0.28,0.27,0.278,0.229
+10509002,Acute bronchitis (disorder),0.306,0.224,0.302,0.299
+88805009,Chronic congestive heart failure (,0.403,0.267,0.404,0.437
+230690007,Stroke,0.199,0.217,0.209,0.323
+22298006,Myocardial Infarction,0.633,0.433,0.638,0.768
+68496003,Polyp of colon,0.202,0.132,0.2,0.22
+44465007,Sprain of ankle,0.057,0.058,0.057,0.043
+53741008,Coronary Heart Disease,0.118,0.129,0.122,0.089
+233604007,Pneumonia,0.42,0.459,0.421,0.594
+43878008,Streptococcal sore throat (disorde,0.052,0.06,0.053,0.081
+65966004,Fracture of forearm,0.085,0.082,0.087,0.239
+126906006,Neoplasm of prostate,0.718,0.605,0.717,0.888
+271737000,Anemia (disorder),0.148,0.159,0.151,0.18
+64859006,Osteoporosis (disorder),0.15,0.13,0.155,0.121
+443165006,Pathological fracture due to osteo,0.253,0.185,0.257,0.334
+49436004,Atrial Fibrillation,0.07,0.065,0.07,0.169
+92691004,Carcinoma in situ of prostate (dis,0.612,0.475,0.609,0.901
+36971009,Sinusitis (disorder),0.031,0.034,0.032,0.034
+75498004,Acute bacterial sinusitis (disorde,0.038,0.035,0.038,0.024
+162573006,Suspected lung cancer (situation),0.254,0.209,0.273,0.255
+424132000,Non-small cell carcinoma of lung  ,0.232,0.198,0.241,0.206
+254637007,Non-small cell lung cancer (disord,0.233,0.204,0.243,0.206
+39848009,Whiplash injury to neck,0.028,0.033,0.029,0.024
+26929004,Alzheimer's disease (disorder),0.188,0.129,0.194,0.282
+263102004,Fracture subluxation of wrist,0.028,0.031,0.029,0.042
+72892002,Normal pregnancy,0.507,0.489,0.516,0.698
+713197008,Recurrent rectal polyp,0.168,0.087,0.167,0.236
+62106007,Concussion with no loss of conscio,0.025,0.023,0.025,0.312
+15777000,Prediabetes,0.083,0.075,0.082,0.112
+58150001,Fracture of clavicle,0.031,0.031,0.032,0.044
+162864005,Body mass index 30+ - obesity (fin,0.517,0.369,0.517,0.589
+16114001,Fracture of ankle,0.025,0.027,0.025,0.044
+70704007,Sprain of wrist,0.024,0.021,0.024,0.034
+283371005,Laceration of forearm,0.024,0.02,0.024,0.018
+314994000,Metastasis from malignant tumor of,0.473,0.295,0.471,0.516
+284551006,Laceration of foot,0.019,0.02,0.019,0.024
+22325002,Abnormal gait (finding),0.072,0.033,0.072,0.116
+723857007,Silent micro-hemorrhage of brain (,0.072,0.036,0.072,0.116
+156073000,Fetus with unknown complication,0.113,0.129,0.12,0.162

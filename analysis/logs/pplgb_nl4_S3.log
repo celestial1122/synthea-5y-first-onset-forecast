@@ -1,0 +1,7 @@
+nl4 block S3: rows 56770, feats 1399, targets 40 [1s]
+  fold 0 done [312s]
+  fold 1 done [622s]
+  fold 2 done [943s]
+  fold 3 done [1250s]
+  fold 4 done [1555s]
+RESULT nl4_S3_all: OOF mAP(targets run)=0.2149 | acc 0.0898 / term 0.4077 / chain 0.2115 | val 0.2514 [1555s]

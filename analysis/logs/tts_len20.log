@@ -1,0 +1,96 @@
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  fold 0: inner-best 0.2515 at ~24 epochs [41s]
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  fold 1: inner-best 0.2358 at ~22 epochs [76s]
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  fold 2: inner-best 0.2313 at ~20 epochs [109s]
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  fold 3: inner-best 0.2764 at ~25 epochs [141s]
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\temporal_transformer.py:43: RuntimeWarning: Mean of empty slice
+  rows_tr = np.concatenate([seq[p] for p in train_p]); mu = np.nanmean(F[rows_tr], 0); sd = np.nanstd(F[rows_tr], 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\torch\nn\modules\transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+  fold 4: inner-best 0.2558 at ~29 epochs [175s]
+RESULT tts maxlen=20 seeds=3: OOF mAP=0.2142 | acc 0.090 / term 0.426 / chain 0.197 | val 0.2685 [175s]

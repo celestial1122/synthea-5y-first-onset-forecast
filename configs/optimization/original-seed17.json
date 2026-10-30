@@ -1,0 +1,22 @@
+{
+  "name": "original-seed17",
+  "prepared_dir": "artifacts/prepared",
+  "output_dir": "artifacts/optimization/runs/original-seed17",
+  "model_type": "transformer",
+  "seed": 17,
+  "d_model": 128,
+  "n_heads": 4,
+  "n_layers": 3,
+  "dropout": 0.15,
+  "batch_size": 32,
+  "epochs": 35,
+  "pretrain_epochs": 4,
+  "learning_rate": 0.0003,
+  "pretrain_learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "patience": 8,
+  "device": "auto",
+  "amp": true,
+  "wandb_mode": "offline",
+  "wandb_project": "patient-timeline-forecast"
+}

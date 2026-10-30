@@ -1,0 +1,41 @@
+cond,train_pos,ap_agesex,ap_agesex_top10,ap_gbm,gbm_minus_lr10
+Viral sinusitis (disorder),741,0.436,0.455,0.476,0.021
+Acute viral pharyngitis (disorde,591,0.276,0.267,0.28,0.013
+Acute bronchitis (disorder),499,0.243,0.24,0.302,0.062
+Chronic congestive heart failure,229,0.11,0.138,0.399,0.261
+Stroke,206,0.174,0.164,0.206,0.042
+Myocardial Infarction,153,0.088,0.372,0.635,0.263
+Polyp of colon,144,0.12,0.157,0.203,0.046
+Sprain of ankle,141,0.05,0.059,0.057,-0.002
+Coronary Heart Disease,137,0.095,0.093,0.12,0.027
+Pneumonia,133,0.128,0.465,0.421,-0.044
+Streptococcal sore throat (disor,133,0.049,0.052,0.053,0.001
+Fracture of forearm,117,0.065,0.089,0.088,-0.001
+Neoplasm of prostate,111,0.185,0.562,0.721,0.159
+Anemia (disorder),111,0.111,0.139,0.143,0.004
+Osteoporosis (disorder),98,0.13,0.112,0.161,0.049
+Pathological fracture due to ost,94,0.113,0.303,0.251,-0.052
+Atrial Fibrillation,92,0.079,0.075,0.07,-0.005
+Carcinoma in situ of prostate (d,88,0.157,0.452,0.61,0.158
+Sinusitis (disorder),88,0.028,0.032,0.03,-0.002
+Acute bacterial sinusitis (disor,88,0.048,0.044,0.037,-0.007
+Suspected lung cancer (situation,84,0.085,0.218,0.265,0.047
+Non-small cell carcinoma of lung,77,0.076,0.204,0.235,0.031
+Non-small cell lung cancer (diso,76,0.076,0.207,0.235,0.028
+Whiplash injury to neck,75,0.026,0.027,0.028,0.001
+Alzheimer's disease (disorder),75,0.12,0.208,0.189,-0.019
+Fracture subluxation of wrist,73,0.041,0.029,0.027,-0.002
+Normal pregnancy,70,0.401,0.496,0.514,0.018
+Recurrent rectal polyp,69,0.065,0.115,0.172,0.057
+Concussion with no loss of consc,69,0.028,0.025,0.025,0.0
+Prediabetes,61,0.062,0.065,0.085,0.02
+Fracture of clavicle,61,0.028,0.032,0.031,-0.001
+Body mass index 30+ - obesity (f,60,0.118,0.091,0.522,0.431
+Fracture of ankle,58,0.035,0.031,0.025,-0.006
+Sprain of wrist,56,0.019,0.021,0.024,0.003
+Laceration of forearm,50,0.02,0.019,0.025,0.006
+Metastasis from malignant tumor ,50,0.102,0.243,0.468,0.225
+Laceration of foot,45,0.019,0.018,0.019,0.001
+Abnormal gait (finding),41,0.026,0.04,0.075,0.035
+Silent micro-hemorrhage of brain,41,0.026,0.04,0.075,0.035
+Fetus with unknown complication,29,0.094,0.142,0.114,-0.028

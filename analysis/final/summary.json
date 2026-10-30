@@ -1,0 +1,14 @@
+{
+ "candidates": [
+  "ppds_gcr:screen200_d3_all",
+  "gstack:genc2_only",
+  "screen_gcr:k200"
+ ],
+ "oof_crossfit_mAP": 0.3064008779278319,
+ "val_mAP": 0.34998869665041743,
+ "avg_weights": {
+  "ppds_gcr:screen200_d3_all": 0.413,
+  "gstack:genc2_only": 0.266,
+  "screen_gcr:k200": 0.321
+ }
+}

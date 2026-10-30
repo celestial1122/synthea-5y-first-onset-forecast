@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "patient-timeline-forecast"
+version = "0.1.0"
+description = "Reproducible PyTorch forecasting of incident conditions from synthetic EHR"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn>=1.5,<2",
+    "torch>=2.5,<3", "wandb>=0.19,<1", "matplotlib>=3.8,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+hub = ["huggingface_hub>=0.28,<2"]
+report = ["reportlab>=4,<5", "pypdf>=6,<7"]
+
+[project.scripts]
+ehr-forecast = "ehr_forecast.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ehr_forecast*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,26 @@
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\mlp_multitask.py:40: RuntimeWarning: Mean of empty slice
+  if mu is None: mu = np.nanmean(A, 0); sd = np.nanstd(A, 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+  fold 0: inner-best 0.5313 at ~62 epochs  [96s]
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\mlp_multitask.py:40: RuntimeWarning: Mean of empty slice
+  if mu is None: mu = np.nanmean(A, 0); sd = np.nanstd(A, 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+  fold 1: inner-best 0.5262 at ~53 epochs  [176s]
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\mlp_multitask.py:40: RuntimeWarning: Mean of empty slice
+  if mu is None: mu = np.nanmean(A, 0); sd = np.nanstd(A, 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+  fold 2: inner-best 0.4803 at ~34 epochs  [261s]
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\mlp_multitask.py:40: RuntimeWarning: Mean of empty slice
+  if mu is None: mu = np.nanmean(A, 0); sd = np.nanstd(A, 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+  fold 3: inner-best 0.5143 at ~80 epochs  [363s]
+C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\mlp_multitask.py:40: RuntimeWarning: Mean of empty slice
+  if mu is None: mu = np.nanmean(A, 0); sd = np.nanstd(A, 0) + 1e-6
+D:\Apps\Miniconda3\envs\quantbuddy\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+  fold 4: inner-best 0.5043 at ~68 epochs  [470s]
+RESULT mlp_pp: OOF mAP=0.2116 | acc 0.090 / term 0.433 / chain 0.186 | val 0.2753 [470s]

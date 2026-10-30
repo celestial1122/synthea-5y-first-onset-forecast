@@ -1,0 +1,22 @@
+candidates: ['lgb_clean', 'l1_lam0.0003', 'l1_lam0.001', 'l1_lam0.003', 'stumps', 'pp_uniform', 'pp_x5', 'pp_yearly', 'pp_yearly_decay', 'pp1_uniform', 'pp1_x5', 'pp_lgb', 'xgb_v5avg', 'lgb_sweep_avg', 'lgb_nl8_mcs5', 'tf_hybrid']
+
+single candidates (OOF mAP / val mAP):
+  lgb_clean    OOF=0.2092  val=0.2551
+  l1_lam0.0003 OOF=0.1560  val=0.2251
+  l1_lam0.001  OOF=0.1735  val=0.2470
+  l1_lam0.003  OOF=0.1888  val=0.2607
+  stumps       OOF=0.1957  val=0.2434
+  pp_uniform   OOF=0.2195  val=0.2604  (terminal targets filled from lgb_clean)
+  pp_x5        OOF=0.2199  val=0.2520  (terminal targets filled from lgb_clean)
+  pp_yearly    OOF=0.2188  val=0.2680  (terminal targets filled from lgb_clean)
+  pp_yearly_decay OOF=0.2181  val=0.2555  (terminal targets filled from lgb_clean)
+  pp1_uniform  OOF=0.2195  val=0.2630  (terminal targets filled from lgb_clean)
+  pp1_x5       OOF=0.2189  val=0.2524  (terminal targets filled from lgb_clean)
+  pp_lgb       OOF=0.2183  val=0.2639  (terminal targets filled from lgb_clean)
+  xgb_v5avg    OOF=0.1967  val=0.2282
+  lgb_sweep_avg OOF=0.2097  val=0.2546
+  lgb_nl8_mcs5 OOF=0.2092  val=0.2569
+  tf_hybrid    OOF=0.1733  val=0.2518
+
+greedy ensemble: cross-fitted OOF mAP=0.2226 | val mAP=0.2702  val macroAUROC=0.7750
+average weight per candidate: {'lgb_clean': np.float64(0.08), 'l1_lam0.0003': np.float64(0.035), 'l1_lam0.001': np.float64(0.029), 'l1_lam0.003': np.float64(0.085), 'stumps': np.float64(0.036), 'pp_uniform': np.float64(0.025), 'pp_x5': np.float64(0.067), 'pp_yearly': np.float64(0.085), 'pp_yearly_decay': np.float64(0.05), 'pp1_uniform': np.float64(0.012), 'pp1_x5': np.float64(0.053), 'pp_lgb': np.float64(0.072), 'xgb_v5avg': np.float64(0.062), 'lgb_sweep_avg': np.float64(0.049), 'lgb_nl8_mcs5': np.float64(0.035), 'tf_hybrid': np.float64(0.082)}

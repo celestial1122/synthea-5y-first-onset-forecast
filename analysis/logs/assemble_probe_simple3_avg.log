@@ -1,0 +1,9 @@
+candidates: ['ppds_gcr:screen200_d3_all_avg3', 'gstack:genc2_only_avg3', 'screen_gcr:k200_grp_avg3']
+
+single candidates (OOF mAP / val mAP):
+  ppds_gcr:screen200_d3_all_avg3 OOF=0.2959  val=0.3566
+  gstack:genc2_only_avg3 OOF=0.2605  val=0.3021
+  screen_gcr:k200_grp_avg3 OOF=0.2855  val=0.3477
+
+greedy ensemble: cross-fitted OOF mAP=0.3061 | val mAP=0.3587  val macroAUROC=0.7912
+average weight per candidate: {'ppds_gcr:screen200_d3_all_avg3': np.float64(0.358), 'gstack:genc2_only_avg3': np.float64(0.301), 'screen_gcr:k200_grp_avg3': np.float64(0.341)}

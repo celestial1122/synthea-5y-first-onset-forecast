@@ -1,0 +1,13 @@
+configs ['d3']: rows 56770 (landmark rows 53256, transductive 0), feats 280, targets 40, indicator=True [1s]
+  fold 0: DMatrix built (45054 rows) [1s]
+  fold 0 done [35s]
+  fold 1: DMatrix built (44684 rows) [36s]
+  fold 1 done [70s]
+  fold 2: DMatrix built (44912 rows) [71s]
+  fold 2 done [105s]
+  fold 3: DMatrix built (45006 rows) [105s]
+  fold 3 done [140s]
+  fold 4: DMatrix built (44532 rows) [140s]
+  fold 4 done [174s]
+RESULT d3_all_S1: OOF mAP(targets run)=0.1950 | acc 0.0951 / term 0.2640 / chain 0.2488 | val 0.2402
+done [174s]

@@ -1,0 +1,4 @@
+configs ['d4']: rows 56770 (landmark rows 53256, transductive 0), feats 2523, targets 40, indicator=True [2s]
+  fold 0: DMatrix built (45054 rows) [7s]
+  fold 0 done [221s]
+  fold 1: DMatrix built (44684 rows) [225s]

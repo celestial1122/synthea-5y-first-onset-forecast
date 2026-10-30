@@ -1,0 +1,44 @@
+candidates: ['ppds_gcr:screen200_d3_all', 'gstack:genc2_only_avg3', 'screen_gcr:k200_grp_avg3']
+
+single candidates (OOF mAP / val mAP):
+  ppds_gcr:screen200_d3_all OOF=0.2960  val=0.3567
+  gstack:genc2_only_avg3 OOF=0.2605  val=0.3021
+  screen_gcr:k200_grp_avg3 OOF=0.2855  val=0.3477
+
+greedy ensemble: cross-fitted OOF mAP=0.3076 | val mAP=0.3601  val macroAUROC=0.7893
+average weight per candidate: {'ppds_gcr:screen200_d3_all': np.float64(0.398), 'gstack:genc2_only_avg3': np.float64(0.271), 'screen_gcr:k200_grp_avg3': np.float64(0.331)}
+== ppds_gcr:screen200_d3_all,screen_gcr:k200_grp_avg3,gstack:genc2_only_avg3
+candidates: ['ppds_gcr:screen200_d3_all', 'gstack:gate3_prelim', 'gstack:genc2_only_avg3', 'screen_gcr:k200_grp_avg3']
+
+single candidates (OOF mAP / val mAP):
+  ppds_gcr:screen200_d3_all OOF=0.2960  val=0.3567
+  gstack:gate3_prelim OOF=0.2865  val=0.3645
+  gstack:genc2_only_avg3 OOF=0.2605  val=0.3021
+  screen_gcr:k200_grp_avg3 OOF=0.2855  val=0.3477
+
+greedy ensemble: cross-fitted OOF mAP=0.3058 | val mAP=0.3607  val macroAUROC=0.7814
+average weight per candidate: {'ppds_gcr:screen200_d3_all': np.float64(0.3), 'gstack:gate3_prelim': np.float64(0.227), 'gstack:genc2_only_avg3': np.float64(0.149), 'screen_gcr:k200_grp_avg3': np.float64(0.324)}
+== ppds_gcr:screen200_d3_all,screen_gcr:k200_grp_avg3,gstack:genc2_only_avg3,gstack:gate3_prelim
+candidates: ['ppds_gcr:screen200_d3_all', 'gstack:genc2_only_avg3', 'screen_gcr:k200_grp_avg3', 'nn:tts']
+
+single candidates (OOF mAP / val mAP):
+  ppds_gcr:screen200_d3_all OOF=0.2960  val=0.3567
+  gstack:genc2_only_avg3 OOF=0.2605  val=0.3021
+  screen_gcr:k200_grp_avg3 OOF=0.2855  val=0.3477
+  nn:tts       OOF=0.2142  val=0.2685
+
+greedy ensemble: cross-fitted OOF mAP=0.3031 | val mAP=0.3644  val macroAUROC=0.7870
+average weight per candidate: {'ppds_gcr:screen200_d3_all': np.float64(0.34), 'gstack:genc2_only_avg3': np.float64(0.26), 'screen_gcr:k200_grp_avg3': np.float64(0.296), 'nn:tts': np.float64(0.104)}
+== ppds_gcr:screen200_d3_all,screen_gcr:k200_grp_avg3,gstack:genc2_only_avg3,nn:tts
+candidates: ['ppds_gcr:screen200_d3_all', 'gstack:gate4tts_prelim', 'gstack:genc2_only_avg3', 'screen_gcr:k200_grp_avg3', 'nn:tts']
+
+single candidates (OOF mAP / val mAP):
+  ppds_gcr:screen200_d3_all OOF=0.2960  val=0.3567
+  gstack:gate4tts_prelim OOF=0.2886  val=0.3622
+  gstack:genc2_only_avg3 OOF=0.2605  val=0.3021
+  screen_gcr:k200_grp_avg3 OOF=0.2855  val=0.3477
+  nn:tts       OOF=0.2142  val=0.2685
+
+greedy ensemble: cross-fitted OOF mAP=0.3047 | val mAP=0.3622  val macroAUROC=0.7821
+average weight per candidate: {'ppds_gcr:screen200_d3_all': np.float64(0.262), 'gstack:gate4tts_prelim': np.float64(0.19), 'gstack:genc2_only_avg3': np.float64(0.17), 'screen_gcr:k200_grp_avg3': np.float64(0.299), 'nn:tts': np.float64(0.079)}
+== ppds_gcr:screen200_d3_all,screen_gcr:k200_grp_avg3,gstack:genc2_only_avg3,gstack:gate4tts_prelim,nn:tts

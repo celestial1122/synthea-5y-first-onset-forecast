@@ -1,0 +1,12 @@
+[multi_wide] seed17 fold0: val-selected mAP=0.2406 | held-out fold mAP=0.2052  (42s)
+[multi_wide] seed17 fold1: val-selected mAP=0.2311 | held-out fold mAP=0.1658  (78s)
+[multi_wide] seed17 fold2: val-selected mAP=0.2195 | held-out fold mAP=0.2080  (122s)
+[multi_wide] seed17 fold3: val-selected mAP=0.2256 | held-out fold mAP=0.1918  (168s)
+[multi_wide] seed17 fold4: val-selected mAP=0.2504 | held-out fold mAP=0.1989  (214s)
+[multi_wide] seed42 fold0: val-selected mAP=0.2223 | held-out fold mAP=0.1832  (249s)
+[multi_wide] seed42 fold1: val-selected mAP=0.2338 | held-out fold mAP=0.1848  (279s)
+[multi_wide] seed42 fold2: val-selected mAP=0.2331 | held-out fold mAP=0.2173  (312s)
+[multi_wide] seed42 fold3: val-selected mAP=0.2357 | held-out fold mAP=0.1898  (350s)
+[multi_wide] seed42 fold4: val-selected mAP=0.2251 | held-out fold mAP=0.1956  (378s)
+=== multi_wide 2 seeds x 5 folds: OOF mAP (2791) = 0.1751 | fold-ensemble val mAP = 0.2490 ===
+saved C:\Users\NEW PC\Desktop\research_intern_coding_test\analysis\cv_tf

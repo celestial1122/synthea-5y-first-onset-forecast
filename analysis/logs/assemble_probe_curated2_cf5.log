@@ -1,0 +1,30 @@
+candidates: ['lgb_clean', 'l1_lam0.003', 'pp_x5', 'pp_yearly', 'pp_yearly_decay', 'pp_lgb', 'xgb_v5avg', 'lgb_sweep_avg', 'tf_hybrid', 'stack_own+death+others_gbm', 'stack_own+death+others_lr', 'stack_own+death_gbm', 'stack_own+death_lr', 'ppds:d3_all_S1', 'ppds:d3_all_S2', 'ppds:d3_all', 'ppds:d6_all', 'ppds:xgbavg3_all', 'blocks_S1', 'pplgb:nl16_S3_all', 'pplgb:nl8_S1_all', 'pplgb:nl8_S3_all', 'pplgb:nl8_all_all', 'offset_pp2_pp_yearly_uniform_nonterm_t150_l4']
+
+single candidates (OOF mAP / val mAP):
+  lgb_clean    OOF=0.2092  val=0.2551
+  l1_lam0.003  OOF=0.1888  val=0.2607
+  pp_x5        OOF=0.2199  val=0.2520  (terminal targets filled from lgb_clean)
+  pp_yearly    OOF=0.2188  val=0.2680  (terminal targets filled from lgb_clean)
+  pp_yearly_decay OOF=0.2181  val=0.2555  (terminal targets filled from lgb_clean)
+  pp_lgb       OOF=0.2183  val=0.2639  (terminal targets filled from lgb_clean)
+  xgb_v5avg    OOF=0.1967  val=0.2282
+  lgb_sweep_avg OOF=0.2097  val=0.2546
+  tf_hybrid    OOF=0.1733  val=0.2518
+  stack_own+death+others_gbm OOF=0.1998  val=0.2503
+  stack_own+death+others_lr OOF=0.2144  val=0.2600
+  stack_own+death_gbm OOF=0.2044  val=0.2649
+  stack_own+death_lr OOF=0.2186  val=0.2667
+  ppds:d3_all_S1 OOF=0.1626  val=0.2032
+  ppds:d3_all_S2 OOF=0.2147  val=0.2436
+  ppds:d3_all  OOF=0.2220  val=0.2675
+  ppds:d6_all  OOF=0.2219  val=0.2623
+  ppds:xgbavg3_all OOF=0.2227  val=0.2650
+  blocks_S1    OOF=0.1558  val=0.1960
+  pplgb:nl16_S3_all OOF=0.2148  val=0.2515
+  pplgb:nl8_S1_all OOF=0.1635  val=0.2061
+  pplgb:nl8_S3_all OOF=0.2183  val=0.2516
+  pplgb:nl8_all_all OOF=0.2207  val=0.2588
+  offset_pp2_pp_yearly_uniform_nonterm_t150_l4 OOF=0.2130  val=0.2608  (terminal targets filled from lgb_clean)
+
+greedy ensemble: cross-fitted OOF mAP=0.2345 | val mAP=0.2810  val macroAUROC=0.7718
+average weight per candidate: {'lgb_clean': np.float64(0.018), 'l1_lam0.003': np.float64(0.067), 'pp_x5': np.float64(0.039), 'pp_yearly': np.float64(0.007), 'pp_yearly_decay': np.float64(0.003), 'pp_lgb': np.float64(0.021), 'xgb_v5avg': np.float64(0.008), 'lgb_sweep_avg': np.float64(0.042), 'tf_hybrid': np.float64(0.008), 'stack_own+death+others_gbm': np.float64(0.056), 'stack_own+death+others_lr': np.float64(0.093), 'stack_own+death_gbm': np.float64(0.122), 'stack_own+death_lr': np.float64(0.078), 'ppds:d3_all_S1': np.float64(0.073), 'ppds:d3_all_S2': np.float64(0.034), 'ppds:d3_all': np.float64(0.01), 'ppds:d6_all': np.float64(0.061), 'ppds:xgbavg3_all': np.float64(0.006), 'blocks_S1': np.float64(0.034), 'pplgb:nl16_S3_all': np.float64(0.048), 'pplgb:nl8_S1_all': np.float64(0.091), 'pplgb:nl8_S3_all': np.float64(0.052), 'pplgb:nl8_all_all': np.float64(0.027), 'offset_pp2_pp_yearly_uniform_nonterm_t150_l4': np.float64(0.0)}

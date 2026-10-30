@@ -1,0 +1,95 @@
+  landmark -1y: 2787 rows, positives 4988  [7s]
+  landmark -2y: 2785 rows, positives 5157  [9s]
+  landmark -3y: 2778 rows, positives 5149  [10s]
+  landmark -4y: 2745 rows, positives 5126  [11s]
+  landmark -5y: 2596 rows, positives 4768  [13s]
+  landmark -6y: 2521 rows, positives 3923  [14s]
+  landmark -7y: 2494 rows, positives 3136  [15s]
+  landmark -8y: 2477 rows, positives 2351  [16s]
+  landmark -9y: 2450 rows, positives 1566  [17s]
+  landmark -10y: 2437 rows, positives 898  [18s]
+  landmark -11y: 2416 rows, positives 788  [19s]
+  landmark -12y: 2399 rows, positives 750  [20s]
+  landmark -13y: 2376 rows, positives 717  [21s]
+  landmark -14y: 2358 rows, positives 701  [23s]
+  landmark -15y: 2339 rows, positives 676  [23s]
+  landmark -16y: 2320 rows, positives 635  [24s]
+  landmark -17y: 2288 rows, positives 608  [26s]
+  landmark -18y: 2262 rows, positives 570  [27s]
+  landmark -19y: 2247 rows, positives 511  [28s]
+  landmark -20y: 2214 rows, positives 470  [29s]
+  landmark -21y: 2175 rows, positives 470  [29s]
+  landmark -22y: 2152 rows, positives 444  [30s]
+  landmark -23y: 2123 rows, positives 416  [31s]
+  landmark -24y: 2094 rows, positives 407  [32s]
+  landmark -25y: 2067 rows, positives 421  [33s]
+  landmark -26y: 2043 rows, positives 418  [34s]
+  landmark -27y: 2007 rows, positives 413  [35s]
+  landmark -28y: 1982 rows, positives 405  [36s]
+  landmark -29y: 1955 rows, positives 417  [37s]
+  landmark -30y: 1919 rows, positives 403  [38s]
+  landmark -31y: 1881 rows, positives 375  [39s]
+  landmark -32y: 1844 rows, positives 367  [40s]
+  landmark -33y: 1803 rows, positives 365  [41s]
+  landmark -34y: 1760 rows, positives 357  [42s]
+  landmark -35y: 1722 rows, positives 345  [42s]
+  landmark -36y: 1693 rows, positives 350  [43s]
+  landmark -37y: 1655 rows, positives 333  [44s]
+  landmark -38y: 1616 rows, positives 329  [45s]
+  landmark -39y: 1576 rows, positives 306  [46s]
+  landmark -40y: 1529 rows, positives 330  [47s]
+  landmark -41y: 1496 rows, positives 313  [48s]
+  landmark -42y: 1450 rows, positives 311  [48s]
+  landmark -43y: 1401 rows, positives 282  [49s]
+  landmark -44y: 1365 rows, positives 266  [50s]
+  landmark -45y: 1322 rows, positives 248  [51s]
+  landmark -46y: 1286 rows, positives 247  [52s]
+  landmark -47y: 1231 rows, positives 237  [52s]
+  landmark -48y: 1190 rows, positives 241  [53s]
+  landmark -49y: 1158 rows, positives 242  [54s]
+  landmark -50y: 1120 rows, positives 215  [55s]
+person-period rows: 102695 features: 1630 [55s]
+    pp yearly uniform: fold 0 done [436s]
+    pp yearly uniform: fold 1 done [807s]
+    pp yearly uniform: fold 2 done [1180s]
+    pp yearly uniform: fold 3 done [1543s]
+    pp yearly uniform: fold 4 done [1884s]
+pp yearly uniform            non-terminal 30 targets: OOF mean AP=0.1536 | val 0.1938
+    pp yearly decay: fold 0 done [2224s]
+    pp yearly decay: fold 1 done [2565s]
+    pp yearly decay: fold 2 done [2907s]
+    pp yearly decay: fold 3 done [3249s]
+    pp yearly decay: fold 4 done [3590s]
+pp yearly decay              non-terminal 30 targets: OOF mean AP=0.1526 | val 0.1770
+                                       cond  train_pos  pp yearly uniform  pp yearly decay
+444814009        Viral sinusitis (disorder)        741              0.441            0.443
+195662009  Acute viral pharyngitis (disorde        591              0.286            0.283
+10509002        Acute bronchitis (disorder)        499              0.246            0.244
+230690007                            Stroke        206              0.183            0.183
+68496003                     Polyp of colon        144              0.153            0.159
+44465007                    Sprain of ankle        141              0.049            0.048
+53741008             Coronary Heart Disease        137              0.143            0.150
+43878008   Streptococcal sore throat (disor        133              0.055            0.054
+65966004                Fracture of forearm        117              0.090            0.093
+271737000                 Anemia (disorder)        111              0.240            0.235
+64859006            Osteoporosis (disorder)         98              0.207            0.211
+443165006  Pathological fracture due to ost         94              0.304            0.289
+49436004                Atrial Fibrillation         92              0.075            0.079
+36971009               Sinusitis (disorder)         88              0.035            0.034
+75498004   Acute bacterial sinusitis (disor         88              0.032            0.033
+39848009            Whiplash injury to neck         75              0.024            0.024
+26929004     Alzheimer's disease (disorder)         75              0.345            0.334
+263102004     Fracture subluxation of wrist         73              0.029            0.027
+72892002                   Normal pregnancy         70              0.565            0.591
+62106007   Concussion with no loss of consc         69              0.025            0.027
+15777000                        Prediabetes         61              0.094            0.083
+58150001               Fracture of clavicle         61              0.030            0.030
+162864005  Body mass index 30+ - obesity (f         60              0.573            0.542
+16114001                  Fracture of ankle         58              0.034            0.035
+70704007                    Sprain of wrist         56              0.022            0.022
+283371005             Laceration of forearm         50              0.023            0.025
+284551006                Laceration of foot         45              0.021            0.019
+22325002            Abnormal gait (finding)         41              0.065            0.081
+723857007  Silent micro-hemorrhage of brain         41              0.065            0.081
+156073000   Fetus with unknown complication         29              0.153            0.120
+done 3590s

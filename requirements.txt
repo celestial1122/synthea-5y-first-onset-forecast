@@ -1,0 +1,10 @@
+lightgbm==4.7.0
+numpy==2.5.3
+pandas==2.3.3
+pyarrow==25.0.1
+pydicom==3.0.2
+scikit-learn==1.6.1
+scipy==1.18.1
+wandb==0.31.0
+xgboost==2.1.4
+# optional, only for the neural-network ablations in analysis/: torch==2.5.1+cu121

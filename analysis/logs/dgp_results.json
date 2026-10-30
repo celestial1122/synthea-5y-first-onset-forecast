@@ -1,0 +1,3492 @@
+{
+ "incidence_by_death": [
+  {
+   "code": "444814009",
+   "cond": "Viral sinusitis (disorder)",
+   "n_atrisk": 1649,
+   "pos": 741,
+   "inc": 0.4494,
+   "inc_died": 0.4411,
+   "inc_alive": 0.4554,
+   "RR": 0.97,
+   "frac_pos_died": 0.414
+  },
+  {
+   "code": "195662009",
+   "cond": "Acute viral pharyngitis (disorder)",
+   "n_atrisk": 2085,
+   "pos": 591,
+   "inc": 0.2835,
+   "inc_died": 0.2627,
+   "inc_alive": 0.2987,
+   "RR": 0.88,
+   "frac_pos_died": 0.393
+  },
+  {
+   "code": "10509002",
+   "cond": "Acute bronchitis (disorder)",
+   "n_atrisk": 2180,
+   "pos": 499,
+   "inc": 0.2289,
+   "inc_died": 0.2194,
+   "inc_alive": 0.2358,
+   "RR": 0.93,
+   "frac_pos_died": 0.403
+  },
+  {
+   "code": "88805009",
+   "cond": "Chronic congestive heart failure (",
+   "n_atrisk": 2755,
+   "pos": 229,
+   "inc": 0.0831,
+   "inc_died": 0.1923,
+   "inc_alive": 0.0031,
+   "RR": 61.14,
+   "frac_pos_died": 0.978
+  },
+  {
+   "code": "230690007",
+   "cond": "Stroke",
+   "n_atrisk": 2388,
+   "pos": 206,
+   "inc": 0.0863,
+   "inc_died": 0.1462,
+   "inc_alive": 0.0411,
+   "RR": 3.56,
+   "frac_pos_died": 0.728
+  },
+  {
+   "code": "22298006",
+   "cond": "Myocardial Infarction",
+   "n_atrisk": 2772,
+   "pos": 153,
+   "inc": 0.0552,
+   "inc_died": 0.1269,
+   "inc_alive": 0.0013,
+   "RR": 100.37,
+   "frac_pos_died": 0.987
+  },
+  {
+   "code": "68496003",
+   "cond": "Polyp of colon",
+   "n_atrisk": 2510,
+   "pos": 144,
+   "inc": 0.0574,
+   "inc_died": 0.0927,
+   "inc_alive": 0.033,
+   "RR": 2.81,
+   "frac_pos_died": 0.66
+  },
+  {
+   "code": "44465007",
+   "cond": "Sprain of ankle",
+   "n_atrisk": 2659,
+   "pos": 141,
+   "inc": 0.053,
+   "inc_died": 0.0474,
+   "inc_alive": 0.0572,
+   "RR": 0.83,
+   "frac_pos_died": 0.383
+  },
+  {
+   "code": "53741008",
+   "cond": "Coronary Heart Disease",
+   "n_atrisk": 2479,
+   "pos": 137,
+   "inc": 0.0553,
+   "inc_died": 0.0915,
+   "inc_alive": 0.031,
+   "RR": 2.95,
+   "frac_pos_died": 0.664
+  },
+  {
+   "code": "233604007",
+   "cond": "Pneumonia",
+   "n_atrisk": 2791,
+   "pos": 133,
+   "inc": 0.0477,
+   "inc_died": 0.1109,
+   "inc_alive": 0.0,
+   "RR": 110925771.48,
+   "frac_pos_died": 1.0
+  },
+  {
+   "code": "43878008",
+   "cond": "Streptococcal sore throat (disorde",
+   "n_atrisk": 2631,
+   "pos": 133,
+   "inc": 0.0506,
+   "inc_died": 0.0516,
+   "inc_alive": 0.0497,
+   "RR": 1.04,
+   "frac_pos_died": 0.436
+  },
+  {
+   "code": "65966004",
+   "cond": "Fracture of forearm",
+   "n_atrisk": 2687,
+   "pos": 117,
+   "inc": 0.0435,
+   "inc_died": 0.0513,
+   "inc_alive": 0.0377,
+   "RR": 1.36,
+   "frac_pos_died": 0.504
+  },
+  {
+   "code": "126906006",
+   "cond": "Neoplasm of prostate",
+   "n_atrisk": 2600,
+   "pos": 111,
+   "inc": 0.0427,
+   "inc_died": 0.1002,
+   "inc_alive": 0.0026,
+   "RR": 38.37,
+   "frac_pos_died": 0.964
+  },
+  {
+   "code": "271737000",
+   "cond": "Anemia (disorder)",
+   "n_atrisk": 1707,
+   "pos": 111,
+   "inc": 0.065,
+   "inc_died": 0.0804,
+   "inc_alive": 0.0559,
+   "RR": 1.44,
+   "frac_pos_died": 0.459
+  },
+  {
+   "code": "64859006",
+   "cond": "Osteoporosis (disorder)",
+   "n_atrisk": 2429,
+   "pos": 98,
+   "inc": 0.0403,
+   "inc_died": 0.0587,
+   "inc_alive": 0.0262,
+   "RR": 2.24,
+   "frac_pos_died": 0.633
+  },
+  {
+   "code": "443165006",
+   "cond": "Pathological fracture due to osteo",
+   "n_atrisk": 2694,
+   "pos": 94,
+   "inc": 0.0349,
+   "inc_died": 0.0364,
+   "inc_alive": 0.0338,
+   "RR": 1.08,
+   "frac_pos_died": 0.447
+  },
+  {
+   "code": "49436004",
+   "cond": "Atrial Fibrillation",
+   "n_atrisk": 2528,
+   "pos": 92,
+   "inc": 0.0364,
+   "inc_died": 0.0474,
+   "inc_alive": 0.028,
+   "RR": 1.69,
+   "frac_pos_died": 0.565
+  },
+  {
+   "code": "92691004",
+   "cond": "Carcinoma in situ of prostate (dis",
+   "n_atrisk": 2600,
+   "pos": 88,
+   "inc": 0.0338,
+   "inc_died": 0.0787,
+   "inc_alive": 0.0026,
+   "RR": 30.12,
+   "frac_pos_died": 0.955
+  },
+  {
+   "code": "36971009",
+   "cond": "Sinusitis (disorder)",
+   "n_atrisk": 2702,
+   "pos": 88,
+   "inc": 0.0326,
+   "inc_died": 0.0312,
+   "inc_alive": 0.0336,
+   "RR": 0.93,
+   "frac_pos_died": 0.409
+  },
+  {
+   "code": "75498004",
+   "cond": "Acute bacterial sinusitis (disorde",
+   "n_atrisk": 2707,
+   "pos": 88,
+   "inc": 0.0325,
+   "inc_died": 0.0224,
+   "inc_alive": 0.0401,
+   "RR": 0.56,
+   "frac_pos_died": 0.295
+  },
+  {
+   "code": "162573006",
+   "cond": "Suspected lung cancer (situation)",
+   "n_atrisk": 2758,
+   "pos": 84,
+   "inc": 0.0305,
+   "inc_died": 0.0703,
+   "inc_alive": 0.0013,
+   "RR": 55.98,
+   "frac_pos_died": 0.976
+  },
+  {
+   "code": "424132000",
+   "cond": "Non-small cell carcinoma of lung  ",
+   "n_atrisk": 2767,
+   "pos": 77,
+   "inc": 0.0278,
+   "inc_died": 0.0638,
+   "inc_alive": 0.0013,
+   "RR": 50.81,
+   "frac_pos_died": 0.974
+  },
+  {
+   "code": "254637007",
+   "cond": "Non-small cell lung cancer (disord",
+   "n_atrisk": 2766,
+   "pos": 76,
+   "inc": 0.0275,
+   "inc_died": 0.063,
+   "inc_alive": 0.0013,
+   "RR": 50.17,
+   "frac_pos_died": 0.974
+  },
+  {
+   "code": "39848009",
+   "cond": "Whiplash injury to neck",
+   "n_atrisk": 2725,
+   "pos": 75,
+   "inc": 0.0275,
+   "inc_died": 0.0266,
+   "inc_alive": 0.0282,
+   "RR": 0.94,
+   "frac_pos_died": 0.413
+  },
+  {
+   "code": "26929004",
+   "cond": "Alzheimer's disease (disorder)",
+   "n_atrisk": 2496,
+   "pos": 75,
+   "inc": 0.03,
+   "inc_died": 0.0487,
+   "inc_alive": 0.0187,
+   "RR": 2.6,
+   "frac_pos_died": 0.613
+  },
+  {
+   "code": "263102004",
+   "cond": "Fracture subluxation of wrist",
+   "n_atrisk": 2727,
+   "pos": 73,
+   "inc": 0.0268,
+   "inc_died": 0.0342,
+   "inc_alive": 0.0212,
+   "RR": 1.62,
+   "frac_pos_died": 0.548
+  },
+  {
+   "code": "72892002",
+   "cond": "Normal pregnancy",
+   "n_atrisk": 2562,
+   "pos": 70,
+   "inc": 0.0273,
+   "inc_died": 0.0069,
+   "inc_alive": 0.044,
+   "RR": 0.16,
+   "frac_pos_died": 0.114
+  },
+  {
+   "code": "713197008",
+   "cond": "Recurrent rectal polyp",
+   "n_atrisk": 2679,
+   "pos": 69,
+   "inc": 0.0258,
+   "inc_died": 0.053,
+   "inc_alive": 0.0058,
+   "RR": 9.1,
+   "frac_pos_died": 0.87
+  },
+  {
+   "code": "62106007",
+   "cond": "Concussion with no loss of conscio",
+   "n_atrisk": 2712,
+   "pos": 69,
+   "inc": 0.0254,
+   "inc_died": 0.0248,
+   "inc_alive": 0.0259,
+   "RR": 0.96,
+   "frac_pos_died": 0.42
+  },
+  {
+   "code": "15777000",
+   "cond": "Prediabetes",
+   "n_atrisk": 1645,
+   "pos": 61,
+   "inc": 0.0371,
+   "inc_died": 0.0291,
+   "inc_alive": 0.0419,
+   "RR": 0.7,
+   "frac_pos_died": 0.295
+  },
+  {
+   "code": "58150001",
+   "cond": "Fracture of clavicle",
+   "n_atrisk": 2725,
+   "pos": 61,
+   "inc": 0.0224,
+   "inc_died": 0.03,
+   "inc_alive": 0.0167,
+   "RR": 1.8,
+   "frac_pos_died": 0.574
+  },
+  {
+   "code": "162864005",
+   "cond": "Body mass index 30+ - obesity (fin",
+   "n_atrisk": 1385,
+   "pos": 60,
+   "inc": 0.0433,
+   "inc_died": 0.0145,
+   "inc_alive": 0.0624,
+   "RR": 0.23,
+   "frac_pos_died": 0.133
+  },
+  {
+   "code": "16114001",
+   "cond": "Fracture of ankle",
+   "n_atrisk": 2732,
+   "pos": 58,
+   "inc": 0.0212,
+   "inc_died": 0.0205,
+   "inc_alive": 0.0218,
+   "RR": 0.94,
+   "frac_pos_died": 0.414
+  },
+  {
+   "code": "70704007",
+   "cond": "Sprain of wrist",
+   "n_atrisk": 2727,
+   "pos": 56,
+   "inc": 0.0205,
+   "inc_died": 0.0204,
+   "inc_alive": 0.0206,
+   "RR": 0.99,
+   "frac_pos_died": 0.429
+  },
+  {
+   "code": "283371005",
+   "cond": "Laceration of forearm",
+   "n_atrisk": 2758,
+   "pos": 50,
+   "inc": 0.0181,
+   "inc_died": 0.0127,
+   "inc_alive": 0.0223,
+   "RR": 0.57,
+   "frac_pos_died": 0.3
+  },
+  {
+   "code": "314994000",
+   "cond": "Metastasis from malignant tumor of",
+   "n_atrisk": 2791,
+   "pos": 50,
+   "inc": 0.0179,
+   "inc_died": 0.0417,
+   "inc_alive": 0.0,
+   "RR": 41701417.85,
+   "frac_pos_died": 1.0
+  },
+  {
+   "code": "284551006",
+   "cond": "Laceration of foot",
+   "n_atrisk": 2739,
+   "pos": 45,
+   "inc": 0.0164,
+   "inc_died": 0.0187,
+   "inc_alive": 0.0147,
+   "RR": 1.27,
+   "frac_pos_died": 0.489
+  },
+  {
+   "code": "22325002",
+   "cond": "Abnormal gait (finding)",
+   "n_atrisk": 2526,
+   "pos": 41,
+   "inc": 0.0162,
+   "inc_died": 0.0164,
+   "inc_alive": 0.0161,
+   "RR": 1.01,
+   "frac_pos_died": 0.415
+  },
+  {
+   "code": "723857007",
+   "cond": "Silent micro-hemorrhage of brain (",
+   "n_atrisk": 2526,
+   "pos": 41,
+   "inc": 0.0162,
+   "inc_died": 0.0164,
+   "inc_alive": 0.0161,
+   "RR": 1.01,
+   "frac_pos_died": 0.415
+  },
+  {
+   "code": "156073000",
+   "cond": "Fetus with unknown complication",
+   "n_atrisk": 2758,
+   "pos": 29,
+   "inc": 0.0105,
+   "inc_died": 0.0042,
+   "inc_alive": 0.0153,
+   "RR": 0.28,
+   "frac_pos_died": 0.172
+  }
+ ],
+ "trivial_scorers": {
+  "constant train incidence": {
+   "mAP": 0.05723703008611937,
+   "auroc": 0.5498186734281125,
+   "per": {
+    "444814009": 0.4342105263157895,
+    "195662009": 0.2656826568265683,
+    "10509002": 0.21254355400696864,
+    "88805009": 0.08055555555555556,
+    "230690007": 0.10802469135802469,
+    "22298006": 0.05234159779614325,
+    "68496003": 0.05521472392638037,
+    "44465007": 0.04597701149425287,
+    "53741008": 0.046296296296296294,
+    "233604007": 0.04657534246575343,
+    "43878008": 0.06340057636887608,
+    "65966004": 0.04519774011299435,
+    "126906006": 0.03254437869822485,
+    "271737000": 0.06493506493506493,
+    "64859006": 0.0379746835443038,
+    "443165006": 0.03943661971830986,
+    "49436004": 0.043343653250773995,
+    "92691004": 0.023668639053254437,
+    "36971009": 0.02556818181818182,
+    "75498004": 0.014326647564469915,
+    "162573006": 0.027700831024930747,
+    "424132000": 0.024930747922437674,
+    "254637007": 0.024930747922437674,
+    "39848009": 0.022535211267605635,
+    "26929004": 0.0391566265060241,
+    "263102004": 0.027932960893854747,
+    "72892002": 0.029585798816568046,
+    "713197008": 0.028409090909090908,
+    "62106007": 0.01977401129943503,
+    "15777000": 0.04504504504504504,
+    "58150001": 0.022408963585434174,
+    "162864005": 0.06043956043956044,
+    "16114001": 0.0223463687150838,
+    "70704007": 0.0223463687150838,
+    "283371005": 0.019337016574585635,
+    "314994000": 0.01643835616438356,
+    "284551006": 0.019444444444444445,
+    "22325002": 0.03254437869822485,
+    "723857007": 0.03254437869822485,
+    "156073000": 0.013812154696132596
+   }
+  },
+  "LR(age, age^2, sex)": {
+   "mAP": 0.12292490370420457,
+   "auroc": 0.706389668635015,
+   "per": {
+    "444814009": 0.4603626028726602,
+    "195662009": 0.25468032041297245,
+    "10509002": 0.24842857623581335,
+    "88805009": 0.09179035601372977,
+    "230690007": 0.35722435165612687,
+    "22298006": 0.07056849235947193,
+    "68496003": 0.16199948534050307,
+    "44465007": 0.056832172275565924,
+    "53741008": 0.09711185264103375,
+    "233604007": 0.08671330532778193,
+    "43878008": 0.07581930902615744,
+    "65966004": 0.12405199843633535,
+    "126906006": 0.14898221234331763,
+    "271737000": 0.12281610178494738,
+    "64859006": 0.11698744082511145,
+    "443165006": 0.14018690464268693,
+    "49436004": 0.3714759509387857,
+    "92691004": 0.11276709247447378,
+    "36971009": 0.028845174341850348,
+    "75498004": 0.021518562481078345,
+    "162573006": 0.07218521480158213,
+    "424132000": 0.0512010389807033,
+    "254637007": 0.05178024632687382,
+    "39848009": 0.018812452167605825,
+    "26929004": 0.09837349763563118,
+    "263102004": 0.04149373349254111,
+    "72892002": 0.4005586080586081,
+    "713197008": 0.057512684384454484,
+    "62106007": 0.030690066684569434,
+    "15777000": 0.07183446765921364,
+    "58150001": 0.024623767370358172,
+    "162864005": 0.15030206369919288,
+    "16114001": 0.02138076126976163,
+    "70704007": 0.0256189219201887,
+    "283371005": 0.040930200473806896,
+    "314994000": 0.22334752110160458,
+    "284551006": 0.019952841307803188,
+    "22325002": 0.1414499620337027,
+    "723857007": 0.1414499620337027,
+    "156073000": 0.08433587433587433
+   }
+  },
+  "LR(age, age^2, sex, hist_years, log_events, log_enc)": {
+   "mAP": 0.15208102234285822,
+   "auroc": 0.7155956150180427,
+   "per": {
+    "444814009": 0.43574658025768886,
+    "195662009": 0.2502034259798119,
+    "10509002": 0.23725338296900983,
+    "88805009": 0.1449943439915572,
+    "230690007": 0.37381930968373056,
+    "22298006": 0.0726246666231113,
+    "68496003": 0.22396768003520226,
+    "44465007": 0.050544176229319795,
+    "53741008": 0.09889433939841746,
+    "233604007": 0.08194625570252813,
+    "43878008": 0.08042008561403324,
+    "65966004": 0.12077675915668437,
+    "126906006": 0.47526762340049755,
+    "271737000": 0.23966572460273522,
+    "64859006": 0.11202100460565442,
+    "443165006": 0.14464607535611132,
+    "49436004": 0.3637470105461841,
+    "92691004": 0.46373794074959446,
+    "36971009": 0.0424211652421111,
+    "75498004": 0.024445346009556047,
+    "162573006": 0.057629792659985045,
+    "424132000": 0.04316535218660101,
+    "254637007": 0.04255420531924027,
+    "39848009": 0.017961277259297484,
+    "26929004": 0.09695143744375447,
+    "263102004": 0.036420588717165574,
+    "72892002": 0.509447063308956,
+    "713197008": 0.05129929696001175,
+    "62106007": 0.035048805662619927,
+    "15777000": 0.39028003658482713,
+    "58150001": 0.02582121183367843,
+    "162864005": 0.21166321598502832,
+    "16114001": 0.023882417804843636,
+    "70704007": 0.01958866887259916,
+    "283371005": 0.045576247730982566,
+    "314994000": 0.08086471274283555,
+    "284551006": 0.02672520053501072,
+    "22325002": 0.12200484229567268,
+    "723857007": 0.12200484229567268,
+    "156073000": 0.08720878136200716
+   }
+  },
+  "LR(+ anchor_year, anchor_year^2)  [calendar artifact]": {
+   "mAP": 0.168709870010375,
+   "auroc": 0.7370649613556383,
+   "per": {
+    "444814009": 0.4519360817262035,
+    "195662009": 0.2695592778472162,
+    "10509002": 0.237925693985341,
+    "88805009": 0.27128521025617336,
+    "230690007": 0.3548820881213684,
+    "22298006": 0.16215572307607046,
+    "68496003": 0.1310725217932816,
+    "44465007": 0.04912828149999812,
+    "53741008": 0.07874375562428884,
+    "233604007": 0.1348376273253917,
+    "43878008": 0.08342130286225047,
+    "65966004": 0.12051749222709088,
+    "126906006": 0.4722017826856536,
+    "271737000": 0.24622608678892194,
+    "64859006": 0.15383578958785357,
+    "443165006": 0.14492519360244527,
+    "49436004": 0.3722902096461076,
+    "92691004": 0.3613799324546276,
+    "36971009": 0.04169390557230763,
+    "75498004": 0.02691378258871243,
+    "162573006": 0.18118736440553138,
+    "424132000": 0.16392741254520676,
+    "254637007": 0.16314362722748674,
+    "39848009": 0.01866006547997967,
+    "26929004": 0.09899314043734946,
+    "263102004": 0.03446705047600173,
+    "72892002": 0.6422222222222222,
+    "713197008": 0.0666085126753651,
+    "62106007": 0.031700508829010404,
+    "15777000": 0.3913970794112638,
+    "58150001": 0.026535303988315755,
+    "162864005": 0.16944691638029954,
+    "16114001": 0.023231973217031278,
+    "70704007": 0.018862802575848214,
+    "283371005": 0.09103823093057745,
+    "314994000": 0.10088395400895402,
+    "284551006": 0.021864054845993033,
+    "22325002": 0.1257067158125456,
+    "723857007": 0.1257067158125456,
+    "156073000": 0.08787940986216848
+   }
+  },
+  "GBM(age, sex, hist_years, log_events, log_enc)": {
+   "mAP": 0.15881157614870012,
+   "auroc": 0.731377124479062,
+   "per": {
+    "444814009": 0.4012365483939648,
+    "195662009": 0.28131516575887233,
+    "10509002": 0.2241280126850262,
+    "88805009": 0.1641139227230081,
+    "230690007": 0.28445690712901023,
+    "22298006": 0.12466486166380464,
+    "68496003": 0.10971536639823626,
+    "44465007": 0.08727203172393937,
+    "53741008": 0.12223219354707097,
+    "233604007": 0.1409443425711394,
+    "43878008": 0.054962941327849804,
+    "65966004": 0.13642668642455366,
+    "126906006": 0.26312894459968467,
+    "271737000": 0.15303312500012659,
+    "64859006": 0.19093358302917127,
+    "443165006": 0.3249871647388813,
+    "49436004": 0.10064129091432865,
+    "92691004": 0.2734189592405705,
+    "36971009": 0.043995491938137544,
+    "75498004": 0.028262708652080974,
+    "162573006": 0.08910188722969742,
+    "424132000": 0.07704918301585424,
+    "254637007": 0.07138397655306619,
+    "39848009": 0.019505130495940076,
+    "26929004": 0.11919297082020887,
+    "263102004": 0.0315263561112408,
+    "72892002": 0.7024621212121211,
+    "713197008": 0.12118324449035875,
+    "62106007": 0.02714713756652744,
+    "15777000": 0.10447228757378221,
+    "58150001": 0.03088709160848429,
+    "162864005": 0.48183836536977454,
+    "16114001": 0.043095917801470804,
+    "70704007": 0.031062348761258997,
+    "283371005": 0.3407678943863154,
+    "314994000": 0.08022646035259358,
+    "284551006": 0.03123346735947322,
+    "22325002": 0.09947090263261407,
+    "723857007": 0.09947090263261407,
+    "156073000": 0.2415151515151515
+   }
+  },
+  "GBM(+ anchor_year)  [calendar artifact]": {
+   "mAP": 0.1748848805069177,
+   "auroc": 0.7549020613914592,
+   "per": {
+    "444814009": 0.43284507566651004,
+    "195662009": 0.26784035870308726,
+    "10509002": 0.20915433496896196,
+    "88805009": 0.3025165422799513,
+    "230690007": 0.3035055903345627,
+    "22298006": 0.2507756610120674,
+    "68496003": 0.10760403907739012,
+    "44465007": 0.04618682296183592,
+    "53741008": 0.16525545964118243,
+    "233604007": 0.30576950508218903,
+    "43878008": 0.060569286413437846,
+    "65966004": 0.16960417402150743,
+    "126906006": 0.3662316055898943,
+    "271737000": 0.11280596960119502,
+    "64859006": 0.19122389127003753,
+    "443165006": 0.30263687003342427,
+    "49436004": 0.12506752985564323,
+    "92691004": 0.2639043349123994,
+    "36971009": 0.032373535153721086,
+    "75498004": 0.03389381615893076,
+    "162573006": 0.12526803562758146,
+    "424132000": 0.1196741645229045,
+    "254637007": 0.11208713084171631,
+    "39848009": 0.01837079873831089,
+    "26929004": 0.1324903761406207,
+    "263102004": 0.04029976576655693,
+    "72892002": 0.6111779448621554,
+    "713197008": 0.08539551285404892,
+    "62106007": 0.023767851486329816,
+    "15777000": 0.09706358801052187,
+    "58150001": 0.035225504789822046,
+    "162864005": 0.4118555811405854,
+    "16114001": 0.1644923094409591,
+    "70704007": 0.042253327987299055,
+    "283371005": 0.22539065027703703,
+    "314994000": 0.129822459286745,
+    "284551006": 0.029002824698685092,
+    "22325002": 0.13264524105316267,
+    "723857007": 0.13264524105316267,
+    "156073000": 0.27670250896057347
+   }
+  },
+  "ORACLE LR(age, age^2, sex, died)  [not usable; ceiling of the artifact]": {
+   "mAP": 0.14885526774688507,
+   "auroc": 0.741105917111172,
+   "per": {
+    "444814009": 0.4872705589627768,
+    "195662009": 0.2572244928324608,
+    "10509002": 0.25139602152984514,
+    "88805009": 0.1935704922499437,
+    "230690007": 0.3900750549906208,
+    "22298006": 0.26277966183218987,
+    "68496003": 0.16108125585597452,
+    "44465007": 0.04832196785044238,
+    "53741008": 0.13602399867397044,
+    "233604007": 0.1850610515559083,
+    "43878008": 0.08235948296659126,
+    "65966004": 0.158908678293669,
+    "126906006": 0.22856953308023228,
+    "271737000": 0.1066470139132975,
+    "64859006": 0.20315422068740652,
+    "443165006": 0.1621040168654923,
+    "49436004": 0.38163541763569914,
+    "92691004": 0.157780211945774,
+    "36971009": 0.032587415236977224,
+    "75498004": 0.02476200480192077,
+    "162573006": 0.09688129783662291,
+    "424132000": 0.07861805328255377,
+    "254637007": 0.08023082105458959,
+    "39848009": 0.018453144417539633,
+    "26929004": 0.12317831240330185,
+    "263102004": 0.06226209919567299,
+    "72892002": 0.5445399045399045,
+    "713197008": 0.06714103481840417,
+    "62106007": 0.030384353418711357,
+    "15777000": 0.07176625561408184,
+    "58150001": 0.03161531795001356,
+    "162864005": 0.15252400111849873,
+    "16114001": 0.022522891332197467,
+    "70704007": 0.0258201275985125,
+    "283371005": 0.03835033941820056,
+    "314994000": 0.08091018609325246,
+    "284551006": 0.022019793546455252,
+    "22325002": 0.20933744630661102,
+    "723857007": 0.20933744630661102,
+    "156073000": 0.07700533186247471
+   }
+  }
+ },
+ "precursor_lift": [
+  {
+   "code": "444814009",
+   "cond": "Viral sinusitis (disorder)",
+   "token": "PROC:18946005",
+   "tokdesc": "Epidural anesthesia",
+   "prec": 0.7391304347826086,
+   "n": 23,
+   "lift": 1.6448395235580588
+  },
+  {
+   "code": "444814009",
+   "cond": "Viral sinusitis (disorder)",
+   "token": "OBS:3094-0",
+   "tokdesc": "Urea nitrogen [Mass/volume] in Serum o",
+   "prec": 0.6956521739130435,
+   "n": 23,
+   "lift": 1.5480842574664084
+  },
+  {
+   "code": "444814009",
+   "cond": "Viral sinusitis (disorder)",
+   "token": "OBS:2160-0",
+   "tokdesc": "Creatinine [Mass/volume] in Serum or P",
+   "prec": 0.6956521739130435,
+   "n": 23,
+   "lift": 1.5480842574664084
+  },
+  {
+   "code": "444814009",
+   "cond": "Viral sinusitis (disorder)",
+   "token": "OBS:2345-7",
+   "tokdesc": "Glucose [Mass/volume] in Serum or Plas",
+   "prec": 0.6956521739130435,
+   "n": 23,
+   "lift": 1.5480842574664084
+  },
+  {
+   "code": "444814009",
+   "cond": "Viral sinusitis (disorder)",
+   "token": "OBS:2951-2",
+   "tokdesc": "Sodium [Moles/volume] in Serum or Plas",
+   "prec": 0.6956521739130435,
+   "n": 23,
+   "lift": 1.5480842574664084
+  },
+  {
+   "code": "195662009",
+   "cond": "Acute viral pharyngitis (disorder)",
+   "token": "ALLERGY:424213003",
+   "tokdesc": "Allergy to bee venom",
+   "prec": 0.47619047619047616,
+   "n": 21,
+   "lift": 1.6799613246313754
+  },
+  {
+   "code": "195662009",
+   "cond": "Acute viral pharyngitis (disorder)",
+   "token": "COND:408512008",
+   "tokdesc": "Body mass index 40+ - severely obese (",
+   "prec": 0.47368421052631576,
+   "n": 19,
+   "lift": 1.671119422922789
+  },
+  {
+   "code": "195662009",
+   "cond": "Acute viral pharyngitis (disorder)",
+   "token": "MED:197319",
+   "tokdesc": "Allopurinol 100 MG Oral Tablet",
+   "prec": 0.4666666666666667,
+   "n": 15,
+   "lift": 1.646362098138748
+  },
+  {
+   "code": "195662009",
+   "cond": "Acute viral pharyngitis (disorder)",
+   "token": "MED:198014",
+   "tokdesc": "Naproxen 500 MG Oral Tablet",
+   "prec": 0.45714285714285713,
+   "n": 35,
+   "lift": 1.6127628716461202
+  },
+  {
+   "code": "195662009",
+   "cond": "Acute viral pharyngitis (disorder)",
+   "token": "COND:97331000119101",
+   "tokdesc": "Macular edema and retinopathy due to t",
+   "prec": 0.4375,
+   "n": 16,
+   "lift": 1.5434644670050761
+  },
+  {
+   "code": "10509002",
+   "cond": "Acute bronchitis (disorder)",
+   "token": "PROC:18946005",
+   "tokdesc": "Epidural anesthesia",
+   "prec": 0.42857142857142855,
+   "n": 28,
+   "lift": 1.8723160606928142
+  },
+  {
+   "code": "10509002",
+   "cond": "Acute bronchitis (disorder)",
+   "token": "COND:283371005",
+   "tokdesc": "Laceration of forearm",
+   "prec": 0.42857142857142855,
+   "n": 28,
+   "lift": 1.8723160606928142
+  },
+  {
+   "code": "10509002",
+   "cond": "Acute bronchitis (disorder)",
+   "token": "PROC:11466000",
+   "tokdesc": "Cesarean section",
+   "prec": 0.4117647058823529,
+   "n": 17,
+   "lift": 1.7988919014499587
+  },
+  {
+   "code": "10509002",
+   "cond": "Acute bronchitis (disorder)",
+   "token": "COND:301011002",
+   "tokdesc": "Escherichia coli urinary tract infecti",
+   "prec": 0.3888888888888889,
+   "n": 18,
+   "lift": 1.6989534624805167
+  },
+  {
+   "code": "10509002",
+   "cond": "Acute bronchitis (disorder)",
+   "token": "COND:359817006",
+   "tokdesc": "Closed fracture of hip",
+   "prec": 0.37037037037037035,
+   "n": 27,
+   "lift": 1.618050916648111
+  },
+  {
+   "code": "88805009",
+   "cond": "Chronic congestive heart failure (",
+   "token": "MED:243670",
+   "tokdesc": "Aspirin 81 MG Oral Tablet",
+   "prec": 0.2153846153846154,
+   "n": 65,
+   "lift": 2.5911991938192815
+  },
+  {
+   "code": "88805009",
+   "cond": "Chronic congestive heart failure (",
+   "token": "COND:284549007",
+   "tokdesc": "Laceration of hand",
+   "prec": 0.1891891891891892,
+   "n": 37,
+   "lift": 2.276053345922342
+  },
+  {
+   "code": "88805009",
+   "cond": "Chronic congestive heart failure (",
+   "token": "COND:90560007",
+   "tokdesc": "Gout",
+   "prec": 0.1794871794871795,
+   "n": 39,
+   "lift": 2.1593326615160677
+  },
+  {
+   "code": "88805009",
+   "cond": "Chronic congestive heart failure (",
+   "token": "COND:5602001",
+   "tokdesc": "Opioid abuse (disorder)",
+   "prec": 0.1746031746031746,
+   "n": 63,
+   "lift": 2.1005753101822973
+  },
+  {
+   "code": "88805009",
+   "cond": "Chronic congestive heart failure (",
+   "token": "MED:106258",
+   "tokdesc": "Hydrocortisone 10 MG/ML Topical Cream",
+   "prec": 0.17105263157894737,
+   "n": 76,
+   "lift": 2.0578602620087336
+  },
+  {
+   "code": "230690007",
+   "cond": "Stroke",
+   "token": "COND:33737001",
+   "tokdesc": "Fracture of rib",
+   "prec": 0.28,
+   "n": 25,
+   "lift": 3.2458252427184466
+  },
+  {
+   "code": "230690007",
+   "cond": "Stroke",
+   "token": "PROC:180325003",
+   "tokdesc": "Electrical cardioversion",
+   "prec": 0.2302158273381295,
+   "n": 139,
+   "lift": 2.668715513026472
+  },
+  {
+   "code": "230690007",
+   "cond": "Stroke",
+   "token": "COND:49436004",
+   "tokdesc": "Atrial Fibrillation",
+   "prec": 0.22535211267605634,
+   "n": 142,
+   "lift": 2.612334199370983
+  },
+  {
+   "code": "230690007",
+   "cond": "Stroke",
+   "token": "MED:197604",
+   "tokdesc": "Digoxin 0.125 MG Oral Tablet",
+   "prec": 0.22535211267605634,
+   "n": 142,
+   "lift": 2.612334199370983
+  },
+  {
+   "code": "230690007",
+   "cond": "Stroke",
+   "token": "MED:855332",
+   "tokdesc": "Warfarin Sodium 5 MG Oral Tablet",
+   "prec": 0.22535211267605634,
+   "n": 142,
+   "lift": 2.612334199370983
+  },
+  {
+   "code": "22298006",
+   "cond": "Myocardial Infarction",
+   "token": "COND:53741008",
+   "tokdesc": "Coronary Heart Disease",
+   "prec": 0.3310580204778157,
+   "n": 293,
+   "lift": 5.997992371009837
+  },
+  {
+   "code": "22298006",
+   "cond": "Myocardial Infarction",
+   "token": "MED:705129",
+   "tokdesc": "Nitroglycerin 0.4 MG/ACTUAT Mucosal Sp",
+   "prec": 0.3310580204778157,
+   "n": 293,
+   "lift": 5.997992371009837
+  },
+  {
+   "code": "22298006",
+   "cond": "Myocardial Infarction",
+   "token": "CARE:718347000",
+   "tokdesc": "Mental health care plan",
+   "prec": 0.2777777777777778,
+   "n": 18,
+   "lift": 5.032679738562092
+  },
+  {
+   "code": "22298006",
+   "cond": "Myocardial Infarction",
+   "token": "OBS:9843-4",
+   "tokdesc": "Head Occipital-frontal circumference",
+   "prec": 0.2727272727272727,
+   "n": 22,
+   "lift": 4.9411764705882355
+  },
+  {
+   "code": "22298006",
+   "cond": "Myocardial Infarction",
+   "token": "OBS:77606-2",
+   "tokdesc": "Weight-for-length Per age and sex",
+   "prec": 0.2727272727272727,
+   "n": 22,
+   "lift": 4.9411764705882355
+  },
+  {
+   "code": "68496003",
+   "cond": "Polyp of colon",
+   "token": "COND:230265002",
+   "tokdesc": "Familial Alzheimer's disease of early ",
+   "prec": 0.2,
+   "n": 25,
+   "lift": 3.486111111111111
+  },
+  {
+   "code": "68496003",
+   "cond": "Polyp of colon",
+   "token": "COND:90560007",
+   "tokdesc": "Gout",
+   "prec": 0.16666666666666666,
+   "n": 36,
+   "lift": 2.9050925925925926
+  },
+  {
+   "code": "68496003",
+   "cond": "Polyp of colon",
+   "token": "PROC:73761001",
+   "tokdesc": "Colonoscopy",
+   "prec": 0.15681233933161953,
+   "n": 778,
+   "lift": 2.7333261925164236
+  },
+  {
+   "code": "68496003",
+   "cond": "Polyp of colon",
+   "token": "OBS:5767-9|Urine smell ammoniacal (finding)",
+   "tokdesc": "Appearance of Urine|Urine smell ammo",
+   "prec": 0.15384615384615385,
+   "n": 39,
+   "lift": 2.681623931623932
+  },
+  {
+   "code": "68496003",
+   "cond": "Polyp of colon",
+   "token": "OBS:5778-6|Brown color (qualifier value)",
+   "tokdesc": "Color of Urine|Brown color (qua",
+   "prec": 0.15384615384615385,
+   "n": 39,
+   "lift": 2.681623931623932
+  },
+  {
+   "code": "44465007",
+   "cond": "Sprain of ankle",
+   "token": "COND:403190006",
+   "tokdesc": "First degree burn",
+   "prec": 0.15625,
+   "n": 32,
+   "lift": 2.9465868794326244
+  },
+  {
+   "code": "44465007",
+   "cond": "Sprain of ankle",
+   "token": "CARE:133901003",
+   "tokdesc": "Burn care",
+   "prec": 0.15254237288135594,
+   "n": 59,
+   "lift": 2.876667868734223
+  },
+  {
+   "code": "44465007",
+   "cond": "Sprain of ankle",
+   "token": "MED:312938",
+   "tokdesc": "Sertraline 100 MG Oral Tablet",
+   "prec": 0.1282051282051282,
+   "n": 39,
+   "lift": 2.4177123113293324
+  },
+  {
+   "code": "44465007",
+   "cond": "Sprain of ankle",
+   "token": "COND:82423001",
+   "tokdesc": "Chronic pain",
+   "prec": 0.11811023622047244,
+   "n": 127,
+   "lift": 2.2273412631931646
+  },
+  {
+   "code": "44465007",
+   "cond": "Sprain of ankle",
+   "token": "COND:87433001",
+   "tokdesc": "Pulmonary emphysema (disorder)",
+   "prec": 0.11764705882352941,
+   "n": 68,
+   "lift": 2.2186065915727995
+  },
+  {
+   "code": "53741008",
+   "cond": "Coronary Heart Disease",
+   "token": "COND:7200002",
+   "tokdesc": "Alcoholism",
+   "prec": 0.140625,
+   "n": 64,
+   "lift": 2.54459397810219
+  },
+  {
+   "code": "53741008",
+   "cond": "Coronary Heart Disease",
+   "token": "CARE:736252007",
+   "tokdesc": "Cancer care plan",
+   "prec": 0.13986013986013987,
+   "n": 143,
+   "lift": 2.5307539176152316
+  },
+  {
+   "code": "53741008",
+   "cond": "Coronary Heart Disease",
+   "token": "COND:92691004",
+   "tokdesc": "Carcinoma in situ of prostate (disorde",
+   "prec": 0.13986013986013987,
+   "n": 143,
+   "lift": 2.5307539176152316
+  },
+  {
+   "code": "53741008",
+   "cond": "Coronary Heart Disease",
+   "token": "COND:126906006",
+   "tokdesc": "Neoplasm of prostate",
+   "prec": 0.13986013986013987,
+   "n": 143,
+   "lift": 2.5307539176152316
+  },
+  {
+   "code": "53741008",
+   "cond": "Coronary Heart Disease",
+   "token": "MED:752899",
+   "tokdesc": "0.25 ML Leuprolide Acetate 30 MG/ML Pr",
+   "prec": 0.13986013986013987,
+   "n": 143,
+   "lift": 2.5307539176152316
+  },
+  {
+   "code": "233604007",
+   "cond": "Pneumonia",
+   "token": "MED:1100184",
+   "tokdesc": "Donepezil hydrochloride 23 MG Oral Tab",
+   "prec": 0.5714285714285714,
+   "n": 56,
+   "lift": 11.99140708915145
+  },
+  {
+   "code": "233604007",
+   "cond": "Pneumonia",
+   "token": "MED:313185",
+   "tokdesc": "Tacrine 10 MG Oral Capsule",
+   "prec": 0.5142857142857142,
+   "n": 35,
+   "lift": 10.792266380236304
+  },
+  {
+   "code": "233604007",
+   "cond": "Pneumonia",
+   "token": "COND:230265002",
+   "tokdesc": "Familial Alzheimer's disease of early ",
+   "prec": 0.5,
+   "n": 30,
+   "lift": 10.492481203007518
+  },
+  {
+   "code": "233604007",
+   "cond": "Pneumonia",
+   "token": "MED:996740",
+   "tokdesc": "Memantine hydrochloride 2 MG/ML Oral S",
+   "prec": 0.463768115942029,
+   "n": 69,
+   "lift": 9.732156478151902
+  },
+  {
+   "code": "233604007",
+   "cond": "Pneumonia",
+   "token": "MED:997223",
+   "tokdesc": "Donepezil hydrochloride 10 MG Oral Tab",
+   "prec": 0.43636363636363634,
+   "n": 55,
+   "lift": 9.157074504442924
+  },
+  {
+   "code": "43878008",
+   "cond": "Streptococcal sore throat (disorde",
+   "token": "PROC:699253003",
+   "tokdesc": "Surgical manipulation of joint of knee",
+   "prec": 0.23076923076923078,
+   "n": 26,
+   "lift": 4.565066512434933
+  },
+  {
+   "code": "43878008",
+   "cond": "Streptococcal sore throat (disorde",
+   "token": "PROC:74016001",
+   "tokdesc": "Knee X-ray",
+   "prec": 0.17647058823529413,
+   "n": 34,
+   "lift": 3.49093321539142
+  },
+  {
+   "code": "43878008",
+   "cond": "Streptococcal sore throat (disorde",
+   "token": "IMM:115",
+   "tokdesc": "Tdap",
+   "prec": 0.1276595744680851,
+   "n": 47,
+   "lift": 2.525355943049112
+  },
+  {
+   "code": "43878008",
+   "cond": "Streptococcal sore throat (disorde",
+   "token": "ALLERGY:232350006",
+   "tokdesc": "House dust mite allergy",
+   "prec": 0.1276595744680851,
+   "n": 47,
+   "lift": 2.525355943049112
+  },
+  {
+   "code": "43878008",
+   "cond": "Streptococcal sore throat (disorde",
+   "token": "ALLERGY:232347008",
+   "tokdesc": "Dander (animal) allergy",
+   "prec": 0.11475409836065574,
+   "n": 61,
+   "lift": 2.270060396893874
+  },
+  {
+   "code": "65966004",
+   "cond": "Fracture of forearm",
+   "token": "COND:359817006",
+   "tokdesc": "Closed fracture of hip",
+   "prec": 0.2,
+   "n": 35,
+   "lift": 4.593162393162394
+  },
+  {
+   "code": "65966004",
+   "cond": "Fracture of forearm",
+   "token": "COND:443165006",
+   "tokdesc": "Pathological fracture due to osteoporo",
+   "prec": 0.19230769230769232,
+   "n": 52,
+   "lift": 4.416502301117686
+  },
+  {
+   "code": "65966004",
+   "cond": "Fracture of forearm",
+   "token": "PROC:268425006",
+   "tokdesc": "Pelvis X-ray",
+   "prec": 0.15625,
+   "n": 32,
+   "lift": 3.5884081196581197
+  },
+  {
+   "code": "65966004",
+   "cond": "Fracture of forearm",
+   "token": "COND:64859006",
+   "tokdesc": "Osteoporosis (disorder)",
+   "prec": 0.1492063492063492,
+   "n": 315,
+   "lift": 3.4266449599782933
+  },
+  {
+   "code": "65966004",
+   "cond": "Fracture of forearm",
+   "token": "MED:904419",
+   "tokdesc": "Alendronic acid 10 MG Oral Tablet",
+   "prec": 0.13917525773195877,
+   "n": 194,
+   "lift": 3.196272799365583
+  },
+  {
+   "code": "126906006",
+   "cond": "Neoplasm of prostate",
+   "token": "OBS:46288-7|Surgical biopsy result normal",
+   "tokdesc": "US Guidance for biopsy of Prostate|Surgical biopsy ",
+   "prec": 0.6888888888888889,
+   "n": 45,
+   "lift": 16.136136136136138
+  },
+  {
+   "code": "126906006",
+   "cond": "Neoplasm of prostate",
+   "token": "PROC:65575008",
+   "tokdesc": "Biopsy of prostate",
+   "prec": 0.6888888888888889,
+   "n": 45,
+   "lift": 16.136136136136138
+  },
+  {
+   "code": "126906006",
+   "cond": "Neoplasm of prostate",
+   "token": "OBS:2857-1",
+   "tokdesc": "Prostate specific Ag [Mass/volume] in ",
+   "prec": 0.6356589147286822,
+   "n": 129,
+   "lift": 14.889307912563728
+  },
+  {
+   "code": "126906006",
+   "cond": "Neoplasm of prostate",
+   "token": "PROC:410006001",
+   "tokdesc": "Digital examination of rectum",
+   "prec": 0.6356589147286822,
+   "n": 129,
+   "lift": 14.889307912563728
+  },
+  {
+   "code": "126906006",
+   "cond": "Neoplasm of prostate",
+   "token": "OBS:32465-7|Prostate enlarged on PR",
+   "tokdesc": "Physical findings of Prostate|Prostate enlarge",
+   "prec": 0.6333333333333333,
+   "n": 120,
+   "lift": 14.834834834834835
+  },
+  {
+   "code": "271737000",
+   "cond": "Anemia (disorder)",
+   "token": "COND:198992004",
+   "tokdesc": "Antepartum eclampsia",
+   "prec": 0.35294117647058826,
+   "n": 17,
+   "lift": 5.427662957074722
+  },
+  {
+   "code": "271737000",
+   "cond": "Anemia (disorder)",
+   "token": "COND:35999006",
+   "tokdesc": "Blighted ovum",
+   "prec": 0.2631578947368421,
+   "n": 19,
+   "lift": 4.046941678520626
+  },
+  {
+   "code": "271737000",
+   "cond": "Anemia (disorder)",
+   "token": "PROC:51116004",
+   "tokdesc": "RhD passive immunization",
+   "prec": 0.25,
+   "n": 20,
+   "lift": 3.8445945945945943
+  },
+  {
+   "code": "271737000",
+   "cond": "Anemia (disorder)",
+   "token": "MED:389221",
+   "tokdesc": "Etonogestrel 68 MG Drug Implant",
+   "prec": 0.22916666666666666,
+   "n": 48,
+   "lift": 3.5242117117117115
+  },
+  {
+   "code": "271737000",
+   "cond": "Anemia (disorder)",
+   "token": "PROC:10383002",
+   "tokdesc": "Counseling for termination of pregnanc",
+   "prec": 0.21951219512195122,
+   "n": 41,
+   "lift": 3.3757415952537904
+  },
+  {
+   "code": "64859006",
+   "cond": "Osteoporosis (disorder)",
+   "token": "CARE:395082007",
+   "tokdesc": "Cancer care plan",
+   "prec": 0.15625,
+   "n": 32,
+   "lift": 3.872767857142857
+  },
+  {
+   "code": "64859006",
+   "cond": "Osteoporosis (disorder)",
+   "token": "COND:1551000119108",
+   "tokdesc": "Nonproliferative diabetic retinopathy ",
+   "prec": 0.13333333333333333,
+   "n": 45,
+   "lift": 3.3047619047619046
+  },
+  {
+   "code": "64859006",
+   "cond": "Osteoporosis (disorder)",
+   "token": "MED:997223",
+   "tokdesc": "Donepezil hydrochloride 10 MG Oral Tab",
+   "prec": 0.11904761904761904,
+   "n": 42,
+   "lift": 2.950680272108843
+  },
+  {
+   "code": "64859006",
+   "cond": "Osteoporosis (disorder)",
+   "token": "COND:422034002",
+   "tokdesc": "Diabetic retinopathy associated with t",
+   "prec": 0.11428571428571428,
+   "n": 70,
+   "lift": 2.8326530612244896
+  },
+  {
+   "code": "64859006",
+   "cond": "Osteoporosis (disorder)",
+   "token": "MED:1803932",
+   "tokdesc": "Leucovorin 100 MG Injection",
+   "prec": 0.09803921568627451,
+   "n": 51,
+   "lift": 2.429971988795518
+  },
+  {
+   "code": "443165006",
+   "cond": "Pathological fracture due to osteo",
+   "token": "COND:64859006",
+   "tokdesc": "Osteoporosis (disorder)",
+   "prec": 0.29056603773584905,
+   "n": 265,
+   "lift": 8.327498996386993
+  },
+  {
+   "code": "443165006",
+   "cond": "Pathological fracture due to osteo",
+   "token": "MED:904419",
+   "tokdesc": "Alendronic acid 10 MG Oral Tablet",
+   "prec": 0.26506024096385544,
+   "n": 166,
+   "lift": 7.596513714432197
+  },
+  {
+   "code": "443165006",
+   "cond": "Pathological fracture due to osteo",
+   "token": "MED:1736776",
+   "tokdesc": "10 ML oxaliplatin 5 MG/ML Injection",
+   "prec": 0.13636363636363635,
+   "n": 66,
+   "lift": 3.908123791102514
+  },
+  {
+   "code": "443165006",
+   "cond": "Pathological fracture due to osteo",
+   "token": "MED:1803932",
+   "tokdesc": "Leucovorin 100 MG Injection",
+   "prec": 0.13636363636363635,
+   "n": 66,
+   "lift": 3.908123791102514
+  },
+  {
+   "code": "443165006",
+   "cond": "Pathological fracture due to osteo",
+   "token": "COND:713197008",
+   "tokdesc": "Recurrent rectal polyp",
+   "prec": 0.12264150943396226,
+   "n": 106,
+   "lift": 3.514853472501003
+  },
+  {
+   "code": "49436004",
+   "cond": "Atrial Fibrillation",
+   "token": "COND:424132000",
+   "tokdesc": "Non-small cell carcinoma of lung  TNM ",
+   "prec": 0.21739130434782608,
+   "n": 23,
+   "lift": 5.973534971644613
+  },
+  {
+   "code": "49436004",
+   "cond": "Atrial Fibrillation",
+   "token": "COND:254637007",
+   "tokdesc": "Non-small cell lung cancer (disorder)",
+   "prec": 0.20833333333333334,
+   "n": 24,
+   "lift": 5.724637681159421
+  },
+  {
+   "code": "49436004",
+   "cond": "Atrial Fibrillation",
+   "token": "MED:583214",
+   "tokdesc": "PACLitaxel 100 MG Injection",
+   "prec": 0.2,
+   "n": 25,
+   "lift": 5.495652173913044
+  },
+  {
+   "code": "49436004",
+   "cond": "Atrial Fibrillation",
+   "token": "COND:162573006",
+   "tokdesc": "Suspected lung cancer (situation)",
+   "prec": 0.1875,
+   "n": 32,
+   "lift": 5.1521739130434785
+  },
+  {
+   "code": "49436004",
+   "cond": "Atrial Fibrillation",
+   "token": "PROC:418891003",
+   "tokdesc": "Computed tomography of chest and abdom",
+   "prec": 0.1875,
+   "n": 32,
+   "lift": 5.1521739130434785
+  },
+  {
+   "code": "92691004",
+   "cond": "Carcinoma in situ of prostate (dis",
+   "token": "OBS:46288-7|Surgical biopsy result normal",
+   "tokdesc": "US Guidance for biopsy of Prostate|Surgical biopsy ",
+   "prec": 0.6,
+   "n": 45,
+   "lift": 17.727272727272727
+  },
+  {
+   "code": "92691004",
+   "cond": "Carcinoma in situ of prostate (dis",
+   "token": "PROC:65575008",
+   "tokdesc": "Biopsy of prostate",
+   "prec": 0.6,
+   "n": 45,
+   "lift": 17.727272727272727
+  },
+  {
+   "code": "92691004",
+   "cond": "Carcinoma in situ of prostate (dis",
+   "token": "OBS:32465-7|Prostate enlarged on PR",
+   "tokdesc": "Physical findings of Prostate|Prostate enlarge",
+   "prec": 0.525,
+   "n": 120,
+   "lift": 15.511363636363637
+  },
+  {
+   "code": "92691004",
+   "cond": "Carcinoma in situ of prostate (dis",
+   "token": "PROC:410006001",
+   "tokdesc": "Digital examination of rectum",
+   "prec": 0.5116279069767442,
+   "n": 129,
+   "lift": 15.116279069767442
+  },
+  {
+   "code": "92691004",
+   "cond": "Carcinoma in situ of prostate (dis",
+   "token": "OBS:2857-1",
+   "tokdesc": "Prostate specific Ag [Mass/volume] in ",
+   "prec": 0.5116279069767442,
+   "n": 129,
+   "lift": 15.116279069767442
+  },
+  {
+   "code": "36971009",
+   "cond": "Sinusitis (disorder)",
+   "token": "MED:757594",
+   "tokdesc": "Jolivette 28 Day Pack",
+   "prec": 0.08333333333333333,
+   "n": 60,
+   "lift": 2.558712121212121
+  },
+  {
+   "code": "36971009",
+   "cond": "Sinusitis (disorder)",
+   "token": "PROC:269911007",
+   "tokdesc": "Sputum examination (procedure)",
+   "prec": 0.08256880733944955,
+   "n": 109,
+   "lift": 2.535237698081735
+  },
+  {
+   "code": "36971009",
+   "cond": "Sinusitis (disorder)",
+   "token": "PROC:76601001",
+   "tokdesc": "Intramuscular injection",
+   "prec": 0.07526881720430108,
+   "n": 93,
+   "lift": 2.3110948191593357
+  },
+  {
+   "code": "36971009",
+   "cond": "Sinusitis (disorder)",
+   "token": "MED:1000126",
+   "tokdesc": "1 ML medroxyprogesterone acetate 150 M",
+   "prec": 0.07407407407407407,
+   "n": 81,
+   "lift": 2.2744107744107747
+  },
+  {
+   "code": "36971009",
+   "cond": "Sinusitis (disorder)",
+   "token": "ALLERGY:300913006",
+   "tokdesc": "Shellfish allergy",
+   "prec": 0.07352941176470588,
+   "n": 68,
+   "lift": 2.257687165775401
+  },
+  {
+   "code": "75498004",
+   "cond": "Acute bacterial sinusitis (disorde",
+   "token": "ALLERGY:419263009",
+   "tokdesc": "Allergy to tree pollen",
+   "prec": 0.1111111111111111,
+   "n": 45,
+   "lift": 3.417929292929293
+  },
+  {
+   "code": "75498004",
+   "cond": "Acute bacterial sinusitis (disorde",
+   "token": "IMM:62",
+   "tokdesc": "HPV  quadrivalent",
+   "prec": 0.08536585365853659,
+   "n": 82,
+   "lift": 2.6259700665188475
+  },
+  {
+   "code": "75498004",
+   "cond": "Acute bacterial sinusitis (disorde",
+   "token": "COND:70704007",
+   "tokdesc": "Sprain of wrist",
+   "prec": 0.07936507936507936,
+   "n": 63,
+   "lift": 2.4413780663780664
+  },
+  {
+   "code": "75498004",
+   "cond": "Acute bacterial sinusitis (disorde",
+   "token": "MED:243670",
+   "tokdesc": "Aspirin 81 MG Oral Tablet",
+   "prec": 0.07936507936507936,
+   "n": 63,
+   "lift": 2.4413780663780664
+  },
+  {
+   "code": "75498004",
+   "cond": "Acute bacterial sinusitis (disorde",
+   "token": "COND:39848009",
+   "tokdesc": "Whiplash injury to neck",
+   "prec": 0.07692307692307693,
+   "n": 65,
+   "lift": 2.3662587412587417
+  },
+  {
+   "code": "162573006",
+   "cond": "Suspected lung cancer (situation)",
+   "token": "OBS:5767-9|Foul smelling urine (finding)",
+   "tokdesc": "Appearance of Urine|Foul smelling ur",
+   "prec": 0.36363636363636365,
+   "n": 33,
+   "lift": 11.93939393939394
+  },
+  {
+   "code": "162573006",
+   "cond": "Suspected lung cancer (situation)",
+   "token": "OBS:32167-9|Cloudy urine (finding)",
+   "tokdesc": "Clarity of Urine|Cloudy urine (fi",
+   "prec": 0.36363636363636365,
+   "n": 33,
+   "lift": 11.93939393939394
+  },
+  {
+   "code": "162573006",
+   "cond": "Suspected lung cancer (situation)",
+   "token": "OBS:5794-3|Blood in urine (finding)",
+   "tokdesc": "Hemoglobin [Presence] in Urine by Test|Blood in urine (",
+   "prec": 0.36363636363636365,
+   "n": 33,
+   "lift": 11.93939393939394
+  },
+  {
+   "code": "162573006",
+   "cond": "Suspected lung cancer (situation)",
+   "token": "OBS:5778-6|Reddish color urine",
+   "tokdesc": "Color of Urine|Reddish color ur",
+   "prec": 0.36363636363636365,
+   "n": 33,
+   "lift": 11.93939393939394
+  },
+  {
+   "code": "162573006",
+   "cond": "Suspected lung cancer (situation)",
+   "token": "OBS:46288-7|Surgical biopsy result abnormal",
+   "tokdesc": "US Guidance for biopsy of Prostate|Surgical biopsy ",
+   "prec": 0.34375,
+   "n": 32,
+   "lift": 11.286458333333332
+  },
+  {
+   "code": "424132000",
+   "cond": "Non-small cell carcinoma of lung  ",
+   "token": "OBS:5767-9|Foul smelling urine (finding)",
+   "tokdesc": "Appearance of Urine|Foul smelling ur",
+   "prec": 0.3235294117647059,
+   "n": 34,
+   "lift": 11.626050420168069
+  },
+  {
+   "code": "424132000",
+   "cond": "Non-small cell carcinoma of lung  ",
+   "token": "OBS:5778-6|Reddish color urine",
+   "tokdesc": "Color of Urine|Reddish color ur",
+   "prec": 0.3235294117647059,
+   "n": 34,
+   "lift": 11.626050420168069
+  },
+  {
+   "code": "424132000",
+   "cond": "Non-small cell carcinoma of lung  ",
+   "token": "OBS:32167-9|Cloudy urine (finding)",
+   "tokdesc": "Clarity of Urine|Cloudy urine (fi",
+   "prec": 0.3235294117647059,
+   "n": 34,
+   "lift": 11.626050420168069
+  },
+  {
+   "code": "424132000",
+   "cond": "Non-small cell carcinoma of lung  ",
+   "token": "OBS:5794-3|Blood in urine (finding)",
+   "tokdesc": "Hemoglobin [Presence] in Urine by Test|Blood in urine (",
+   "prec": 0.3235294117647059,
+   "n": 34,
+   "lift": 11.626050420168069
+  },
+  {
+   "code": "424132000",
+   "cond": "Non-small cell carcinoma of lung  ",
+   "token": "PROC:90470006",
+   "tokdesc": "Prostatectomy",
+   "prec": 0.30303030303030304,
+   "n": 33,
+   "lift": 10.889413616686344
+  },
+  {
+   "code": "254637007",
+   "cond": "Non-small cell lung cancer (disord",
+   "token": "OBS:5767-9|Foul smelling urine (finding)",
+   "tokdesc": "Appearance of Urine|Foul smelling ur",
+   "prec": 0.3235294117647059,
+   "n": 34,
+   "lift": 11.774767801857585
+  },
+  {
+   "code": "254637007",
+   "cond": "Non-small cell lung cancer (disord",
+   "token": "OBS:5778-6|Reddish color urine",
+   "tokdesc": "Color of Urine|Reddish color ur",
+   "prec": 0.3235294117647059,
+   "n": 34,
+   "lift": 11.774767801857585
+  },
+  {
+   "code": "254637007",
+   "cond": "Non-small cell lung cancer (disord",
+   "token": "OBS:32167-9|Cloudy urine (finding)",
+   "tokdesc": "Clarity of Urine|Cloudy urine (fi",
+   "prec": 0.3235294117647059,
+   "n": 34,
+   "lift": 11.774767801857585
+  },
+  {
+   "code": "254637007",
+   "cond": "Non-small cell lung cancer (disord",
+   "token": "OBS:5794-3|Blood in urine (finding)",
+   "tokdesc": "Hemoglobin [Presence] in Urine by Test|Blood in urine (",
+   "prec": 0.3235294117647059,
+   "n": 34,
+   "lift": 11.774767801857585
+  },
+  {
+   "code": "254637007",
+   "cond": "Non-small cell lung cancer (disord",
+   "token": "PROC:90470006",
+   "tokdesc": "Prostatectomy",
+   "prec": 0.30303030303030304,
+   "n": 33,
+   "lift": 11.028708133971293
+  },
+  {
+   "code": "39848009",
+   "cond": "Whiplash injury to neck",
+   "token": "MED:198014",
+   "tokdesc": "Naproxen 500 MG Oral Tablet",
+   "prec": 0.10638297872340426,
+   "n": 47,
+   "lift": 3.8652482269503543
+  },
+  {
+   "code": "39848009",
+   "cond": "Whiplash injury to neck",
+   "token": "MED:1049630",
+   "tokdesc": "diphenhydrAMINE Hydrochloride 25 MG Or",
+   "prec": 0.08771929824561403,
+   "n": 57,
+   "lift": 3.187134502923976
+  },
+  {
+   "code": "39848009",
+   "cond": "Whiplash injury to neck",
+   "token": "COND:7200002",
+   "tokdesc": "Alcoholism",
+   "prec": 0.06329113924050633,
+   "n": 79,
+   "lift": 2.29957805907173
+  },
+  {
+   "code": "39848009",
+   "cond": "Whiplash injury to neck",
+   "token": "CARE:134435003",
+   "tokdesc": "Routine antenatal care",
+   "prec": 0.06018518518518518,
+   "n": 216,
+   "lift": 2.1867283950617282
+  },
+  {
+   "code": "39848009",
+   "cond": "Whiplash injury to neck",
+   "token": "OBS:20570-8",
+   "tokdesc": "Hematocrit [Volume Fraction] of Blood",
+   "prec": 0.05813953488372093,
+   "n": 86,
+   "lift": 2.1124031007751936
+  },
+  {
+   "code": "26929004",
+   "cond": "Alzheimer's disease (disorder)",
+   "token": "PROC:241601008",
+   "tokdesc": "Magnetic resonance imaging of head (pr",
+   "prec": 0.3111111111111111,
+   "n": 45,
+   "lift": 10.353777777777777
+  },
+  {
+   "code": "26929004",
+   "cond": "Alzheimer's disease (disorder)",
+   "token": "PROC:241517007",
+   "tokdesc": "CT of head (procedure)",
+   "prec": 0.2916666666666667,
+   "n": 48,
+   "lift": 9.706666666666667
+  },
+  {
+   "code": "26929004",
+   "cond": "Alzheimer's disease (disorder)",
+   "token": "COND:386806002",
+   "tokdesc": "Impaired cognition (finding)",
+   "prec": 0.17582417582417584,
+   "n": 91,
+   "lift": 5.851428571428571
+  },
+  {
+   "code": "26929004",
+   "cond": "Alzheimer's disease (disorder)",
+   "token": "COND:8011004",
+   "tokdesc": "Dysarthria (finding)",
+   "prec": 0.1724137931034483,
+   "n": 29,
+   "lift": 5.7379310344827585
+  },
+  {
+   "code": "26929004",
+   "cond": "Alzheimer's disease (disorder)",
+   "token": "COND:22325002",
+   "tokdesc": "Abnormal gait (finding)",
+   "prec": 0.15286624203821655,
+   "n": 157,
+   "lift": 5.087388535031847
+  },
+  {
+   "code": "263102004",
+   "cond": "Fracture subluxation of wrist",
+   "token": "CARE:736254008",
+   "tokdesc": "Psychiatry care plan",
+   "prec": 0.08823529411764706,
+   "n": 68,
+   "lift": 3.2961321514907334
+  },
+  {
+   "code": "263102004",
+   "cond": "Fracture subluxation of wrist",
+   "token": "MED:996740",
+   "tokdesc": "Memantine hydrochloride 2 MG/ML Oral S",
+   "prec": 0.078125,
+   "n": 64,
+   "lift": 2.918450342465753
+  },
+  {
+   "code": "263102004",
+   "cond": "Fracture subluxation of wrist",
+   "token": "DEVICE:706004007",
+   "tokdesc": "Implantable cardiac pacemaker (physica",
+   "prec": 0.07042253521126761,
+   "n": 71,
+   "lift": 2.6307158016592704
+  },
+  {
+   "code": "263102004",
+   "cond": "Fracture subluxation of wrist",
+   "token": "COND:713197008",
+   "tokdesc": "Recurrent rectal polyp",
+   "prec": 0.06481481481481481,
+   "n": 108,
+   "lift": 2.4212328767123283
+  },
+  {
+   "code": "263102004",
+   "cond": "Fracture subluxation of wrist",
+   "token": "COND:196416002",
+   "tokdesc": "Impacted molars",
+   "prec": 0.05426356589147287,
+   "n": 129,
+   "lift": 2.0270786874800892
+  },
+  {
+   "code": "72892002",
+   "cond": "Normal pregnancy",
+   "token": "MED:749762",
+   "tokdesc": "Seasonique 91 Day Pack",
+   "prec": 0.7368421052631579,
+   "n": 19,
+   "lift": 26.968421052631577
+  },
+  {
+   "code": "72892002",
+   "cond": "Normal pregnancy",
+   "token": "MED:748856",
+   "tokdesc": "Yaz 28 Day Pack",
+   "prec": 0.6086956521739131,
+   "n": 23,
+   "lift": 22.27826086956522
+  },
+  {
+   "code": "72892002",
+   "cond": "Normal pregnancy",
+   "token": "MED:978950",
+   "tokdesc": "Natazia 28 Day Pack",
+   "prec": 0.5833333333333334,
+   "n": 24,
+   "lift": 21.35
+  },
+  {
+   "code": "72892002",
+   "cond": "Normal pregnancy",
+   "token": "MED:389221",
+   "tokdesc": "Etonogestrel 68 MG Drug Implant",
+   "prec": 0.5384615384615384,
+   "n": 26,
+   "lift": 19.70769230769231
+  },
+  {
+   "code": "72892002",
+   "cond": "Normal pregnancy",
+   "token": "MED:748879",
+   "tokdesc": "Levora 0.15/30 28 Day Pack",
+   "prec": 0.5217391304347826,
+   "n": 23,
+   "lift": 19.095652173913045
+  },
+  {
+   "code": "713197008",
+   "cond": "Recurrent rectal polyp",
+   "token": "PROC:104435004",
+   "tokdesc": "Screening for occult blood in feces (p",
+   "prec": 0.1509433962264151,
+   "n": 106,
+   "lift": 5.860541427399508
+  },
+  {
+   "code": "713197008",
+   "cond": "Recurrent rectal polyp",
+   "token": "PROC:274031008",
+   "tokdesc": "Rectal polypectomy",
+   "prec": 0.1509433962264151,
+   "n": 106,
+   "lift": 5.860541427399508
+  },
+  {
+   "code": "713197008",
+   "cond": "Recurrent rectal polyp",
+   "token": "OBS:57905-2",
+   "tokdesc": "Hemoglobin.gastrointestinal [Presence]",
+   "prec": 0.1509433962264151,
+   "n": 106,
+   "lift": 5.860541427399508
+  },
+  {
+   "code": "713197008",
+   "cond": "Recurrent rectal polyp",
+   "token": "OBS:33756-8",
+   "tokdesc": "Polyp size greatest dimension by CAP c",
+   "prec": 0.1509433962264151,
+   "n": 106,
+   "lift": 5.860541427399508
+  },
+  {
+   "code": "713197008",
+   "cond": "Recurrent rectal polyp",
+   "token": "COND:68496003",
+   "tokdesc": "Polyp of colon",
+   "prec": 0.1242603550295858,
+   "n": 169,
+   "lift": 4.824543349626961
+  },
+  {
+   "code": "62106007",
+   "cond": "Concussion with no loss of conscio",
+   "token": "COND:128613002",
+   "tokdesc": "Seizure disorder",
+   "prec": 0.08108108108108109,
+   "n": 74,
+   "lift": 3.1868390129259696
+  },
+  {
+   "code": "62106007",
+   "cond": "Concussion with no loss of conscio",
+   "token": "COND:703151001",
+   "tokdesc": "History of single seizure (situation)",
+   "prec": 0.08108108108108109,
+   "n": 74,
+   "lift": 3.1868390129259696
+  },
+  {
+   "code": "62106007",
+   "cond": "Concussion with no loss of conscio",
+   "token": "OBS:20570-8",
+   "tokdesc": "Hematocrit [Volume Fraction] of Blood",
+   "prec": 0.06818181818181818,
+   "n": 88,
+   "lift": 2.679841897233201
+  },
+  {
+   "code": "62106007",
+   "cond": "Concussion with no loss of conscio",
+   "token": "COND:36971009",
+   "tokdesc": "Sinusitis (disorder)",
+   "prec": 0.060240963855421686,
+   "n": 83,
+   "lift": 2.367731796752226
+  },
+  {
+   "code": "62106007",
+   "cond": "Concussion with no loss of conscio",
+   "token": "PROC:162676008",
+   "tokdesc": "Brief general examination (procedure)",
+   "prec": 0.058823529411764705,
+   "n": 85,
+   "lift": 2.312020460358056
+  },
+  {
+   "code": "15777000",
+   "cond": "Prediabetes",
+   "token": "MED:748962",
+   "tokdesc": "Camila 28 Day Pack",
+   "prec": 0.1590909090909091,
+   "n": 44,
+   "lift": 4.290238450074516
+  },
+  {
+   "code": "15777000",
+   "cond": "Prediabetes",
+   "token": "MED:389221",
+   "tokdesc": "Etonogestrel 68 MG Drug Implant",
+   "prec": 0.13043478260869565,
+   "n": 46,
+   "lift": 3.5174625801853168
+  },
+  {
+   "code": "15777000",
+   "cond": "Prediabetes",
+   "token": "MED:757594",
+   "tokdesc": "Jolivette 28 Day Pack",
+   "prec": 0.1282051282051282,
+   "n": 39,
+   "lift": 3.4573350147120636
+  },
+  {
+   "code": "15777000",
+   "cond": "Prediabetes",
+   "token": "PROC:169553002",
+   "tokdesc": "Insertion of subcutaneous contraceptiv",
+   "prec": 0.1,
+   "n": 50,
+   "lift": 2.69672131147541
+  },
+  {
+   "code": "15777000",
+   "cond": "Prediabetes",
+   "token": "MED:1000126",
+   "tokdesc": "1 ML medroxyprogesterone acetate 150 M",
+   "prec": 0.0967741935483871,
+   "n": 62,
+   "lift": 2.609730301427816
+  },
+  {
+   "code": "58150001",
+   "cond": "Fracture of clavicle",
+   "token": "MED:857005",
+   "tokdesc": "Acetaminophen 325 MG / HYDROcodone Bit",
+   "prec": 0.06451612903225806,
+   "n": 93,
+   "lift": 2.8820729772607088
+  },
+  {
+   "code": "58150001",
+   "cond": "Fracture of clavicle",
+   "token": "OBS:32465-7|Normal size prostate",
+   "tokdesc": "Physical findings of Prostate|Normal size pros",
+   "prec": 0.056451612903225805,
+   "n": 124,
+   "lift": 2.52181385510312
+  },
+  {
+   "code": "58150001",
+   "cond": "Fracture of clavicle",
+   "token": "OBS:32465-7|Prostate enlarged on PR",
+   "tokdesc": "Physical findings of Prostate|Prostate enlarge",
+   "prec": 0.05333333333333334,
+   "n": 150,
+   "lift": 2.382513661202186
+  },
+  {
+   "code": "58150001",
+   "cond": "Fracture of clavicle",
+   "token": "COND:239873007",
+   "tokdesc": "Osteoarthritis of knee",
+   "prec": 0.05078125,
+   "n": 256,
+   "lift": 2.2685066598360657
+  },
+  {
+   "code": "58150001",
+   "cond": "Fracture of clavicle",
+   "token": "OBS:2857-1",
+   "tokdesc": "Prostate specific Ag [Mass/volume] in ",
+   "prec": 0.050314465408805034,
+   "n": 159,
+   "lift": 2.2476543973605527
+  },
+  {
+   "code": "162864005",
+   "cond": "Body mass index 30+ - obesity (fin",
+   "token": "PROC:301807007",
+   "tokdesc": "Removal of subcutaneous contraceptive",
+   "prec": 0.20833333333333334,
+   "n": 24,
+   "lift": 4.809027777777779
+  },
+  {
+   "code": "162864005",
+   "cond": "Body mass index 30+ - obesity (fin",
+   "token": "IMM:52",
+   "tokdesc": "Hep A  adult",
+   "prec": 0.14285714285714285,
+   "n": 56,
+   "lift": 3.2976190476190474
+  },
+  {
+   "code": "162864005",
+   "cond": "Body mass index 30+ - obesity (fin",
+   "token": "PROC:169553002",
+   "tokdesc": "Insertion of subcutaneous contraceptiv",
+   "prec": 0.1388888888888889,
+   "n": 36,
+   "lift": 3.2060185185185186
+  },
+  {
+   "code": "162864005",
+   "cond": "Body mass index 30+ - obesity (fin",
+   "token": "PROC:76601001",
+   "tokdesc": "Intramuscular injection",
+   "prec": 0.10714285714285714,
+   "n": 56,
+   "lift": 2.4732142857142856
+  },
+  {
+   "code": "162864005",
+   "cond": "Body mass index 30+ - obesity (fin",
+   "token": "IMM:43",
+   "tokdesc": "Hep B  adult",
+   "prec": 0.09836065573770492,
+   "n": 61,
+   "lift": 2.2704918032786887
+  },
+  {
+   "code": "16114001",
+   "cond": "Fracture of ankle",
+   "token": "OBS:46288-7|Surgical biopsy result normal",
+   "tokdesc": "US Guidance for biopsy of Prostate|Surgical biopsy ",
+   "prec": 0.10204081632653061,
+   "n": 49,
+   "lift": 4.806474313863476
+  },
+  {
+   "code": "16114001",
+   "cond": "Fracture of ankle",
+   "token": "PROC:65575008",
+   "tokdesc": "Biopsy of prostate",
+   "prec": 0.07792207792207792,
+   "n": 77,
+   "lift": 3.6703985669502908
+  },
+  {
+   "code": "16114001",
+   "cond": "Fracture of ankle",
+   "token": "COND:309557009",
+   "tokdesc": "Numbness of face (finding)",
+   "prec": 0.06060606060606061,
+   "n": 99,
+   "lift": 2.8547544409613375
+  },
+  {
+   "code": "16114001",
+   "cond": "Fracture of ankle",
+   "token": "OBS:32465-7|Prostate enlarged on PR",
+   "tokdesc": "Physical findings of Prostate|Prostate enlarge",
+   "prec": 0.059602649006622516,
+   "n": 151,
+   "lift": 2.8074902945878053
+  },
+  {
+   "code": "16114001",
+   "cond": "Fracture of ankle",
+   "token": "OBS:2857-1",
+   "tokdesc": "Prostate specific Ag [Mass/volume] in ",
+   "prec": 0.05625,
+   "n": 160,
+   "lift": 2.649568965517241
+  },
+  {
+   "code": "70704007",
+   "cond": "Sprain of wrist",
+   "token": "COND:65363002",
+   "tokdesc": "Otitis media",
+   "prec": 0.06944444444444445,
+   "n": 72,
+   "lift": 3.381696428571429
+  },
+  {
+   "code": "70704007",
+   "cond": "Sprain of wrist",
+   "token": "CARE:91251008",
+   "tokdesc": "Physical therapy procedure",
+   "prec": 0.04838709677419355,
+   "n": 186,
+   "lift": 2.356278801843318
+  },
+  {
+   "code": "70704007",
+   "cond": "Sprain of wrist",
+   "token": "OBS:32465-7|Normal size prostate",
+   "tokdesc": "Physical findings of Prostate|Normal size pros",
+   "prec": 0.047619047619047616,
+   "n": 126,
+   "lift": 2.318877551020408
+  },
+  {
+   "code": "70704007",
+   "cond": "Sprain of wrist",
+   "token": "COND:429007001",
+   "tokdesc": "History of cardiac arrest (situation)",
+   "prec": 0.04504504504504504,
+   "n": 111,
+   "lift": 2.1935328185328187
+  },
+  {
+   "code": "70704007",
+   "cond": "Sprain of wrist",
+   "token": "COND:410429000",
+   "tokdesc": "Cardiac Arrest",
+   "prec": 0.04504504504504504,
+   "n": 111,
+   "lift": 2.1935328185328187
+  },
+  {
+   "code": "283371005",
+   "cond": "Laceration of forearm",
+   "token": "ALLERGY:419474003",
+   "tokdesc": "Allergy to mould",
+   "prec": 0.06172839506172839,
+   "n": 81,
+   "lift": 3.404938271604938
+  },
+  {
+   "code": "283371005",
+   "cond": "Laceration of forearm",
+   "token": "COND:82423001",
+   "tokdesc": "Chronic pain",
+   "prec": 0.045454545454545456,
+   "n": 132,
+   "lift": 2.5072727272727273
+  },
+  {
+   "code": "283371005",
+   "cond": "Laceration of forearm",
+   "token": "COND:410429000",
+   "tokdesc": "Cardiac Arrest",
+   "prec": 0.044642857142857144,
+   "n": 112,
+   "lift": 2.4625000000000004
+  },
+  {
+   "code": "283371005",
+   "cond": "Laceration of forearm",
+   "token": "COND:429007001",
+   "tokdesc": "History of cardiac arrest (situation)",
+   "prec": 0.044642857142857144,
+   "n": 112,
+   "lift": 2.4625000000000004
+  },
+  {
+   "code": "283371005",
+   "cond": "Laceration of forearm",
+   "token": "DEVICE:72506001",
+   "tokdesc": "Implantable defibrillator  device (phy",
+   "prec": 0.044642857142857144,
+   "n": 112,
+   "lift": 2.4625000000000004
+  },
+  {
+   "code": "314994000",
+   "cond": "Metastasis from malignant tumor of",
+   "token": "OBS:46288-7|Surgical biopsy result normal",
+   "tokdesc": "US Guidance for biopsy of Prostate|Surgical biopsy ",
+   "prec": 0.23529411764705882,
+   "n": 51,
+   "lift": 13.134117647058822
+  },
+  {
+   "code": "314994000",
+   "cond": "Metastasis from malignant tumor of",
+   "token": "PROC:410006001",
+   "tokdesc": "Digital examination of rectum",
+   "prec": 0.21341463414634146,
+   "n": 164,
+   "lift": 11.91280487804878
+  },
+  {
+   "code": "314994000",
+   "cond": "Metastasis from malignant tumor of",
+   "token": "OBS:2857-1",
+   "tokdesc": "Prostate specific Ag [Mass/volume] in ",
+   "prec": 0.21341463414634146,
+   "n": 164,
+   "lift": 11.91280487804878
+  },
+  {
+   "code": "314994000",
+   "cond": "Metastasis from malignant tumor of",
+   "token": "OBS:32465-7|Normal size prostate",
+   "tokdesc": "Physical findings of Prostate|Normal size pros",
+   "prec": 0.2109375,
+   "n": 128,
+   "lift": 11.774531249999999
+  },
+  {
+   "code": "314994000",
+   "cond": "Metastasis from malignant tumor of",
+   "token": "OBS:32465-7|Prostate enlarged on PR",
+   "tokdesc": "Physical findings of Prostate|Prostate enlarge",
+   "prec": 0.2064516129032258,
+   "n": 155,
+   "lift": 11.524129032258063
+  },
+  {
+   "code": "284551006",
+   "cond": "Laceration of foot",
+   "token": "COND:7200002",
+   "tokdesc": "Alcoholism",
+   "prec": 0.075,
+   "n": 80,
+   "lift": 4.5649999999999995
+  },
+  {
+   "code": "284551006",
+   "cond": "Laceration of foot",
+   "token": "COND:87433001",
+   "tokdesc": "Pulmonary emphysema (disorder)",
+   "prec": 0.07142857142857142,
+   "n": 70,
+   "lift": 4.347619047619047
+  },
+  {
+   "code": "284551006",
+   "cond": "Laceration of foot",
+   "token": "CARE:412776001",
+   "tokdesc": "Chronic obstructive pulmonary disease ",
+   "prec": 0.05172413793103448,
+   "n": 116,
+   "lift": 3.1482758620689655
+  },
+  {
+   "code": "284551006",
+   "cond": "Laceration of foot",
+   "token": "PROC:127783003",
+   "tokdesc": "Spirometry (procedure)",
+   "prec": 0.05172413793103448,
+   "n": 116,
+   "lift": 3.1482758620689655
+  },
+  {
+   "code": "284551006",
+   "cond": "Laceration of foot",
+   "token": "OBS:19926-5",
+   "tokdesc": "FEV1/FVC",
+   "prec": 0.05172413793103448,
+   "n": 116,
+   "lift": 3.1482758620689655
+  },
+  {
+   "code": "22325002",
+   "cond": "Abnormal gait (finding)",
+   "token": "COND:368581000119106",
+   "tokdesc": "Neuropathy due to type 2 diabetes mell",
+   "prec": 0.05747126436781609,
+   "n": 87,
+   "lift": 3.5407905803195963
+  },
+  {
+   "code": "22325002",
+   "cond": "Abnormal gait (finding)",
+   "token": "MED:308136",
+   "tokdesc": "amLODIPine 2.5 MG Oral Tablet",
+   "prec": 0.04776119402985075,
+   "n": 335,
+   "lift": 2.9425555151073897
+  },
+  {
+   "code": "22325002",
+   "cond": "Abnormal gait (finding)",
+   "token": "PROC:18286008",
+   "tokdesc": "Catheter ablation of tissue of heart",
+   "prec": 0.045454545454545456,
+   "n": 154,
+   "lift": 2.800443458980044
+  },
+  {
+   "code": "22325002",
+   "cond": "Abnormal gait (finding)",
+   "token": "PROC:180325003",
+   "tokdesc": "Electrical cardioversion",
+   "prec": 0.03827751196172249,
+   "n": 209,
+   "lift": 2.358268175983195
+  },
+  {
+   "code": "22325002",
+   "cond": "Abnormal gait (finding)",
+   "token": "MED:197604",
+   "tokdesc": "Digoxin 0.125 MG Oral Tablet",
+   "prec": 0.037383177570093455,
+   "n": 214,
+   "lift": 2.30316845224527
+  },
+  {
+   "code": "723857007",
+   "cond": "Silent micro-hemorrhage of brain (",
+   "token": "COND:368581000119106",
+   "tokdesc": "Neuropathy due to type 2 diabetes mell",
+   "prec": 0.05747126436781609,
+   "n": 87,
+   "lift": 3.5407905803195963
+  },
+  {
+   "code": "723857007",
+   "cond": "Silent micro-hemorrhage of brain (",
+   "token": "MED:308136",
+   "tokdesc": "amLODIPine 2.5 MG Oral Tablet",
+   "prec": 0.04776119402985075,
+   "n": 335,
+   "lift": 2.9425555151073897
+  },
+  {
+   "code": "723857007",
+   "cond": "Silent micro-hemorrhage of brain (",
+   "token": "PROC:18286008",
+   "tokdesc": "Catheter ablation of tissue of heart",
+   "prec": 0.045454545454545456,
+   "n": 154,
+   "lift": 2.800443458980044
+  },
+  {
+   "code": "723857007",
+   "cond": "Silent micro-hemorrhage of brain (",
+   "token": "PROC:180325003",
+   "tokdesc": "Electrical cardioversion",
+   "prec": 0.03827751196172249,
+   "n": 209,
+   "lift": 2.358268175983195
+  },
+  {
+   "code": "723857007",
+   "cond": "Silent micro-hemorrhage of brain (",
+   "token": "MED:197604",
+   "tokdesc": "Digoxin 0.125 MG Oral Tablet",
+   "prec": 0.037383177570093455,
+   "n": 214,
+   "lift": 2.30316845224527
+  },
+  {
+   "code": "156073000",
+   "cond": "Fetus with unknown complication",
+   "token": "MED:807283",
+   "tokdesc": "Mirena 52 MG Intrauterine System",
+   "prec": 0.16363636363636364,
+   "n": 55,
+   "lift": 15.562382445141065
+  },
+  {
+   "code": "156073000",
+   "cond": "Fetus with unknown complication",
+   "token": "PROC:65200003",
+   "tokdesc": "Insertion of intrauterine contraceptiv",
+   "prec": 0.12941176470588237,
+   "n": 85,
+   "lift": 12.307505070993916
+  },
+  {
+   "code": "156073000",
+   "cond": "Fetus with unknown complication",
+   "token": "MED:757594",
+   "tokdesc": "Jolivette 28 Day Pack",
+   "prec": 0.12727272727272726,
+   "n": 55,
+   "lift": 12.104075235109717
+  },
+  {
+   "code": "156073000",
+   "cond": "Fetus with unknown complication",
+   "token": "MED:389221",
+   "tokdesc": "Etonogestrel 68 MG Drug Implant",
+   "prec": 0.12727272727272726,
+   "n": 55,
+   "lift": 12.104075235109717
+  },
+  {
+   "code": "156073000",
+   "cond": "Fetus with unknown complication",
+   "token": "PROC:301807007",
+   "tokdesc": "Removal of subcutaneous contraceptive",
+   "prec": 0.125,
+   "n": 48,
+   "lift": 11.887931034482758
+  }
+ ],
+ "numeric_last_value_auc": [
+  {
+   "code": "444814009",
+   "top": [
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.5584315375982043,
+     "n": 169
+    },
+    {
+     "code": "33914-3",
+     "desc": "Estimated Glomerular Filtration Rate",
+     "auc": 0.4420602718823693,
+     "n": 483
+    },
+    {
+     "code": "32623-1",
+     "desc": "Platelet mean volume [Entitic volume] in Blood by Automated count",
+     "auc": 0.5404601214671005,
+     "n": 1489
+    }
+   ]
+  },
+  {
+   "code": "195662009",
+   "top": [
+    {
+     "code": "10834-0",
+     "desc": "Globulin [Mass/volume] in Serum by calculation",
+     "auc": 0.41416502272922207,
+     "n": 487
+    },
+    {
+     "code": "2885-2",
+     "desc": "Protein [Mass/volume] in Serum or Plasma",
+     "auc": 0.5494028764239479,
+     "n": 508
+    },
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.460827664399093,
+     "n": 203
+    }
+   ]
+  },
+  {
+   "code": "10509002",
+   "top": [
+    {
+     "code": "29463-7",
+     "desc": "Body Weight",
+     "auc": 0.45388074553178465,
+     "n": 2083
+    },
+    {
+     "code": "8302-2",
+     "desc": "Body Height",
+     "auc": 0.45666118106318654,
+     "n": 2083
+    },
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.4589221556886227,
+     "n": 217
+    }
+   ]
+  },
+  {
+   "code": "88805009",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.6767148140394948,
+     "n": 1720
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.5968355313655711,
+     "n": 1720
+    },
+    {
+     "code": "2857-1",
+     "desc": "Prostate specific Ag [Mass/volume] in Serum or Plasma",
+     "auc": 0.5860153256704981,
+     "n": 163
+    }
+   ]
+  },
+  {
+   "code": "230690007",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.8168385961116739,
+     "n": 1466
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.6858451943679217,
+     "n": 2310
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.6798867134104967,
+     "n": 1466
+    }
+   ]
+  },
+  {
+   "code": "22298006",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.7276115718799367,
+     "n": 1712
+    },
+    {
+     "code": "72106-8",
+     "desc": "Total score [MMSE]",
+     "auc": 0.6755441008018328,
+     "n": 297
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.6342071484992101,
+     "n": 1712
+    }
+   ]
+  },
+  {
+   "code": "68496003",
+   "top": [
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.6547202797202798,
+     "n": 219
+    },
+    {
+     "code": "2857-1",
+     "desc": "Prostate specific Ag [Mass/volume] in Serum or Plasma",
+     "auc": 0.6084710743801653,
+     "n": 129
+    },
+    {
+     "code": "29463-7",
+     "desc": "Body Weight",
+     "auc": 0.5725606617997446,
+     "n": 2419
+    }
+   ]
+  },
+  {
+   "code": "44465007",
+   "top": [
+    {
+     "code": "2885-2",
+     "desc": "Protein [Mass/volume] in Serum or Plasma",
+     "auc": 0.3868465504978663,
+     "n": 630
+    },
+    {
+     "code": "59576-9",
+     "desc": "Body mass index (BMI) [Percentile] Per age and gender",
+     "auc": 0.5995327102803739,
+     "n": 224
+    },
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.4118773946360153,
+     "n": 267
+    }
+   ]
+  },
+  {
+   "code": "53741008",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.7915751215407628,
+     "n": 1584
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.6582250373971578,
+     "n": 1584
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.6318489640113117,
+     "n": 2380
+    }
+   ]
+  },
+  {
+   "code": "233604007",
+   "top": [
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.10990338164251207,
+     "n": 282
+    },
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.7695619427594349,
+     "n": 1723
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.6989070250910812,
+     "n": 2690
+    }
+   ]
+  },
+  {
+   "code": "43878008",
+   "top": [
+    {
+     "code": "59576-9",
+     "desc": "Body mass index (BMI) [Percentile] Per age and gender",
+     "auc": 0.6665439823334561,
+     "n": 222
+    },
+    {
+     "code": "2885-2",
+     "desc": "Protein [Mass/volume] in Serum or Plasma",
+     "auc": 0.3970903887431433,
+     "n": 634
+    },
+    {
+     "code": "72106-8",
+     "desc": "Total score [MMSE]",
+     "auc": 0.404320987654321,
+     "n": 285
+    }
+   ]
+  },
+  {
+   "code": "65966004",
+   "top": [
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.2352860286028603,
+     "n": 220
+    },
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.6478597276016947,
+     "n": 1663
+    },
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.6404361921603301,
+     "n": 274
+    }
+   ]
+  },
+  {
+   "code": "126906006",
+   "top": [
+    {
+     "code": "8302-2",
+     "desc": "Body Height",
+     "auc": 0.7475341527455382,
+     "n": 2499
+    },
+    {
+     "code": "29463-7",
+     "desc": "Body Weight",
+     "auc": 0.7441968872483732,
+     "n": 2499
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.7269744835965979,
+     "n": 1651
+    }
+   ]
+  },
+  {
+   "code": "271737000",
+   "top": [
+    {
+     "code": "2885-2",
+     "desc": "Protein [Mass/volume] in Serum or Plasma",
+     "auc": 0.8245192307692308,
+     "n": 318
+    },
+    {
+     "code": "6299-2",
+     "desc": "Urea Nitrogen",
+     "auc": 0.7251398006321419,
+     "n": 466
+    },
+    {
+     "code": "10834-0",
+     "desc": "Globulin [Mass/volume] in Serum by calculation",
+     "auc": 0.27796234772978956,
+     "n": 307
+    }
+   ]
+  },
+  {
+   "code": "64859006",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.7860785555907507,
+     "n": 1479
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.7269986155759438,
+     "n": 2338
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.6073962622743111,
+     "n": 1479
+    }
+   ]
+  },
+  {
+   "code": "443165006",
+   "top": [
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.16567707335759435,
+     "n": 250
+    },
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.8239082969432314,
+     "n": 1663
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.7578842315369261,
+     "n": 2596
+    }
+   ]
+  },
+  {
+   "code": "49436004",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.7968540268456374,
+     "n": 1538
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.7176261105290604,
+     "n": 2430
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.6546071029082774,
+     "n": 1538
+    }
+   ]
+  },
+  {
+   "code": "92691004",
+   "top": [
+    {
+     "code": "8302-2",
+     "desc": "Body Height",
+     "auc": 0.7436976992432474,
+     "n": 2499
+    },
+    {
+     "code": "29463-7",
+     "desc": "Body Weight",
+     "auc": 0.7393587617468216,
+     "n": 2499
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.7269744835965979,
+     "n": 1651
+    }
+   ]
+  },
+  {
+   "code": "36971009",
+   "top": [
+    {
+     "code": "1920-8",
+     "desc": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
+     "auc": 0.33169646604549646,
+     "n": 646
+    },
+    {
+     "code": "59576-9",
+     "desc": "Body mass index (BMI) [Percentile] Per age and gender",
+     "auc": 0.35401785714285716,
+     "n": 229
+    },
+    {
+     "code": "QOLS",
+     "desc": "QOLS",
+     "auc": 0.39772334203326937,
+     "n": 1676
+    }
+   ]
+  },
+  {
+   "code": "75498004",
+   "top": [
+    {
+     "code": "10834-0",
+     "desc": "Globulin [Mass/volume] in Serum by calculation",
+     "auc": 0.7446982055464926,
+     "n": 624
+    },
+    {
+     "code": "1975-2",
+     "desc": "Bilirubin.total [Mass/volume] in Serum or Plasma",
+     "auc": 0.7327932320045885,
+     "n": 645
+    },
+    {
+     "code": "72106-8",
+     "desc": "Total score [MMSE]",
+     "auc": 0.6782325029655991,
+     "n": 287
+    }
+   ]
+  },
+  {
+   "code": "162573006",
+   "top": [
+    {
+     "code": "33914-3",
+     "desc": "Estimated Glomerular Filtration Rate",
+     "auc": 0.29422467821281756,
+     "n": 819
+    },
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.6795673076923077,
+     "n": 276
+    },
+    {
+     "code": "38483-4",
+     "desc": "Creatinine",
+     "auc": 0.6502590002590003,
+     "n": 1459
+    }
+   ]
+  },
+  {
+   "code": "424132000",
+   "top": [
+    {
+     "code": "33914-3",
+     "desc": "Estimated Glomerular Filtration Rate",
+     "auc": 0.2965904277848369,
+     "n": 823
+    },
+    {
+     "code": "38483-4",
+     "desc": "Creatinine",
+     "auc": 0.679992927864215,
+     "n": 1464
+    },
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.6795977011494253,
+     "n": 277
+    }
+   ]
+  },
+  {
+   "code": "254637007",
+   "top": [
+    {
+     "code": "33914-3",
+     "desc": "Estimated Glomerular Filtration Rate",
+     "auc": 0.2965904277848369,
+     "n": 823
+    },
+    {
+     "code": "38483-4",
+     "desc": "Creatinine",
+     "auc": 0.679992927864215,
+     "n": 1464
+    },
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.6795977011494253,
+     "n": 277
+    }
+   ]
+  },
+  {
+   "code": "39848009",
+   "top": [
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.6602316602316602,
+     "n": 265
+    },
+    {
+     "code": "49765-1",
+     "desc": "Calcium",
+     "auc": 0.38096935138987886,
+     "n": 1441
+    },
+    {
+     "code": "59576-9",
+     "desc": "Body mass index (BMI) [Percentile] Per age and gender",
+     "auc": 0.39166666666666666,
+     "n": 233
+    }
+   ]
+  },
+  {
+   "code": "26929004",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.7362804374401163,
+     "n": 1631
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.7202281925123595,
+     "n": 2395
+    },
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.6710059171597633,
+     "n": 208
+    }
+   ]
+  },
+  {
+   "code": "263102004",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.6740184414039263,
+     "n": 1681
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.6348750743604997,
+     "n": 1681
+    },
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.6301115241635689,
+     "n": 276
+    }
+   ]
+  },
+  {
+   "code": "72892002",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.10882970137207423,
+     "n": 1538
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.1353251052672913,
+     "n": 2468
+    },
+    {
+     "code": "33914-3",
+     "desc": "Estimated Glomerular Filtration Rate",
+     "auc": 0.8465454545454545,
+     "n": 830
+    }
+   ]
+  },
+  {
+   "code": "713197008",
+   "top": [
+    {
+     "code": "1751-7",
+     "desc": "Albumin [Mass/volume] in Serum or Plasma",
+     "auc": 0.3280727424749164,
+     "n": 614
+    },
+    {
+     "code": "72106-8",
+     "desc": "Total score [MMSE]",
+     "auc": 0.6657692307692308,
+     "n": 265
+    },
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.6484375,
+     "n": 248
+    }
+   ]
+  },
+  {
+   "code": "62106007",
+   "top": [
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.8066914498141264,
+     "n": 276
+    },
+    {
+     "code": "1742-6",
+     "desc": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
+     "auc": 0.6691184141888368,
+     "n": 654
+    },
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.349859943977591,
+     "n": 262
+    }
+   ]
+  },
+  {
+   "code": "15777000",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.3117412957445862,
+     "n": 1089
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.3159685391229773,
+     "n": 1561
+    },
+    {
+     "code": "DALY",
+     "desc": "DALY",
+     "auc": 0.3188558850993819,
+     "n": 1089
+    }
+   ]
+  },
+  {
+   "code": "58150001",
+   "top": [
+    {
+     "code": "8310-5",
+     "desc": "Body temperature",
+     "auc": 0.748526936026936,
+     "n": 801
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.6842528402351267,
+     "n": 2631
+    },
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.6618336181707922,
+     "n": 1682
+    }
+   ]
+  },
+  {
+   "code": "162864005",
+   "top": [
+    {
+     "code": "59576-9",
+     "desc": "Body mass index (BMI) [Percentile] Per age and gender",
+     "auc": 0.8754618226600985,
+     "n": 219
+    },
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.2874583795782464,
+     "n": 886
+    },
+    {
+     "code": "39156-5",
+     "desc": "Body Mass Index",
+     "auc": 0.682059533386967,
+     "n": 1303
+    }
+   ]
+  },
+  {
+   "code": "16114001",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.6513992053895319,
+     "n": 1689
+    },
+    {
+     "code": "14959-1",
+     "desc": "Microalbumin Creatinine Ratio",
+     "auc": 0.6510416666666666,
+     "n": 278
+    },
+    {
+     "code": "2885-2",
+     "desc": "Protein [Mass/volume] in Serum or Plasma",
+     "auc": 0.3774577572964669,
+     "n": 641
+    }
+   ]
+  },
+  {
+   "code": "70704007",
+   "top": [
+    {
+     "code": "6768-6",
+     "desc": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma",
+     "auc": 0.7338057742782153,
+     "n": 650
+    },
+    {
+     "code": "1975-2",
+     "desc": "Bilirubin.total [Mass/volume] in Serum or Plasma",
+     "auc": 0.3363396624472574,
+     "n": 647
+    },
+    {
+     "code": "2857-1",
+     "desc": "Prostate specific Ag [Mass/volume] in Serum or Plasma",
+     "auc": 0.3675213675213675,
+     "n": 162
+    }
+   ]
+  },
+  {
+   "code": "283371005",
+   "top": [
+    {
+     "code": "1751-7",
+     "desc": "Albumin [Mass/volume] in Serum or Plasma",
+     "auc": 0.7337692307692308,
+     "n": 660
+    },
+    {
+     "code": "2885-2",
+     "desc": "Protein [Mass/volume] in Serum or Plasma",
+     "auc": 0.6509230769230769,
+     "n": 660
+    },
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.6454311454311454,
+     "n": 265
+    }
+   ]
+  },
+  {
+   "code": "314994000",
+   "top": [
+    {
+     "code": "33914-3",
+     "desc": "Estimated Glomerular Filtration Rate",
+     "auc": 0.2496105485701569,
+     "n": 839
+    },
+    {
+     "code": "29463-7",
+     "desc": "Body Weight",
+     "auc": 0.7438446969696969,
+     "n": 2690
+    },
+    {
+     "code": "8302-2",
+     "desc": "Body Height",
+     "auc": 0.7089659090909091,
+     "n": 2690
+    }
+   ]
+  },
+  {
+   "code": "284551006",
+   "top": [
+    {
+     "code": "4548-4",
+     "desc": "Hemoglobin A1c/Hemoglobin.total in Blood",
+     "auc": 0.6449649685310533,
+     "n": 1231
+    },
+    {
+     "code": "1920-8",
+     "desc": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
+     "auc": 0.617141544117647,
+     "n": 657
+    },
+    {
+     "code": "786-4",
+     "desc": "MCHC [Mass/volume] by Automated count",
+     "auc": 0.6046012269938651,
+     "n": 2487
+    }
+   ]
+  },
+  {
+   "code": "22325002",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.7578758797184899,
+     "n": 1588
+    },
+    {
+     "code": "785-6",
+     "desc": "MCH [Entitic mass] by Automated count",
+     "auc": 0.669716049382716,
+     "n": 2286
+    },
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.6572327044025158,
+     "n": 218
+    }
+   ]
+  },
+  {
+   "code": "723857007",
+   "top": [
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.7578758797184899,
+     "n": 1588
+    },
+    {
+     "code": "785-6",
+     "desc": "MCH [Entitic mass] by Automated count",
+     "auc": 0.669716049382716,
+     "n": 2286
+    },
+    {
+     "code": "38265-5",
+     "desc": "DXA [T-score] Bone density",
+     "auc": 0.6572327044025158,
+     "n": 218
+    }
+   ]
+  },
+  {
+   "code": "156073000",
+   "top": [
+    {
+     "code": "6299-2",
+     "desc": "Urea Nitrogen",
+     "auc": 0.1472108843537415,
+     "n": 1475
+    },
+    {
+     "code": "QALY",
+     "desc": "QALY",
+     "auc": 0.20384248210023867,
+     "n": 1701
+    },
+    {
+     "code": "8480-6",
+     "desc": "Systolic Blood Pressure",
+     "auc": 0.23066329140488712,
+     "n": 2658
+    }
+   ]
+  }
+ ]
+}

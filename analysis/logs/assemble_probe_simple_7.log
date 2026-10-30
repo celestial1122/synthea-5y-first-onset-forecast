@@ -1,0 +1,13 @@
+candidates: ['ppds_gcr:d3_all', 'ppds_gcr:screen200_d3_all', 'pplgb:nl8_S1_all_gcr', 'gstack:genc2_only', 'screen_gcr:k200', 'screen_gcr:k60', 'blocks_gcr:S3']
+
+single candidates (OOF mAP / val mAP):
+  ppds_gcr:d3_all OOF=0.2890  val=0.3590
+  ppds_gcr:screen200_d3_all OOF=0.2960  val=0.3567
+  pplgb:nl8_S1_all_gcr OOF=0.2517  val=0.3111
+  gstack:genc2_only OOF=0.2595  val=0.3005
+  screen_gcr:k200 OOF=0.2840  val=0.3477
+  screen_gcr:k60 OOF=0.2768  val=0.3448
+  blocks_gcr:S3 OOF=0.2799  val=0.3175
+
+greedy ensemble: cross-fitted OOF mAP=0.3099 | val mAP=0.3612  val macroAUROC=0.7842
+average weight per candidate: {'ppds_gcr:d3_all': np.float64(0.112), 'ppds_gcr:screen200_d3_all': np.float64(0.211), 'pplgb:nl8_S1_all_gcr': np.float64(0.134), 'gstack:genc2_only': np.float64(0.149), 'screen_gcr:k200': np.float64(0.151), 'screen_gcr:k60': np.float64(0.163), 'blocks_gcr:S3': np.float64(0.08)}

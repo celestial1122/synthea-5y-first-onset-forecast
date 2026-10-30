@@ -1,0 +1,39 @@
+candidates: ['lgb_clean', 'l1_lam0.0003', 'l1_lam0.001', 'l1_lam0.003', 'stumps', 'pp_uniform', 'pp_x5', 'pp_yearly', 'pp_yearly_decay', 'pp1_uniform', 'pp1_x5', 'pp_lgb', 'xgb_v5avg', 'lgb_sweep_avg', 'lgb_nl8_mcs5', 'tf_hybrid', 'stack_own+death+others_gbm', 'stack_own+death+others_lr', 'stack_own+death_gbm', 'stack_own+death_lr', 'ppds:d3_all_S1', 'ppds:d3_all_S2', 'ppds:d3_nonterm_noind', 'ppds:d4_all_S1', 'ppds:d4_all_S2', 'blocks_S1', 'blocks_S2', 'blocks_S3', 'pplgb:nl16_S3_all', 'pplgb:nl8_S1_all', 'pplgb:nl8_S2_all', 'pplgb:nl8_S3_all', 'pplgb:nl8_all_all']
+
+single candidates (OOF mAP / val mAP):
+  lgb_clean    OOF=0.2092  val=0.2551
+  l1_lam0.0003 OOF=0.1560  val=0.2251
+  l1_lam0.001  OOF=0.1735  val=0.2470
+  l1_lam0.003  OOF=0.1888  val=0.2607
+  stumps       OOF=0.1957  val=0.2434
+  pp_uniform   OOF=0.2195  val=0.2604  (terminal targets filled from lgb_clean)
+  pp_x5        OOF=0.2199  val=0.2520  (terminal targets filled from lgb_clean)
+  pp_yearly    OOF=0.2188  val=0.2680  (terminal targets filled from lgb_clean)
+  pp_yearly_decay OOF=0.2181  val=0.2555  (terminal targets filled from lgb_clean)
+  pp1_uniform  OOF=0.2195  val=0.2630  (terminal targets filled from lgb_clean)
+  pp1_x5       OOF=0.2189  val=0.2524  (terminal targets filled from lgb_clean)
+  pp_lgb       OOF=0.2183  val=0.2639  (terminal targets filled from lgb_clean)
+  xgb_v5avg    OOF=0.1967  val=0.2282
+  lgb_sweep_avg OOF=0.2097  val=0.2546
+  lgb_nl8_mcs5 OOF=0.2092  val=0.2569
+  tf_hybrid    OOF=0.1733  val=0.2518
+  stack_own+death+others_gbm OOF=0.1998  val=0.2503
+  stack_own+death+others_lr OOF=0.2144  val=0.2600
+  stack_own+death_gbm OOF=0.2044  val=0.2649
+  stack_own+death_lr OOF=0.2186  val=0.2667
+  ppds:d3_all_S1 OOF=0.1626  val=0.2032
+  ppds:d3_all_S2 OOF=0.2147  val=0.2436
+  ppds:d3_nonterm_noind OOF=0.2194  val=0.2644  (terminal targets filled from lgb_clean)
+  ppds:d4_all_S1 OOF=0.1621  val=0.2018
+  ppds:d4_all_S2 OOF=0.2111  val=0.2394
+  blocks_S1    OOF=0.1558  val=0.1960
+  blocks_S2    OOF=0.1904  val=0.2178
+  blocks_S3    OOF=0.1956  val=0.2297
+  pplgb:nl16_S3_all OOF=0.2148  val=0.2515
+  pplgb:nl8_S1_all OOF=0.1635  val=0.2061
+  pplgb:nl8_S2_all OOF=0.2097  val=0.2408
+  pplgb:nl8_S3_all OOF=0.2183  val=0.2516
+  pplgb:nl8_all_all OOF=0.2207  val=0.2588
+
+greedy ensemble: cross-fitted OOF mAP=0.2298 | val mAP=0.2698  val macroAUROC=0.7758
+average weight per candidate: {'lgb_clean': np.float64(0.026), 'l1_lam0.0003': np.float64(0.025), 'l1_lam0.001': np.float64(0.012), 'l1_lam0.003': np.float64(0.057), 'stumps': np.float64(0.0), 'pp_uniform': np.float64(0.016), 'pp_x5': np.float64(0.023), 'pp_yearly': np.float64(0.019), 'pp_yearly_decay': np.float64(0.0), 'pp1_uniform': np.float64(0.024), 'pp1_x5': np.float64(0.01), 'pp_lgb': np.float64(0.016), 'xgb_v5avg': np.float64(0.008), 'lgb_sweep_avg': np.float64(0.026), 'lgb_nl8_mcs5': np.float64(0.006), 'tf_hybrid': np.float64(0.003), 'stack_own+death+others_gbm': np.float64(0.069), 'stack_own+death+others_lr': np.float64(0.103), 'stack_own+death_gbm': np.float64(0.103), 'stack_own+death_lr': np.float64(0.084), 'ppds:d3_all_S1': np.float64(0.058), 'ppds:d3_all_S2': np.float64(0.036), 'ppds:d3_nonterm_noind': np.float64(0.0), 'ppds:d4_all_S1': np.float64(0.032), 'ppds:d4_all_S2': np.float64(0.051), 'blocks_S1': np.float64(0.016), 'blocks_S2': np.float64(0.0), 'blocks_S3': np.float64(0.021), 'pplgb:nl16_S3_all': np.float64(0.059), 'pplgb:nl8_S1_all': np.float64(0.036), 'pplgb:nl8_S2_all': np.float64(0.006), 'pplgb:nl8_S3_all': np.float64(0.029), 'pplgb:nl8_all_all': np.float64(0.025)}

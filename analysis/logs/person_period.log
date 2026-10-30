@@ -1,0 +1,76 @@
+  landmark -2y: 2785 rows, positives 5157  [8s]
+  landmark -4y: 2745 rows, positives 5126  [9s]
+  landmark -6y: 2521 rows, positives 3923  [10s]
+  landmark -8y: 2477 rows, positives 2351  [12s]
+  landmark -10y: 2437 rows, positives 898  [13s]
+  landmark -12y: 2399 rows, positives 750  [14s]
+  landmark -14y: 2358 rows, positives 701  [16s]
+  landmark -16y: 2320 rows, positives 635  [17s]
+  landmark -18y: 2262 rows, positives 570  [18s]
+  landmark -20y: 2214 rows, positives 470  [19s]
+  landmark -22y: 2152 rows, positives 444  [20s]
+  landmark -24y: 2094 rows, positives 407  [22s]
+  landmark -26y: 2043 rows, positives 418  [23s]
+  landmark -28y: 1982 rows, positives 405  [24s]
+  landmark -30y: 1919 rows, positives 403  [25s]
+  landmark -32y: 1844 rows, positives 367  [26s]
+  landmark -34y: 1760 rows, positives 357  [27s]
+  landmark -36y: 1693 rows, positives 350  [28s]
+  landmark -38y: 1616 rows, positives 329  [29s]
+  landmark -40y: 1529 rows, positives 330  [30s]
+  landmark -42y: 1450 rows, positives 311  [31s]
+  landmark -44y: 1365 rows, positives 266  [32s]
+  landmark -46y: 1286 rows, positives 247  [33s]
+  landmark -48y: 1190 rows, positives 241  [34s]
+  landmark -50y: 1120 rows, positives 215  [35s]
+person-period rows: 52352 features: 1630 [35s]
+    official only: fold 0 done [70s]
+    official only: fold 1 done [102s]
+    official only: fold 2 done [135s]
+    official only: fold 3 done [167s]
+    official only: fold 4 done [200s]
+official only                non-terminal 30 targets: OOF mean AP=0.1377 | val 0.1664
+    person-period uniform: fold 0 done [354s]
+    person-period uniform: fold 1 done [508s]
+    person-period uniform: fold 2 done [667s]
+    person-period uniform: fold 3 done [839s]
+    person-period uniform: fold 4 done [1076s]
+person-period uniform        non-terminal 30 targets: OOF mean AP=0.1545 | val 0.1835
+    person-period official x5: fold 0 done [1351s]
+    person-period official x5: fold 1 done [1618s]
+    person-period official x5: fold 2 done [1886s]
+    person-period official x5: fold 3 done [2156s]
+    person-period official x5: fold 4 done [2416s]
+person-period official x5    non-terminal 30 targets: OOF mean AP=0.1550 | val 0.1723
+                                       cond  train_pos  official only  person-period uniform  person-period official x5  gain_uniform  gain_x5
+444814009        Viral sinusitis (disorder)        741          0.468                  0.442                      0.457        -0.026   -0.011
+195662009  Acute viral pharyngitis (disorde        591          0.293                  0.286                      0.299        -0.007    0.006
+10509002        Acute bronchitis (disorder)        499          0.307                  0.261                      0.303        -0.046   -0.004
+230690007                            Stroke        206          0.187                  0.186                      0.192        -0.001    0.005
+68496003                     Polyp of colon        144          0.178                  0.162                      0.168        -0.016   -0.010
+44465007                    Sprain of ankle        141          0.050                  0.050                      0.052         0.000    0.002
+53741008             Coronary Heart Disease        137          0.117                  0.143                      0.151         0.026    0.034
+43878008   Streptococcal sore throat (disor        133          0.050                  0.054                      0.056         0.004    0.006
+65966004                Fracture of forearm        117          0.081                  0.094                      0.081         0.013    0.000
+271737000                 Anemia (disorder)        111          0.132                  0.240                      0.242         0.108    0.110
+64859006            Osteoporosis (disorder)         98          0.165                  0.212                      0.181         0.047    0.016
+443165006  Pathological fracture due to ost         94          0.271                  0.275                      0.274         0.004    0.003
+49436004                Atrial Fibrillation         92          0.071                  0.070                      0.072        -0.001    0.001
+36971009               Sinusitis (disorder)         88          0.031                  0.033                      0.033         0.002    0.002
+75498004   Acute bacterial sinusitis (disor         88          0.036                  0.035                      0.035        -0.001   -0.001
+39848009            Whiplash injury to neck         75          0.030                  0.027                      0.027        -0.003   -0.003
+26929004     Alzheimer's disease (disorder)         75          0.159                  0.340                      0.275         0.181    0.116
+263102004     Fracture subluxation of wrist         73          0.025                  0.028                      0.026         0.003    0.001
+72892002                   Normal pregnancy         70          0.487                  0.529                      0.546         0.042    0.059
+62106007   Concussion with no loss of consc         69          0.024                  0.026                      0.025         0.002    0.001
+15777000                        Prediabetes         61          0.079                  0.089                      0.075         0.010   -0.004
+58150001               Fracture of clavicle         61          0.031                  0.030                      0.033        -0.001    0.002
+162864005  Body mass index 30+ - obesity (f         60          0.501                  0.593                      0.549         0.092    0.048
+16114001                  Fracture of ankle         58          0.034                  0.041                      0.036         0.007    0.002
+70704007                    Sprain of wrist         56          0.026                  0.019                      0.023        -0.007   -0.003
+283371005             Laceration of forearm         50          0.031                  0.023                      0.023        -0.008   -0.008
+284551006                Laceration of foot         45          0.021                  0.020                      0.022        -0.001    0.001
+22325002            Abnormal gait (finding)         41          0.074                  0.074                      0.107         0.000    0.033
+723857007  Silent micro-hemorrhage of brain         41          0.074                  0.074                      0.107         0.000    0.033
+156073000   Fetus with unknown complication         29          0.098                  0.182                      0.178         0.084    0.080
+done 2416s

@@ -1,0 +1,49 @@
+train 2791 (dying 1199), val 365, test 358; gate OOF AUROC 0.9978, gate>0.5 accuracy 0.9871 [1s]
+RESULT base        : OOF mAP=0.2068 | acc 0.0961 / term 0.4148 / chain 0.1787 | val 0.2559 [188s]
+RESULT diw_feat    : OOF mAP=0.2090 | acc 0.0961 / term 0.4222 / chain 0.1798 | val 0.2554 [384s]
+RESULT pdeath_feat : OOF mAP=0.2084 | acc 0.0964 / term 0.4180 / chain 0.1806 | val 0.2585 [589s]
+RESULT mix         : OOF mAP=0.2044 | acc 0.0937 / term 0.4205 / chain 0.1710 | val 0.2400 [828s]
+RESULT mix_oracle  : OOF mAP=0.2049 | acc 0.0942 / term 0.4228 / chain 0.1702 | val 0.2400 [1064s]
+                                         cond    grp  pos  pos_dying   base  diw_feat  pdeath_feat    mix  mix_oracle
+284551006                  Laceration of foot    acc   45         22  0.018     0.018        0.018  0.020       0.020
+283371005               Laceration of forearm    acc   50         15  0.022     0.023        0.022  0.026       0.026
+39848009              Whiplash injury to neck    acc   75         31  0.025     0.025        0.025  0.024       0.025
+62106007   Concussion with no loss of conscio    acc   69         29  0.025     0.025        0.024  0.025       0.025
+263102004       Fracture subluxation of wrist    acc   73         40  0.026     0.025        0.026  0.032       0.031
+16114001                    Fracture of ankle    acc   58         24  0.026     0.027        0.027  0.031       0.031
+70704007                      Sprain of wrist    acc   56         24  0.027     0.026        0.026  0.021       0.022
+58150001                 Fracture of clavicle    acc   61         35  0.031     0.032        0.032  0.034       0.034
+36971009                 Sinusitis (disorder)    acc   88         36  0.034     0.032        0.033  0.033       0.034
+75498004   Acute bacterial sinusitis (disorde    acc   88         26  0.040     0.039        0.040  0.036       0.037
+43878008   Streptococcal sore throat (disorde    acc  133         58  0.053     0.054        0.055  0.057       0.056
+44465007                      Sprain of ankle    acc  141         54  0.055     0.056        0.057  0.053       0.052
+195662009  Acute viral pharyngitis (disorder)    acc  591        232  0.285     0.285        0.284  0.270       0.273
+10509002          Acute bronchitis (disorder)    acc  499        201  0.306     0.311        0.312  0.270       0.271
+444814009          Viral sinusitis (disorder)    acc  741        307  0.468     0.464        0.466  0.474       0.476
+22325002              Abnormal gait (finding)  chain   41         17  0.057     0.069        0.070  0.041       0.041
+723857007  Silent micro-hemorrhage of brain (  chain   41         17  0.057     0.069        0.070  0.041       0.041
+49436004                  Atrial Fibrillation  chain   92         52  0.074     0.068        0.068  0.127       0.131
+65966004                  Fracture of forearm  chain  117         59  0.078     0.079        0.079  0.065       0.063
+15777000                          Prediabetes  chain   61         18  0.079     0.076        0.078  0.067       0.069
+53741008               Coronary Heart Disease  chain  137         91  0.107     0.109        0.108  0.106       0.106
+156073000     Fetus with unknown complication  chain   29          5  0.110     0.106        0.107  0.086       0.084
+64859006              Osteoporosis (disorder)  chain   98         62  0.130     0.132        0.140  0.108       0.110
+271737000                   Anemia (disorder)  chain  111         51  0.135     0.134        0.140  0.131       0.131
+26929004       Alzheimer's disease (disorder)  chain   75         46  0.174     0.174        0.166  0.127       0.131
+230690007                              Stroke  chain  206        150  0.186     0.189        0.187  0.203       0.200
+68496003                       Polyp of colon  chain  144         95  0.195     0.186        0.195  0.178       0.176
+443165006  Pathological fracture due to osteo  chain   94         42  0.270     0.278        0.273  0.259       0.254
+72892002                     Normal pregnancy  chain   70          8  0.512     0.510        0.516  0.506       0.509
+162864005  Body mass index 30+ - obesity (fin  chain   60          8  0.515     0.517        0.514  0.521       0.506
+713197008              Recurrent rectal polyp   term   69         60  0.143     0.145        0.145  0.189       0.187
+424132000  Non-small cell carcinoma of lung     term   77         75  0.228     0.244        0.238  0.226       0.225
+254637007  Non-small cell lung cancer (disord   term   76         74  0.234     0.245        0.239  0.227       0.220
+162573006   Suspected lung cancer (situation)   term   84         82  0.247     0.246        0.254  0.240       0.235
+88805009   Chronic congestive heart failure (   term  229        224  0.406     0.405        0.390  0.407       0.416
+233604007                           Pneumonia   term  133        133  0.439     0.455        0.449  0.455       0.471
+314994000  Metastasis from malignant tumor of   term   50         50  0.482     0.480        0.483  0.480       0.478
+92691004   Carcinoma in situ of prostate (dis   term   88         84  0.613     0.621        0.618  0.627       0.621
+22298006                Myocardial Infarction   term  153        151  0.624     0.650        0.634  0.630       0.658
+126906006                Neoplasm of prostate   term  111        107  0.731     0.733        0.731  0.724       0.718
+done [1064s]
+exit 0

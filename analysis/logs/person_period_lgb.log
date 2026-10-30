@@ -1,0 +1,70 @@
+  landmark -2y: 2785 rows, positives 5157  [9s]
+  landmark -4y: 2745 rows, positives 5126  [10s]
+  landmark -6y: 2521 rows, positives 3923  [11s]
+  landmark -8y: 2477 rows, positives 2351  [13s]
+  landmark -10y: 2437 rows, positives 898  [14s]
+  landmark -12y: 2399 rows, positives 750  [16s]
+  landmark -14y: 2358 rows, positives 701  [17s]
+  landmark -16y: 2320 rows, positives 635  [18s]
+  landmark -18y: 2262 rows, positives 570  [20s]
+  landmark -20y: 2214 rows, positives 470  [21s]
+  landmark -22y: 2152 rows, positives 444  [22s]
+  landmark -24y: 2094 rows, positives 407  [23s]
+  landmark -26y: 2043 rows, positives 418  [25s]
+  landmark -28y: 1982 rows, positives 405  [26s]
+  landmark -30y: 1919 rows, positives 403  [27s]
+  landmark -32y: 1844 rows, positives 367  [28s]
+  landmark -34y: 1760 rows, positives 357  [29s]
+  landmark -36y: 1693 rows, positives 350  [30s]
+  landmark -38y: 1616 rows, positives 329  [31s]
+  landmark -40y: 1529 rows, positives 330  [32s]
+  landmark -42y: 1450 rows, positives 311  [33s]
+  landmark -44y: 1365 rows, positives 266  [34s]
+  landmark -46y: 1286 rows, positives 247  [35s]
+  landmark -48y: 1190 rows, positives 241  [36s]
+  landmark -50y: 1120 rows, positives 215  [37s]
+person-period rows: 52352 features: 1630 [37s]
+    official only: fold 0 done [93s]
+    official only: fold 1 done [148s]
+    official only: fold 2 done [203s]
+    official only: fold 3 done [258s]
+    official only: fold 4 done [316s]
+official only                non-terminal 30 targets: OOF mean AP=0.1387 | val 0.1838
+    person-period uniform: fold 0 done [548s]
+    person-period uniform: fold 1 done [776s]
+    person-period uniform: fold 2 done [1005s]
+    person-period uniform: fold 3 done [1202s]
+    person-period uniform: fold 4 done [1344s]
+person-period uniform        non-terminal 30 targets: OOF mean AP=0.1528 | val 0.1883
+                                       cond  train_pos  official only  person-period uniform  gain_uniform
+444814009        Viral sinusitis (disorder)        741          0.463                  0.448        -0.015
+195662009  Acute viral pharyngitis (disorde        591          0.296                  0.289        -0.007
+10509002        Acute bronchitis (disorder)        499          0.309                  0.252        -0.057
+230690007                            Stroke        206          0.187                  0.182        -0.005
+68496003                     Polyp of colon        144          0.174                  0.166        -0.008
+44465007                    Sprain of ankle        141          0.051                  0.051         0.000
+53741008             Coronary Heart Disease        137          0.116                  0.138         0.022
+43878008   Streptococcal sore throat (disor        133          0.059                  0.057        -0.002
+65966004                Fracture of forearm        117          0.077                  0.091         0.014
+271737000                 Anemia (disorder)        111          0.152                  0.249         0.097
+64859006            Osteoporosis (disorder)         98          0.137                  0.218         0.081
+443165006  Pathological fracture due to ost         94          0.277                  0.288         0.011
+49436004                Atrial Fibrillation         92          0.073                  0.071        -0.002
+36971009               Sinusitis (disorder)         88          0.033                  0.033         0.000
+75498004   Acute bacterial sinusitis (disor         88          0.038                  0.037        -0.001
+39848009            Whiplash injury to neck         75          0.029                  0.025        -0.004
+26929004     Alzheimer's disease (disorder)         75          0.160                  0.310         0.150
+263102004     Fracture subluxation of wrist         73          0.023                  0.031         0.008
+72892002                   Normal pregnancy         70          0.505                  0.527         0.022
+62106007   Concussion with no loss of consc         69          0.023                  0.027         0.004
+15777000                        Prediabetes         61          0.071                  0.083         0.012
+58150001               Fracture of clavicle         61          0.035                  0.031        -0.004
+162864005  Body mass index 30+ - obesity (f         60          0.522                  0.588         0.066
+16114001                  Fracture of ankle         58          0.028                  0.036         0.008
+70704007                    Sprain of wrist         56          0.027                  0.021        -0.006
+283371005             Laceration of forearm         50          0.023                  0.025         0.002
+284551006                Laceration of foot         45          0.020                  0.019        -0.001
+22325002            Abnormal gait (finding)         41          0.068                  0.087         0.019
+723857007  Silent micro-hemorrhage of brain         41          0.068                  0.087         0.019
+156073000   Fetus with unknown complication         29          0.114                  0.118         0.004
+done 1344s

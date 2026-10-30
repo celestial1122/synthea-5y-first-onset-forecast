@@ -1,0 +1,45 @@
+RESULT block S1 (302 feats): OOF mAP=0.2599 (acc 0.093 / term 0.533 / chain 0.245) | val 0.3021 | full-feature lgb_clean OOF 0.2092 [80s]
+RESULT block S2 (715 feats): OOF mAP=0.2759 (acc 0.091 / term 0.582 / chain 0.257) | val 0.3031 | full-feature lgb_clean OOF 0.2092 [226s]
+RESULT block S3 (1613 feats): OOF mAP=0.2799 (acc 0.091 / term 0.588 / chain 0.264) | val 0.3175 | full-feature lgb_clean OOF 0.2092 [494s]
+                                       cond     S1     S2     S3    all best_block
+444814009        Viral sinusitis (disorder)  0.463  0.462  0.467  0.478        all
+195662009  Acute viral pharyngitis (disorde  0.281  0.269  0.275  0.280         S1
+10509002        Acute bronchitis (disorder)  0.243  0.242  0.242  0.306        all
+88805009   Chronic congestive heart failure  0.458  0.438  0.433  0.403         S1
+230690007                            Stroke  0.872  0.873  0.874  0.199         S3
+22298006              Myocardial Infarction  0.700  0.702  0.746  0.633         S3
+68496003                     Polyp of colon  0.164  0.154  0.146  0.202        all
+44465007                    Sprain of ankle  0.057  0.062  0.060  0.057         S2
+53741008             Coronary Heart Disease  0.192  0.235  0.235  0.118         S2
+233604007                         Pneumonia  0.439  0.431  0.424  0.420         S1
+43878008   Streptococcal sore throat (disor  0.057  0.055  0.054  0.052         S1
+65966004                Fracture of forearm  0.079  0.085  0.088  0.085         S3
+126906006              Neoplasm of prostate  0.451  0.636  0.638  0.718        all
+271737000                 Anemia (disorder)  0.177  0.161  0.172  0.148         S1
+64859006            Osteoporosis (disorder)  0.145  0.106  0.104  0.150        all
+443165006  Pathological fracture due to ost  0.236  0.244  0.261  0.253         S3
+49436004                Atrial Fibrillation  0.079  0.073  0.068  0.070         S1
+92691004   Carcinoma in situ of prostate (d  0.323  0.476  0.483  0.612        all
+36971009               Sinusitis (disorder)  0.030  0.032  0.033  0.031         S3
+75498004   Acute bacterial sinusitis (disor  0.040  0.041  0.037  0.038         S2
+162573006  Suspected lung cancer (situation  0.803  0.796  0.799  0.254         S1
+424132000  Non-small cell carcinoma of lung  0.870  0.873  0.870  0.232         S2
+254637007  Non-small cell lung cancer (diso  0.867  0.866  0.866  0.233         S1
+39848009            Whiplash injury to neck  0.029  0.024  0.025  0.028         S1
+26929004     Alzheimer's disease (disorder)  0.214  0.160  0.185  0.188         S1
+263102004     Fracture subluxation of wrist  0.032  0.029  0.027  0.028         S1
+72892002                   Normal pregnancy  0.653  0.601  0.603  0.507         S1
+713197008            Recurrent rectal polyp  0.151  0.101  0.126  0.168        all
+62106007   Concussion with no loss of consc  0.025  0.027  0.027  0.025         S2
+15777000                        Prediabetes  0.083  0.087  0.084  0.083         S2
+58150001               Fracture of clavicle  0.042  0.034  0.032  0.031         S1
+162864005  Body mass index 30+ - obesity (f  0.194  0.544  0.540  0.517         S2
+16114001                  Fracture of ankle  0.042  0.024  0.025  0.025         S1
+70704007                    Sprain of wrist  0.018  0.020  0.020  0.024        all
+283371005             Laceration of forearm  0.015  0.020  0.020  0.024        all
+314994000  Metastasis from malignant tumor   0.263  0.497  0.492  0.473         S2
+284551006                Laceration of foot  0.018  0.016  0.017  0.019        all
+22325002            Abnormal gait (finding)  0.238  0.205  0.236  0.072         S1
+723857007  Silent micro-hemorrhage of brain  0.238  0.205  0.236  0.072         S1
+156073000   Fetus with unknown complication  0.111  0.128  0.128  0.113         S2
+per-target oracle over blocks+all: 0.2962

@@ -1,0 +1,9 @@
+{
+  "path": "C:\\Users\\NEW PC\\Desktop\\research_intern_coding_test\\predictions.csv",
+  "n_patients": 358,
+  "n_targets": 40,
+  "probability_min": 0.0,
+  "probability_max": 0.9995222739758748,
+  "sha256": "33335d60fa95ea7bb086b7cec2f9f98ad84c872718779206ab2825511b4ce75a",
+  "valid": true
+}

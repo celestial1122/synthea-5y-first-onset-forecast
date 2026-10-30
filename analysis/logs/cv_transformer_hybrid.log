@@ -1,0 +1,12 @@
+wide input dims: 714
+[hybrid] seed17 fold0: val-selected mAP=0.2400 | held-out fold mAP=0.2137  (36s)
+[hybrid] seed17 fold1: val-selected mAP=0.2399 | held-out fold mAP=0.1794  (71s)
+[hybrid] seed17 fold2: val-selected mAP=0.2233 | held-out fold mAP=0.2017  (99s)
+[hybrid] seed17 fold3: val-selected mAP=0.2371 | held-out fold mAP=0.1905  (148s)
+[hybrid] seed17 fold4: val-selected mAP=0.2265 | held-out fold mAP=0.1987  (191s)
+[hybrid] seed42 fold0: val-selected mAP=0.2378 | held-out fold mAP=0.1892  (230s)
+[hybrid] seed42 fold1: val-selected mAP=0.2428 | held-out fold mAP=0.1880  (276s)
+[hybrid] seed42 fold2: val-selected mAP=0.2342 | held-out fold mAP=0.1907  (324s)
+[hybrid] seed42 fold3: val-selected mAP=0.2326 | held-out fold mAP=0.1726  (367s)
+[hybrid] seed42 fold4: val-selected mAP=0.2259 | held-out fold mAP=0.1931  (405s)
+=== hybrid 2 seeds x 5 folds: OOF mAP (2791) = 0.1733 | fold-ensemble val mAP = 0.2518 ===

@@ -1,0 +1,63 @@
+                                 cond    grp  pos  final7_AP  static  prior  tokens  numeric  active_med  genomics   cost  cost_auc_died  cost_auc_alive  pos_share_died
+code                                                                                                                                                                    
+70704007              Sprain of wrist    acc   56      0.018   0.567  0.554   0.593    0.603       0.530     0.569  0.546          0.557           0.495            0.43
+284551006          Laceration of foot    acc   45      0.018   0.630  0.596   0.633    0.679       0.585     0.515  0.590          0.558           0.458            0.49
+283371005       Laceration of forearm    acc   50      0.020   0.598  0.566   0.602    0.604       0.538     0.555  0.554          0.562           0.414            0.30
+62106007   Concussion with no loss of    acc   69      0.026   0.573  0.562   0.582    0.582       0.529     0.523  0.557          0.460           0.467            0.42
+263102004  Fracture subluxation of wr    acc   73      0.040   0.656  0.581   0.645    0.601       0.542     0.559  0.611          0.537           0.667            0.55
+36971009         Sinusitis (disorder)    acc   88      0.041   0.551  0.541   0.562    0.598       0.530     0.508  0.559          0.476           0.538            0.41
+16114001            Fracture of ankle    acc   58      0.042   0.654  0.568   0.644    0.600       0.554     0.602  0.617          0.618           0.579            0.41
+75498004   Acute bacterial sinusitis     acc   88      0.048   0.599  0.561   0.603    0.640       0.544     0.567  0.590          0.442           0.429            0.30
+39848009      Whiplash injury to neck    acc   75      0.048   0.564  0.539   0.565    0.588       0.535     0.533  0.548          0.521           0.434            0.41
+44465007              Sprain of ankle    acc  141      0.049   0.547  0.528   0.570    0.565       0.522     0.515  0.556          0.536           0.488            0.38
+58150001         Fracture of clavicle    acc   61      0.057   0.652  0.588   0.661    0.673       0.604     0.524  0.583          0.561           0.599            0.57
+43878008   Streptococcal sore throat     acc  133      0.068   0.557  0.548   0.589    0.564       0.533     0.524  0.542          0.504           0.445            0.44
+195662009  Acute viral pharyngitis (d    acc  591      0.289   0.519  0.518   0.537    0.528       0.516     0.511  0.524          0.526           0.483            0.39
+10509002   Acute bronchitis (disorder    acc  499      0.293   0.535  0.518   0.533    0.548       0.521     0.521  0.516          0.522           0.514            0.40
+444814009  Viral sinusitis (disorder)    acc  741      0.475   0.522  0.529   0.529    0.539       0.513     0.505  0.507          0.495           0.509            0.41
+49436004          Atrial Fibrillation  chain   92      0.070   0.769  0.590   0.735    0.735       0.537     0.579  0.680          0.648           0.698            0.57
+15777000                  Prediabetes  chain   61      0.083   0.726  0.584   0.697    0.681       0.577     0.591  0.674          0.333           0.342            0.30
+65966004          Fracture of forearm  chain  117      0.098   0.661  0.649   0.649    0.639       0.583     0.553  0.610          0.596           0.606            0.50
+156073000  Fetus with unknown complic  chain   29      0.126   0.849  0.830   0.832    0.767       0.590     0.586  0.788          0.387           0.473            0.17
+68496003               Polyp of colon  chain  144      0.200   0.573  0.569   0.805    0.656       0.536     0.509  0.622          0.462           0.525            0.66
+271737000           Anemia (disorder)  chain  111      0.227   0.685  0.582   0.646    0.634       0.569     0.586  0.684          0.255           0.373            0.46
+22325002      Abnormal gait (finding)  chain   41      0.231   0.765  0.594   0.728    0.630       0.631     0.786  0.716          0.594           0.748            0.41
+723857007  Silent micro-hemorrhage of  chain   41      0.231   0.765  0.594   0.728    0.630       0.631     0.786  0.716          0.594           0.748            0.41
+64859006      Osteoporosis (disorder)  chain   98      0.277   0.775  0.585   0.698    0.727       0.584     0.575  0.707          0.686           0.699            0.63
+53741008       Coronary Heart Disease  chain  137      0.295   0.646  0.569   0.629    0.650       0.566     0.620  0.579          0.468           0.734            0.66
+443165006  Pathological fracture due   chain   94      0.306   0.828  0.873   0.876    0.760       0.711     0.637  0.741          0.701           0.763            0.45
+26929004   Alzheimer's disease (disor  chain   75      0.332   0.765  0.633   0.719    0.724       0.633     0.604  0.734          0.726           0.712            0.61
+162864005  Body mass index 30+ - obes  chain   60      0.576   0.808  0.746   0.796    0.784       0.588     0.607  0.739          0.103           0.339            0.13
+72892002             Normal pregnancy  chain   70      0.602   0.913  0.712   0.842    0.839       0.610     0.616  0.796          0.277           0.382            0.11
+230690007                      Stroke  chain  206      0.831   0.748  0.555   0.682    0.677       0.579     0.873  0.787          0.710           0.905            0.73
+713197008      Recurrent rectal polyp   term   69      0.224   0.581  0.624   0.823    0.749       0.529     0.542  0.600          0.461           0.495            0.87
+424132000  Non-small cell carcinoma o   term   77      0.303   0.668  0.653   0.689    0.814       0.653     0.534  0.822          0.814           0.999            0.97
+254637007  Non-small cell lung cancer   term   76      0.307   0.674  0.656   0.692    0.814       0.656     0.533  0.826          0.818           0.999            0.97
+162573006  Suspected lung cancer (sit   term   84      0.331   0.680  0.644   0.709    0.816       0.644     0.531  0.832          0.825           0.999            0.98
+233604007                   Pneumonia   term  133      0.427   0.738  0.902   0.956    0.961       0.616     0.564  0.657          0.552             NaN            1.00
+88805009   Chronic congestive heart f   term  229      0.432   0.579  0.550   0.678    0.789       0.529     0.521  0.554          0.517           0.725            0.98
+314994000  Metastasis from malignant    term   50      0.484   0.724  0.689   0.832    0.827       0.611     0.604  0.656          0.395             NaN            1.00
+92691004   Carcinoma in situ of prost   term   88      0.652   0.744  0.671   0.863    0.864       0.590     0.520  0.674          0.488           0.558            0.95
+22298006        Myocardial Infarction   term  153      0.752   0.664  0.780   0.786    0.780       0.776     0.686  0.600          0.362           0.869            0.99
+126906006        Neoplasm of prostate   term  111      0.752   0.746  0.673   0.860    0.860       0.593     0.536  0.672          0.461           0.558            0.96
+
+best history feature per target (tokens):
+                                 cond  tokens                   tokens_best   cost          cost_best  genomics        genomics_best
+code                                                                                                                                
+162573006  Suspected lung cancer (sit   0.709  rec_OBS:32465-7|Prostate enl  0.832      cost_post_cov     0.531    gen_rs_rs10033464
+254637007  Non-small cell lung cancer   0.692  rec_OBS:32465-7|Prostate enl  0.826      cost_post_cov     0.533    gen_rs_rs10033464
+424132000  Non-small cell carcinoma o   0.689  rec_OBS:32465-7|Prostate enl  0.822      cost_post_cov     0.534    gen_rs_rs10033464
+72892002             Normal pregnancy   0.842            first_ENC:wellness  0.796    cost_life_total     0.616    gen_rs_rs10757274
+156073000  Fetus with unknown complic   0.832             cnt_COND:72892002  0.788  cost_pre_per_year     0.586      gen_rs_rs700651
+230690007                      Stroke   0.682            first_ENC:wellness  0.787      cost_post_cov     0.873      gen_n_var_rsids
+443165006  Pathological fracture due    0.876             rec_COND:64859006  0.741      cost_life_cov     0.637        gen_gene_PON1
+162864005  Body mass index 30+ - obes   0.796            first_ENC:wellness  0.739      cost_life_cov     0.607    gen_n_var_alleles
+26929004   Alzheimer's disease (disor   0.719          first_ENC:ambulatory  0.734      cost_post_cov     0.604        has_dicom_pre
+723857007  Silent micro-hemorrhage of   0.728            first_ENC:wellness  0.716    cost_life_total     0.786    gen_rs_rs10033464
+22325002      Abnormal gait (finding)   0.728            first_ENC:wellness  0.716    cost_life_total     0.786    gen_rs_rs10033464
+64859006      Osteoporosis (disorder)   0.698            first_ENC:wellness  0.707      cost_post_cov     0.575         gen_rs_rs699
+271737000           Anemia (disorder)   0.646          first_ENC:ambulatory  0.684      cost_life_cov     0.586        gen_gene_PON1
+49436004          Atrial Fibrillation   0.735            first_ENC:wellness  0.680      cost_life_cov     0.579  gen_gene_CDKN2B-AS1
+92691004   Carcinoma in situ of prost   0.863            cnt_PROC:410006001  0.674       cost_pre_exp     0.520        has_dicom_pre
+15777000                  Prediabetes   0.697            first_ENC:wellness  0.674      cost_life_cov     0.591     gen_n_pathogenic
+[21s]

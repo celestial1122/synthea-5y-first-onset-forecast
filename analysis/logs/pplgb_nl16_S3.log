@@ -1,0 +1,7 @@
+nl16 block S3: rows 56770, feats 1399, targets 40 [1s]
+  fold 0 done [285s]
+  fold 1 done [570s]
+  fold 2 done [861s]
+  fold 3 done [1156s]
+  fold 4 done [1447s]
+RESULT nl16_S3_all: OOF mAP(targets run)=0.2148 | acc 0.0903 / term 0.4115 / chain 0.2082 | val 0.2515 [1447s]

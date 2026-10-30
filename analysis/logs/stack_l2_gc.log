@@ -1,0 +1,7 @@
+families: ['lgb_clean', 'lgb_sweep_avg', 'xgb_v5avg', 'pp_yearly', 'pp_lgb', 'pp_x5', 'l1_lam0.003', 'stumps', 'tf_hybrid']
+death model OOF AUROC 0.9976 [6s]
+L2 own+death_lr             OOF mAP=0.2185 (acc 0.097 / term 0.412 / chain 0.211) | val mAP=0.2676 [12s]
+L2 own+death_gbm            OOF mAP=0.2058 (acc 0.102 / term 0.373 / chain 0.198) | val mAP=0.2607 [24s]
+L2 own+death+others_lr      OOF mAP=0.2149 (acc 0.104 / term 0.394 / chain 0.206) | val mAP=0.2610 [49s]
+L2 own+death+others_gbm     OOF mAP=0.1998 (acc 0.099 / term 0.373 / chain 0.185) | val mAP=0.2468 [67s]
+reference: per-target best single family (oracle) OOF=0.2312; greedy ensemble cross-fitted OOF=0.2671

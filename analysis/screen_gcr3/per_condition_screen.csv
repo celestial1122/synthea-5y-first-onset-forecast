@@ -1,0 +1,41 @@
+,cond,pos,k60,k200,lgb_clean
+444814009,Viral sinusitis (disorder),741,0.45,0.456,0.478
+195662009,Acute viral pharyngitis (disorder),591,0.283,0.273,0.28
+10509002,Acute bronchitis (disorder),499,0.268,0.289,0.306
+88805009,Chronic congestive heart failure (,229,0.415,0.415,0.403
+230690007,Stroke,206,0.792,0.794,0.199
+22298006,Myocardial Infarction,153,0.721,0.748,0.633
+68496003,Polyp of colon,144,0.192,0.203,0.202
+44465007,Sprain of ankle,141,0.058,0.066,0.057
+53741008,Coronary Heart Disease,137,0.187,0.202,0.118
+233604007,Pneumonia,133,0.459,0.491,0.42
+43878008,Streptococcal sore throat (disorde,133,0.057,0.051,0.052
+65966004,Fracture of forearm,117,0.074,0.076,0.085
+126906006,Neoplasm of prostate,111,0.759,0.743,0.718
+271737000,Anemia (disorder),111,0.14,0.132,0.148
+64859006,Osteoporosis (disorder),98,0.137,0.125,0.15
+443165006,Pathological fracture due to osteo,94,0.243,0.238,0.253
+49436004,Atrial Fibrillation,92,0.058,0.068,0.07
+92691004,Carcinoma in situ of prostate (dis,88,0.64,0.567,0.612
+36971009,Sinusitis (disorder),88,0.029,0.03,0.031
+75498004,Acute bacterial sinusitis (disorde,88,0.038,0.041,0.038
+162573006,Suspected lung cancer (situation),84,0.823,0.834,0.254
+424132000,Non-small cell carcinoma of lung  ,77,0.863,0.876,0.232
+254637007,Non-small cell lung cancer (disord,76,0.868,0.872,0.233
+39848009,Whiplash injury to neck,75,0.03,0.022,0.028
+26929004,Alzheimer's disease (disorder),75,0.198,0.164,0.188
+263102004,Fracture subluxation of wrist,73,0.028,0.026,0.028
+72892002,Normal pregnancy,70,0.596,0.548,0.507
+713197008,Recurrent rectal polyp,69,0.25,0.18,0.168
+62106007,Concussion with no loss of conscio,69,0.026,0.033,0.025
+15777000,Prediabetes,61,0.078,0.098,0.083
+58150001,Fracture of clavicle,61,0.04,0.029,0.031
+162864005,Body mass index 30+ - obesity (fin,60,0.279,0.516,0.517
+16114001,Fracture of ankle,58,0.059,0.078,0.025
+70704007,Sprain of wrist,56,0.021,0.021,0.024
+283371005,Laceration of forearm,50,0.018,0.018,0.024
+314994000,Metastasis from malignant tumor of,50,0.424,0.56,0.473
+284551006,Laceration of foot,45,0.027,0.019,0.019
+22325002,Abnormal gait (finding),41,0.15,0.134,0.072
+723857007,Silent micro-hemorrhage of brain (,41,0.15,0.134,0.072
+156073000,Fetus with unknown complication,29,0.123,0.103,0.113

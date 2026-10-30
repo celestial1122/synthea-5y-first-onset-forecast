@@ -1,0 +1,2 @@
+(a) GBM 2-config                             OOF mAP rep0=0.2019 rep1=0.1974 mean=0.1997 (acc 0.096/term 0.389/chain 0.177) | val 0.2348  [3341s]
+(b) screened top-150 -> GBM                  OOF mAP rep0=0.1986 rep1=0.1938 mean=0.1962 (acc 0.096/term 0.369/chain 0.182) | val 0.2388  [5860s]

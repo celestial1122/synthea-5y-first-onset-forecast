@@ -1,0 +1,46 @@
+     cond  n_pos  base_oof  stack_oof   gain  base_val  stack_val                                                                           top_feats
+233604007    133     0.438      0.466  0.028     0.803      0.683                 score:0.65; cost_resid_cov_x_alive:0.05; cost_resid_cov_x_dead:0.03
+ 72892002     70     0.593      0.612  0.019     0.697      0.694                                score:0.59; cost_pred_total:0.04; cost_life_exp:0.04
+195662009    591     0.287      0.301  0.013     0.290      0.283             cost_resid3_cov_x_alive:0.06; cost_resid_total:0.05; cost_post_cov:0.04
+ 44465007    141     0.055      0.067  0.013     0.040      0.043                                   cost_pre_1y:0.08; score:0.07; cost_pred3_cov:0.05
+ 70704007     56     0.017      0.022  0.005     0.035      0.038                         score:0.09; payer_dominant_share:0.05; cost_resid3_exp:0.05
+162573006     84     0.836      0.839  0.003     0.880      0.870                         score:0.53; cost_post_cov:0.18; cost_resid3_cov_x_dead:0.07
+284551006     45     0.017      0.019  0.002     0.162      0.023                          cost_pre_5y:0.05; cost_pred_total:0.05; cost_life_cov:0.05
+283371005     50     0.021      0.022  0.002     0.017      0.027                               score:0.07; cost_pre_5y_share:0.06; cost_pre_cov:0.05
+ 62106007     69     0.025      0.027  0.001     0.029      0.034                           payer_dominant_share:0.06; cost_pred_exp:0.06; score:0.06
+ 49436004     92     0.069      0.067 -0.002     0.281      0.166                           score:0.20; payer_share_6:0.07; payer_dominant_share:0.06
+ 36971009     88     0.038      0.033 -0.005     0.026      0.021 cost_resid_cov_x_alive:0.07; payer_dominant_share:0.05; cost_resid3_cov_x_dead:0.05
+254637007     76     0.885      0.879 -0.006     0.905      0.890                         score:0.56; cost_post_cov:0.19; cost_resid3_cov_x_dead:0.06
+424132000     77     0.874      0.867 -0.007     0.905      0.905                         score:0.54; cost_post_cov:0.19; cost_resid3_cov_x_dead:0.06
+ 10509002    499     0.290      0.281 -0.009     0.293      0.321                        score:0.15; cost_pre_5y_share:0.04; cost_pre_5y_per_enc:0.04
+263102004     73     0.042      0.033 -0.009     0.027      0.043                    score:0.11; cost_pre_5y_per_enc:0.05; cost_resid_cov_x_dead:0.05
+ 75498004     88     0.047      0.035 -0.012     0.027      0.021                            score:0.08; cost_resid3_exp:0.05; cost_resid3_total:0.04
+230690007    206     0.874      0.861 -0.013     0.943      0.949                             score:0.45; gen_n_var_alleles:0.18; gen_gene_APOA5:0.06
+ 16114001     58     0.043      0.026 -0.017     0.047      0.022                            cost_life_exp:0.06; score:0.05; cost_pre_5y_per_enc:0.05
+156073000     29     0.143      0.126 -0.017     0.339      0.275                            score:0.33; cost_pre_5y_per_enc:0.07; payer_share_7:0.06
+ 43878008    133     0.072      0.055 -0.017     0.053      0.069                         score:0.07; cost_pre_5y_per_enc:0.07; cost_pred3_total:0.05
+ 58150001     61     0.051      0.031 -0.020     0.029      0.066                           score:0.12; payer_dominant_share:0.06; cost_pred_exp:0.05
+ 15777000     61     0.080      0.060 -0.020     0.122      0.098                               score:0.21; cost_pred3_cov:0.06; cost_pred_total:0.06
+ 68496003    144     0.202      0.172 -0.030     0.307      0.179                        score:0.40; cost_resid3_cov_x_alive:0.03; cost_life_exp:0.03
+444814009    741     0.473      0.441 -0.032     0.408      0.436                       cost_resid3_exp:0.06; cost_resid_total:0.05; cost_pre_5y:0.05
+ 65966004    117     0.102      0.066 -0.035     0.120      0.141                                score:0.15; payer_share_6:0.06; cost_pred_total:0.05
+ 22298006    153     0.756      0.713 -0.043     0.757      0.688                   score:0.61; gen_gene_CDKN2B-AS1:0.05; cost_resid3_cov_x_dead:0.03
+271737000    111     0.218      0.171 -0.046     0.277      0.136                                 score:0.25; cost_pred3_cov:0.07; cost_pred_cov:0.04
+ 53741008    137     0.288      0.239 -0.049     0.196      0.138                           score:0.35; cost_resid_exp:0.03; cost_pre_5y_per_enc:0.03
+ 39848009     75     0.081      0.031 -0.050     0.025      0.025                                   score:0.09; cost_pre_5y:0.04; cost_pred3_exp:0.04
+ 26929004     75     0.313      0.253 -0.060     0.259      0.189                                score:0.39; payer_share_6:0.07; cost_resid3_exp:0.03
+ 64859006     98     0.237      0.176 -0.061     0.218      0.223                                 score:0.38; cost_pred3_cov:0.04; payer_share_6:0.04
+713197008     69     0.252      0.160 -0.092     0.400      0.300                           score:0.41; cost_pre_1y:0.04; cost_resid3_cov_x_dead:0.04
+126906006    111     0.759      0.666 -0.093     0.992      0.927                score:0.70; cost_resid3_cov_x_dead:0.04; cost_resid_cov_x_alive:0.02
+ 88805009    229     0.480      0.377 -0.104     0.480      0.438               score:0.54; cost_resid3_cov_x_alive:0.06; cost_resid_cov_x_alive:0.05
+ 92691004     88     0.637      0.533 -0.105     0.871      0.847                score:0.64; cost_resid3_cov_x_dead:0.04; cost_resid_cov_x_alive:0.02
+443165006     94     0.312      0.204 -0.109     0.334      0.483                                 score:0.49; payer_share_6:0.05; cost_pred3_cov:0.03
+314994000     50     0.516      0.384 -0.132     0.679      0.557                score:0.55; cost_resid_cov_x_alive:0.05; cost_resid3_cov_x_dead:0.05
+ 22325002     41     0.313      0.150 -0.162     0.422      0.218                          score:0.24; cost_pre_5y_share:0.05; cost_resid3_total:0.04
+723857007     41     0.313      0.150 -0.162     0.422      0.218                          score:0.24; cost_pre_5y_share:0.05; cost_resid3_total:0.04
+162864005     60     0.576      0.409 -0.166     0.586      0.381                                  score:0.56; cost_pred_cov:0.05; cost_life_exp:0.04
+
+base       : OOF 0.3157  val 0.3676  val AUROC 0.7601
+stack all  : OOF 0.2756  val 0.3266  val AUROC 0.7546
+stack sel  : OOF 0.3175  val 0.3644  val AUROC 0.7603   selected 4 targets: ['195662009', '44465007', '233604007', '72892002']
+[50s]

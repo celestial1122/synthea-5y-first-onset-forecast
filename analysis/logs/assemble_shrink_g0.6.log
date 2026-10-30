@@ -1,0 +1,47 @@
+candidates: ['lgb_clean', 'l1_lam0.003', 'pp_x5', 'pp_yearly', 'pp_lgb', 'xgb_v5avg', 'lgb_sweep_avg', 'tf_hybrid', 'stack_own+death+others_gbm', 'stack_own+death+others_lr', 'stack_own+death_gbm', 'stack_own+death_lr', 'ppds:d3_all_S1', 'ppds:d3_all_S2', 'ppds:d3_all', 'ppds:d6_all', 'ppds:screen200_d3_all', 'ppds:screen400_d3_all', 'ppds:xgbavg3_all', 'ppds_g:d3_all', 'ppds_gc:d3_all', 'ppds_gc:screen200_d3_all', 'ppds_gcr:d3_all', 'ppds_gcr:screen200_d3_all', 'blocks_S1', 'pplgb:nl16_S3_all', 'pplgb:nl8_S1_all_gcr', 'pplgb:nl8_S1_all', 'pplgb:nl8_S3_all', 'pplgb:nl8_all_all', 'screen:k200', 'screen:k60', 'gstack:final+gen', 'gstack:final7+genc2', 'gstack:genc2_only', 'gstack:genc_only', 'screen_gcr:k200', 'screen_gcr:k60', 'blocks_gcr:S1', 'blocks_gcr:S2', 'blocks_gcr:S3']
+
+single candidates (OOF mAP / val mAP):
+  lgb_clean    OOF=0.2092  val=0.2551
+  l1_lam0.003  OOF=0.1888  val=0.2607
+  pp_x5        OOF=0.2199  val=0.2520  (terminal targets filled from lgb_clean)
+  pp_yearly    OOF=0.2188  val=0.2680  (terminal targets filled from lgb_clean)
+  pp_lgb       OOF=0.2183  val=0.2639  (terminal targets filled from lgb_clean)
+  xgb_v5avg    OOF=0.1967  val=0.2282
+  lgb_sweep_avg OOF=0.2097  val=0.2546
+  tf_hybrid    OOF=0.1733  val=0.2518
+  stack_own+death+others_gbm OOF=0.1998  val=0.2503
+  stack_own+death+others_lr OOF=0.2144  val=0.2600
+  stack_own+death_gbm OOF=0.2044  val=0.2649
+  stack_own+death_lr OOF=0.2186  val=0.2667
+  ppds:d3_all_S1 OOF=0.1626  val=0.2032
+  ppds:d3_all_S2 OOF=0.2147  val=0.2436
+  ppds:d3_all  OOF=0.2220  val=0.2675
+  ppds:d6_all  OOF=0.2219  val=0.2623
+  ppds:screen200_d3_all OOF=0.2233  val=0.2648
+  ppds:screen400_d3_all OOF=0.2221  val=0.2716
+  ppds:xgbavg3_all OOF=0.2227  val=0.2650
+  ppds_g:d3_all OOF=0.2547  val=0.3045
+  ppds_gc:d3_all OOF=0.2943  val=0.3520
+  ppds_gc:screen200_d3_all OOF=0.2957  val=0.3507
+  ppds_gcr:d3_all OOF=0.2890  val=0.3590
+  ppds_gcr:screen200_d3_all OOF=0.2960  val=0.3567
+  blocks_S1    OOF=0.1558  val=0.1960
+  pplgb:nl16_S3_all OOF=0.2148  val=0.2515
+  pplgb:nl8_S1_all_gcr OOF=0.2517  val=0.3111
+  pplgb:nl8_S1_all OOF=0.1635  val=0.2061
+  pplgb:nl8_S3_all OOF=0.2183  val=0.2516
+  pplgb:nl8_all_all OOF=0.2207  val=0.2588
+  screen:k200  OOF=0.2134  val=0.2609
+  screen:k60   OOF=0.2055  val=0.2620
+  gstack:final+gen OOF=0.2308  val=0.2742
+  gstack:final7+genc2 OOF=0.2834  val=0.3292
+  gstack:genc2_only OOF=0.2595  val=0.3005
+  gstack:genc_only OOF=0.2433  val=0.2552
+  screen_gcr:k200 OOF=0.2840  val=0.3477
+  screen_gcr:k60 OOF=0.2768  val=0.3448
+  blocks_gcr:S1 OOF=0.2599  val=0.3021
+  blocks_gcr:S2 OOF=0.2759  val=0.3031
+  blocks_gcr:S3 OOF=0.2799  val=0.3175
+
+greedy ensemble: cross-fitted OOF mAP=0.3013 | val mAP=0.3599  val macroAUROC=0.7896
+average weight per candidate: {'lgb_clean': np.float64(0.0), 'l1_lam0.003': np.float64(0.004), 'pp_x5': np.float64(0.019), 'pp_yearly': np.float64(0.011), 'pp_lgb': np.float64(0.013), 'xgb_v5avg': np.float64(0.003), 'lgb_sweep_avg': np.float64(0.01), 'tf_hybrid': np.float64(0.003), 'stack_own+death+others_gbm': np.float64(0.053), 'stack_own+death+others_lr': np.float64(0.059), 'stack_own+death_gbm': np.float64(0.085), 'stack_own+death_lr': np.float64(0.051), 'ppds:d3_all_S1': np.float64(0.05), 'ppds:d3_all_S2': np.float64(0.016), 'ppds:d3_all': np.float64(0.003), 'ppds:d6_all': np.float64(0.018), 'ppds:screen200_d3_all': np.float64(0.009), 'ppds:screen400_d3_all': np.float64(0.022), 'ppds:xgbavg3_all': np.float64(0.003), 'ppds_g:d3_all': np.float64(0.035), 'ppds_gc:d3_all': np.float64(0.011), 'ppds_gc:screen200_d3_all': np.float64(0.04), 'ppds_gcr:d3_all': np.float64(0.0), 'ppds_gcr:screen200_d3_all': np.float64(0.018), 'blocks_S1': np.float64(0.012), 'pplgb:nl16_S3_all': np.float64(0.008), 'pplgb:nl8_S1_all_gcr': np.float64(0.026), 'pplgb:nl8_S1_all': np.float64(0.038), 'pplgb:nl8_S3_all': np.float64(0.017), 'pplgb:nl8_all_all': np.float64(0.0), 'screen:k200': np.float64(0.024), 'screen:k60': np.float64(0.008), 'gstack:final+gen': np.float64(0.015), 'gstack:final7+genc2': np.float64(0.035), 'gstack:genc2_only': np.float64(0.039), 'gstack:genc_only': np.float64(0.049), 'screen_gcr:k200': np.float64(0.06), 'screen_gcr:k60': np.float64(0.058), 'blocks_gcr:S1': np.float64(0.037), 'blocks_gcr:S2': np.float64(0.012), 'blocks_gcr:S3': np.float64(0.024)}

@@ -1,0 +1,23 @@
+payers 10
+cost_life_cov: R^2 v2 0.748 -> v3 (+payer) 0.775
+cost_life_exp: R^2 v2 0.436 -> v3 (+payer) 0.869
+cost_life_total: R^2 v2 0.459 -> v3 (+payer) 0.867
+saved (3514, 55)
+                               cond  pos  cost_resid_cov  cost_resid3_cov  cost_resid_total  cost_resid3_total  payer_dominant_share
+254637007  Non-small cell lung canc   76           0.845            0.860             0.643              0.770                 0.546
+424132000  Non-small cell carcinoma   77           0.841            0.859             0.643              0.770                 0.549
+162573006  Suspected lung cancer (s   84           0.829            0.857             0.616              0.729                 0.552
+230690007                    Stroke  206           0.681            0.701             0.530              0.532                 0.563
+314994000  Metastasis from malignan   50           0.657            0.674             0.508              0.550                 0.571
+72892002           Normal pregnancy   70           0.580            0.644             0.598              0.543                 0.500
+126906006      Neoplasm of prostate  111           0.632            0.634             0.536              0.548                 0.546
+723857007  Silent micro-hemorrhage    41           0.629            0.632             0.536              0.563                 0.563
+22325002    Abnormal gait (finding)   41           0.629            0.632             0.536              0.563                 0.563
+156073000  Fetus with unknown compl   29           0.563            0.629             0.558              0.524                 0.756
+92691004   Carcinoma in situ of pro   88           0.595            0.597             0.546              0.540                 0.532
+22298006      Myocardial Infarction  153           0.581            0.588             0.522              0.519                 0.583
+233604007                 Pneumonia  133           0.595            0.586             0.521              0.533                 0.599
+713197008    Recurrent rectal polyp   69           0.555            0.576             0.553              0.531                 0.549
+263102004  Fracture subluxation of    73           0.562            0.570             0.532              0.566                 0.542
+284551006        Laceration of foot   45           0.532            0.560             0.554              0.536                 0.547
+mean |delta| resid3 - resid (cov): 0.0063 [35s]

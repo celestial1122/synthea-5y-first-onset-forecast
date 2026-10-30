@@ -1,0 +1,56 @@
+features (3514, 2221)  (5s)
+GBM base                                             OOF mAP=0.2088 (acc 0.096 / term 0.416 / chain 0.184) | val mAP=0.2548  [434s]
+GBM shallow                                          OOF mAP=0.2097 (acc 0.096 / term 0.412 / chain 0.188) | val mAP=0.2537  [861s]
+GBM 2-config average                                 OOF mAP=0.2104 (acc 0.096 / term 0.416 / chain 0.188) | val mAP=0.2557  [861s]
+age/sex logistic                                     OOF mAP=0.0919 (acc 0.089 / term 0.082 / chain 0.102) | val mAP=0.1290  [863s]
+death model: OOF AUROC=0.997  val AUROC=0.998
+two-stage death x cause (terminal targets)           OOF mAP=0.2096 (acc 0.096 / term 0.413 / chain 0.188) | val mAP=0.2540  [1179s]
+GBM + two-stage average                              OOF mAP=0.2107 (acc 0.096 / term 0.417 / chain 0.188) | val mAP=0.2551  [1179s]
+stacking weights on GBM side: {'Viral sinusitis (d': np.float64(1.0), 'Acute viral pharyn': np.float64(1.0), 'Acute bronchitis (': np.float64(1.0), 'Chronic congestive': np.float64(1.0), 'Stroke': np.float64(0.6), 'Myocardial Infarct': np.float64(0.8), 'Polyp of colon': np.float64(1.0), 'Sprain of ankle': np.float64(1.0), 'Coronary Heart Dis': np.float64(0.7), 'Pneumonia': np.float64(0.9), 'Streptococcal sore': np.float64(1.0), 'Fracture of forear': np.float64(0.8), 'Neoplasm of prosta': np.float64(0.9), 'Anemia (disorder)': np.float64(0.7), 'Osteoporosis (diso': np.float64(0.4), 'Pathological fract': np.float64(1.0), 'Atrial Fibrillatio': np.float64(0.0), 'Carcinoma in situ ': np.float64(0.8), 'Sinusitis (disorde': np.float64(1.0), 'Acute bacterial si': np.float64(0.0), 'Suspected lung can': np.float64(0.8), 'Non-small cell car': np.float64(0.8), 'Non-small cell lun': np.float64(0.8), 'Whiplash injury to': np.float64(1.0), "Alzheimer's diseas": np.float64(1.0), 'Fracture subluxati': np.float64(0.0), 'Normal pregnancy': np.float64(0.9), 'Recurrent rectal p': np.float64(0.7), 'Concussion with no': np.float64(0.0), 'Prediabetes': np.float64(1.0), 'Fracture of clavic': np.float64(0.8), 'Body mass index 30': np.float64(1.0), 'Fracture of ankle': np.float64(0.0), 'Sprain of wrist': np.float64(1.0), 'Laceration of fore': np.float64(0.5), 'Metastasis from ma': np.float64(0.7), 'Laceration of foot': np.float64(0.9), 'Abnormal gait (fin': np.float64(0.9), 'Silent micro-hemor': np.float64(0.9), 'Fetus with unknown': np.float64(1.0)}
+tabular final (stacked, in-sample OOF weights -> optimistic) OOF mAP=0.2129 (acc 0.099 / term 0.419 / chain 0.190) | val mAP=0.2558  [1179s]
+tabular final                            val mAP=0.2558  (+dup-group avg 0.2562)  macroAUROC=0.7685
+transformer C0R0 x3                      val mAP=0.2543  (+dup-group avg 0.2542)  macroAUROC=0.7579
+blend 0.5 tabular + 0.5 transformer      val mAP=0.2849  (+dup-group avg 0.2851)  macroAUROC=0.7686
+blend 0.6 tabular + 0.4 transformer      val mAP=0.2897  (+dup-group avg 0.2897)  macroAUROC=0.7692
+                                         cond  val_pos  oof_gbm  oof_twostage  oof_simple  oof_tabular_final  stack_w  val_tabular  val_transformer  val_final_blend
+444814009          Viral sinusitis (disorder)       99    0.476         0.476       0.428              0.476      1.0        0.439            0.445            0.444
+195662009  Acute viral pharyngitis (disorder)       72    0.280         0.280       0.277              0.280      1.0        0.223            0.272            0.244
+10509002          Acute bronchitis (disorder)       61    0.302         0.302       0.236              0.302      1.0        0.291            0.244            0.285
+88805009   Chronic congestive heart failure (       29    0.399         0.407       0.109              0.405      1.0        0.424            0.332            0.421
+230690007                              Stroke       35    0.206         0.206       0.178              0.210      0.6        0.358            0.298            0.341
+22298006                Myocardial Infarction       19    0.635         0.637       0.085              0.648      0.8        0.748            0.586            0.749
+68496003                       Polyp of colon       18    0.203         0.203       0.125              0.203      1.0        0.218            0.142            0.226
+44465007                      Sprain of ankle       16    0.057         0.057       0.050              0.057      1.0        0.045            0.115            0.054
+53741008               Coronary Heart Disease       15    0.120         0.120       0.096              0.123      0.7        0.090            0.086            0.087
+233604007                           Pneumonia       17    0.421         0.425       0.088              0.426      0.9        0.634            0.580            0.701
+43878008   Streptococcal sore throat (disorde       22    0.053         0.053       0.048              0.053      1.0        0.104            0.066            0.100
+65966004                  Fracture of forearm       16    0.088         0.088       0.067              0.089      0.8        0.254            0.089            0.135
+126906006                Neoplasm of prostate       11    0.721         0.713       0.130              0.725      0.9        0.848            0.767            0.939
+271737000                   Anemia (disorder)       15    0.143         0.143       0.107              0.145      0.7        0.183            0.135            0.135
+64859006              Osteoporosis (disorder)       12    0.161         0.161       0.110              0.169      0.4        0.120            0.247            0.223
+443165006  Pathological fracture due to osteo       14    0.251         0.251       0.115              0.251      1.0        0.313            0.215            0.325
+49436004                  Atrial Fibrillation       14    0.070         0.070       0.081              0.081      0.0        0.372            0.133            0.257
+92691004   Carcinoma in situ of prostate (dis        8    0.610         0.601       0.092              0.612      0.8        0.913            0.397            0.759
+36971009                 Sinusitis (disorder)        9    0.030         0.030       0.027              0.030      1.0        0.030            0.033            0.031
+75498004   Acute bacterial sinusitis (disorde        5    0.037         0.037       0.048              0.048      0.0        0.021            0.056            0.040
+162573006   Suspected lung cancer (situation)       10    0.265         0.258       0.077              0.261      0.8        0.230            0.427            0.467
+424132000  Non-small cell carcinoma of lung          9    0.235         0.213       0.068              0.227      0.8        0.170            0.396            0.409
+254637007  Non-small cell lung cancer (disord        9    0.235         0.211       0.068              0.226      0.8        0.172            0.376            0.409
+39848009              Whiplash injury to neck        8    0.028         0.028       0.023              0.028      1.0        0.023            0.017            0.017
+26929004       Alzheimer's disease (disorder)       13    0.189         0.189       0.055              0.189      1.0        0.228            0.296            0.245
+263102004       Fracture subluxation of wrist       10    0.027         0.027       0.045              0.045      0.0        0.041            0.082            0.054
+72892002                     Normal pregnancy       10    0.514         0.514       0.332              0.516      0.9        0.656            0.600            0.645
+713197008              Recurrent rectal polyp       10    0.172         0.199       0.044              0.189      0.7        0.289            0.172            0.272
+62106007   Concussion with no loss of conscio        7    0.025         0.025       0.026              0.026      0.0        0.030            0.069            0.094
+15777000                          Prediabetes       10    0.085         0.085       0.059              0.085      1.0        0.107            0.218            0.149
+58150001                 Fracture of clavicle        8    0.031         0.031       0.029              0.031      0.8        0.043            0.059            0.046
+162864005  Body mass index 30+ - obesity (fin       11    0.522         0.522       0.080              0.522      1.0        0.595            0.395            0.625
+16114001                    Fracture of ankle        8    0.025         0.025       0.034              0.034      0.0        0.021            0.033            0.025
+70704007                      Sprain of wrist        8    0.024         0.024       0.016              0.024      1.0        0.033            0.033            0.033
+283371005               Laceration of forearm        7    0.025         0.025       0.020              0.026      0.5        0.020            0.034            0.026
+314994000  Metastasis from malignant tumor of        6    0.468         0.460       0.056              0.468      0.7        0.516            0.852            0.712
+284551006                  Laceration of foot        7    0.019         0.019       0.018              0.019      0.9        0.025            0.018            0.019
+22325002              Abnormal gait (finding)       11    0.075         0.075       0.034              0.076      0.9        0.118            0.220            0.220
+723857007  Silent micro-hemorrhage of brain (       11    0.075         0.075       0.034              0.076      0.9        0.118            0.287            0.220
+156073000     Fetus with unknown complication        5    0.114         0.114       0.060              0.114      1.0        0.168            0.351            0.224
+wrote predictions_v2.csv (1180s)
