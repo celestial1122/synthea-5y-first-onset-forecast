@@ -676,7 +676,7 @@ OOF +0.0002 在噪声内（val 的 +0.0085 在 365 人的 ±0.013 内），按�
 
 - **流水线**：`reproduce.py features|members|assemble|evaluate|all`（根目录），调用 `analysis/` 下的脚本；所有脚本路径已改为相对仓库；新增 `death_model.py`（独立的 P(死亡) 模型）、`pp_join_extra.py`（person-period 数据集并入模态特征）、`evaluate_submission.py`、`predict.py`（从导出的模型包重算预测并与提交比对）。
 - **复现运行**（离线 wandb，`EXPORT_DIR=export/`）：成员 A 0.2952、B 0.2832、C 0.2603；装配交叉拟合 OOF **0.3064** / val **0.3500** / val AUROC 0.7869（OOF AUROC 0.7858；val mAP bootstrap 95% CI 0.338–0.389）。与此前手工运行的 0.3080 / 0.3604 的差异来自 GPU 训练的非确定性，在噪声内；为保证“代码 = 模型包 = 提交”，`predictions.csv` 以复现运行为准（`predict.py --export export` 重算的最大绝对差 7e-5）。
-- **交付物**：GitHub（公开）https://github.com/celestial1122/synthea-5y-first-onset-forecast ；Hugging Face 模型包 https://huggingface.co/Chengxiang1122/synthea-5y-first-onset-forecast （A/B 每目标每折 booster + 筛选列索引，C 每目标 booster，装配权重与成员 OOF，模型卡）；wandb 项目 https://forge.coreweave.com/wandb/chengxianghuang1122-university-of-british-columbia/ehr-forecast-5y （三成员的逐轮 train/val logloss 曲线、逐目标表、装配指标）；报告 `report/report.md` → `report/results.pdf`（`report/build_pdf.py`，Chrome 无头打印）。
+- **交付物**：GitHub（公开）https://github.com/celestial1122/synthea-5y-first-onset-forecast ；Hugging Face 模型包 https://huggingface.co/Chengxiang1122/synthea-5y-first-onset-forecast （A/B 每目标每折 booster + 筛选列索引，C 每目标 booster，装配权重与成员 OOF，模型卡）；wandb 项目 https://forge.coreweave.com/wandb/chengxianghuang/ehr-forecast-5y （三成员的逐轮 train/val logloss 曲线、逐目标表、装配指标）；报告 `report/report.md` → `report/results.pdf`（`report/build_pdf.py`，Chrome 无头打印）。
 - **待办**：wandb 项目设为公开；报告按用户意见修改并改名 `<name>_results.pdf`；用户仍在考虑是否改交 41 候选版（0.3157 / 0.3676）。
 
 ## 9. 复现

@@ -59,7 +59,7 @@ Rules followed: training uses the train split only (vocabularies, screening, mod
 train folds); the validation split is used for monitoring; test rows are read only as prediction inputs; no external data
 or pretrained weights.
 
-Links: wandb project [ehr-forecast-5y](https://forge.coreweave.com/wandb/chengxianghuang1122-university-of-british-columbia/ehr-forecast-5y) (training / validation curves of the three members and the assembly metrics); model bundle on Hugging Face [Chengxiang1122/synthea-5y-first-onset-forecast](https://huggingface.co/Chengxiang1122/synthea-5y-first-onset-forecast); technical report `report/results.pdf`.
+Links: wandb project [ehr-forecast-5y](https://forge.coreweave.com/wandb/chengxianghuang/ehr-forecast-5y) (training / validation curves of the three members and the assembly metrics); model bundle on Hugging Face [Chengxiang1122/synthea-5y-first-onset-forecast](https://huggingface.co/Chengxiang1122/synthea-5y-first-onset-forecast); technical report `report/results.pdf`.
 
 ## Repository map
 
