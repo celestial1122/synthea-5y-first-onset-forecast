@@ -15,5 +15,5 @@ pre { background: #f3f3f3; padding: 6pt; font-size: 8.8pt; white-space: pre-wrap
 html = f"<!doctype html><html><head><meta charset='utf-8'><title>Five-year first-onset prediction from synthetic EHR</title><style>{css}</style></head><body>{body}</body></html>"
 (HERE / "report.html").write_text(html, encoding="utf-8")
 chrome = Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe")
-subprocess.run([str(chrome), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={out}", (HERE / "report.html").resolve().as_uri()], check=True, timeout=120)
+subprocess.run([str(chrome), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={out.resolve()}", (HERE / "report.html").resolve().as_uri()], check=True, timeout=120)
 print("wrote", out, out.stat().st_size // 1024, "KB")

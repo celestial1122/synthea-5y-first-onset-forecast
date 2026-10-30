@@ -1,0 +1,171 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Five-year first-onset prediction from synthetic EHR</title><style>
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; line-height: 1.42; color: #111; max-width: 180mm; margin: 0 auto; }
+h1 { font-size: 20pt; margin: 0 0 4pt 0; } h2 { font-size: 14pt; margin: 18pt 0 6pt 0; border-bottom: 1px solid #999; padding-bottom: 2pt; }
+h3 { font-size: 11.5pt; margin: 12pt 0 4pt 0; } p { margin: 5pt 0; text-align: justify; } em { color: #444; }
+table { border-collapse: collapse; margin: 6pt 0 8pt 0; font-size: 9.3pt; width: 100%; } th, td { border: 1px solid #bbb; padding: 3pt 5pt; vertical-align: top; }
+th { background: #eee; text-align: left; } code { font-family: Consolas, monospace; font-size: 9pt; background: #f3f3f3; padding: 0 2pt; }
+pre { background: #f3f3f3; padding: 6pt; font-size: 8.8pt; white-space: pre-wrap; } ul, ol { margin: 4pt 0 4pt 18pt; } li { margin: 2pt 0; }
+@page { size: A4; margin: 16mm 14mm 16mm 14mm; }
+</style></head><body><h1>Five-year first-onset prediction from synthetic EHR</h1>
+<p><em>Technical report — research intern coding test</em></p>
+<h2>Summary</h2>
+<p>The task is to predict, for 40 conditions, whether a patient is diagnosed with the condition for the first time in the five years after an anchor date, using only the record before the anchor. The data are Synthea/Coherent synthetic records: 2,791 training, 365 validation and 358 test patients.</p>
+<p>The submitted model is deliberately small: three gradient-boosted members on engineered patient-state features, combined per target by greedy selection on rank-transformed out-of-fold scores. All decisions were made on patient-level cross-validation inside the training split; the validation split was used only for monitoring.</p>
+<table>
+<thead>
+<tr>
+<th>Split</th>
+<th style="text-align: right;">macro AUROC</th>
+<th style="text-align: right;">mAP</th>
+<th style="text-align: right;">random mAP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>train, 5-fold cross-fitted OOF (2,791 patients)</td>
+<td style="text-align: right;">0.786</td>
+<td style="text-align: right;">0.306</td>
+<td style="text-align: right;">0.047</td>
+</tr>
+<tr>
+<td>official validation (365 patients)</td>
+<td style="text-align: right;">0.787</td>
+<td style="text-align: right;">0.350 (95% bootstrap CI 0.338–0.389)</td>
+<td style="text-align: right;">0.047</td>
+</tr>
+</tbody>
+</table>
+<p>Test labels are withheld. Because the test feature distribution matches the training split (adversarial validation AUROC ≈ 0.5), the honest expectation for the test score is the OOF range, 0.30–0.32 mAP; the validation split is an easier draw by about +0.05 for every model we built.</p>
+<p>The report is organised around one finding: the 40 targets have three different generative structures, and the design follows from them.</p>
+<h2>1. Representation</h2>
+<p><strong>One unit of input is a patient at a landmark year.</strong> For every patient and every second year before the anchor (plus the anchor itself) we compute the state of the record at that time and the label "first diagnosis in the following five years". This person-period construction yields 56,770 rows from 3,514 patients; the anchor rows carry an <code>is_official</code> indicator and the time to the end of the record, so the model can tell them apart. Member B uses the anchor rows only.</p>
+<p><strong>Features (2,558 per row, all computed strictly before the landmark).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th style="text-align: right;">Count</th>
+<th>Construction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>History tokens</td>
+<td style="text-align: right;">1,800</td>
+<td>For each condition, medication, procedure, immunization, care plan, device, allergy, imaging code and encounter class with ≥ 20 training patients: lifetime count, counts in the last 1 and 5 years, years since the last and since the first occurrence</td>
+</tr>
+<tr>
+<td>Numeric observations</td>
+<td style="text-align: right;">413</td>
+<td>For 59 LOINC codes with ≥ 50 training patients: last value, min, max, mean over 5 years, standard deviation, count, linear trend. Raw units, no binning; missing stays missing</td>
+</tr>
+<tr>
+<td>Prior / active</td>
+<td style="text-align: right;">83</td>
+<td>Indicator that each of the 40 targets was already diagnosed before the landmark (such patients are not at risk and are scored 0); 43 medications active at the landmark</td>
+</tr>
+<tr>
+<td>Static</td>
+<td style="text-align: right;">21</td>
+<td>Age at landmark, sex, race, ethnicity, marital status, encounter rates</td>
+</tr>
+<tr>
+<td>Genomics</td>
+<td style="text-align: right;">216</td>
+<td>From the optional <code>genomics/</code> files: file present, number of variant alleles and of variant rsIDs, pathogenic and uncertain counts, dosage (0/1/2) for 161 rsIDs, variant counts for 49 genes; DICOM present with a study date on or before the anchor</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td style="text-align: right;">25</td>
+<td>From <code>HEALTHCARE_EXPENSES</code> / <code>HEALTHCARE_COVERAGE</code> in <code>patients.csv</code>: the two lifetime totals, pre-anchor spending summed from the event tables (lifetime, last 1 and 5 years), and two-stage residuals: a cross-fitted LightGBM regression predicts the lifetime totals from the pre-anchor record, and the residual isolates spending that the history does not explain</td>
+</tr>
+</tbody>
+</table>
+<p>Vocabularies and support thresholds are fitted on training patients only. Time between events enters through the recency features and through the landmark construction; values are never discretised.</p>
+<p><strong>Modality disclosure.</strong> The README permits any provided modality. The genomics files and the cost fields are both generated by the Coherent pipeline from the patient's complete record, including the five years after the anchor: among training patients without a prior stroke, 50% of those with a DNA file have a stroke in the window versus 2.3% of those without, and the variant count alone separates them with AUROC 0.97; the lifetime coverage field separates future lung-cancer patients with AUROC 0.82 because it includes the treatment. These are label-derived signals, not clinical ones. We report the model with and without them (Section 4) so that the reader can judge either way. Test rows are used only as prediction inputs; the validation split is never trained on; no external data or pretrained weights are used.</p>
+<h2>2. Model and training</h2>
+<p><strong>Member A — history generalist.</strong> XGBoost, depth 3, 400 rounds, learning rate 0.03, 30% column sampling, trained on all person-period rows with at-risk masking. Before training each target in each fold, features are ranked by univariate average precision on the fold's at-risk anchor rows and the top 200 are kept together with 44 always-on columns (age, sex, prior flags, landmark indicators). The screening controls the dilution of ~90 positives by 2,500 features.</p>
+<p><strong>Member B — the same evidence, read differently.</strong> LightGBM, 8 leaves, minimum 15 samples per leaf, learning rate 0.03, the same per-target screening, trained on anchor rows only. Rounds follow the measured curves per target group: 100 for accident targets, 150 for chain targets, 350 for terminal targets. Its errors are only partly correlated with A's.</p>
+<p><strong>Member C — dense modality specialist.</strong> LightGBM, 6 leaves, 300 rounds, on age, sex, the 40 prior flags, the genomics features and the cost features, with no history tokens. On its own it reaches OOF mAP 0.260, which shows where the step-change information lives. (Members alone, cross-validated OOF mAP: A 0.295, B 0.283, C 0.260.)</p>
+<p><strong>Assembly.</strong> For each target, Caruana greedy selection with replacement (8 steps) chooses weights over the three members' rank-transformed OOF scores; validation and test scores are mapped through the training score distribution of each member so the blend is a monotone transform of each member's probabilities. Patients already diagnosed before the anchor receive probability 0. The three near-identical lung-cancer targets and the gait / micro-haemorrhage pair are averaged within group.</p>
+<p><strong>Evaluation protocol.</strong> Everything is judged on train out-of-fold predictions with patient-level 5-fold splits. The ensemble weights are additionally cross-fitted: selected on a random half of the OOF rows and evaluated on the other half, averaged over five random halvings, so the reported 0.306 contains no selection optimism. Per-target standard errors are 0.02–0.03 (median 86 positives), and the validation mAP has a bootstrap 95% interval of roughly ±0.04 (365 patients, median 11 positives per target).</p>
+<p><strong>Training curves.</strong> Training and validation log-loss per boosting round for each member and fold, and the per-target metrics of each member and of the assembly, are logged to wandb: <a href="https://forge.coreweave.com/wandb/chengxianghuang1122-university-of-british-columbia/ehr-forecast-5y">project <code>ehr-forecast-5y</code></a> (runs <code>memberA_pp_xgb_screen200_ppds_gcr</code>, <code>memberB_lgb_official_screen200</code>, <code>memberC_history_free_genc2_only</code>, <code>assembly_rank_greedy</code>). The curves show the members are not under-trained: the official-row LightGBM peaks at 200 rounds overall and at 100 rounds on the chain targets, and is slightly worse at 1,200.</p>
+<p><strong>Hyper-parameters</strong> (members): XGBoost <code>max_depth=3, eta=0.03, n=400, colsample_bytree=0.3, min_child_weight=5, subsample=0.8, lambda=5</code>; LightGBM <code>num_leaves=8, min_child_samples=15, learning_rate=0.03, colsample 0.3–0.8 by screened size, subsample=0.8, lambda_l2=5</code>; member C <code>num_leaves=6, min_child_samples=10, feature_fraction=0.6, lambda_l2=2, 300 rounds</code>.</p>
+<h2>3. AI workflow</h2>
+<p>The project was carried out with two AI coding assistants. An initial pass with Codex implemented the recommended decoder-only Transformer baseline with next-event pre-training and fine-tuning, and its ablations (context length, pre-training, ranking losses). The remainder was done with Claude Code: the data audit, the diagnosis of why scores were low, every subsequent experiment, and this report.</p>
+<p>The working method was fixed early and kept: (1) state the problem in terms of the generative process before proposing a model; (2) make every decision on train OOF, never on the validation split, after finding that validation-based comparisons had been reporting improvements that disappeared under cross-validation; (3) run experiments as background GPU/CPU jobs in batches and write each round's results and negative results into a running document before starting the next. The assistant wrote the scripts, launched and monitored the jobs, and drafted the analysis; the author decided which modalities to use and which model to submit.</p>
+<h2>4. Interpretation</h2>
+<p><strong>Three generative structures.</strong> Synthea patients are superpositions of independent state machines with constant per-state hazards. This gives the 40 targets three different natures, visible in learning curves measured by training on 25%, 50%, 75% and 100% of the training patients:</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th style="text-align: right;">Targets</th>
+<th>Mechanism</th>
+<th>AP vs. training size</th>
+<th>Final OOF AP / AUROC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accident</td>
+<td style="text-align: right;">15 (sprains, lacerations, fractures, sinusitis, pharyngitis, bronchitis…)</td>
+<td>memoryless hazard, no precursor in the record</td>
+<td>flat (+0.002 per e-fold of patients)</td>
+<td>0.098 / 0.60, i.e. prevalence and chance</td>
+</tr>
+<tr>
+<td>Chain</td>
+<td style="text-align: right;">15 (stroke, CHD, osteoporosis, Alzheimer's, pregnancy, anaemia, polyp…)</td>
+<td>determined by the module state at the anchor: precursors, their recency, latest values</td>
+<td>rising, +0.03 per e-fold, no plateau</td>
+<td>0.298 / 0.89</td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td style="text-align: right;">10 (lung-cancer triad, MI, CHF, pneumonia, metastasis, prostate…)</td>
+<td>every dying patient's last encounter is a death certificate, so the window is the last five years of life and these targets are the cause of death</td>
+<td>rising, +0.07 per e-fold</td>
+<td>0.632 / 0.96</td>
+</tr>
+</tbody>
+</table>
+<p>Two consequences follow. First, 37.5% of the macro average is structurally unpredictable: even perfect prediction of the other 25 targets caps mAP at 0.66 and macro AUROC near 0.83. Second, the chain and terminal targets are sample-limited rather than information-limited; the ensemble's gain over a single model is equivalent to 2.4× more patients, and the only lever left is sample efficiency (landmark rows, screening, small trees).</p>
+<p><strong>Where each target's signal lives.</strong> For every target we computed the best univariate AUROC inside each feature group. Age and era proxies dominate the chain group; genomics carries stroke (0.87), gait abnormality / micro-haemorrhage (0.79) and MI (0.69); the cost residual carries the lung-cancer triad (0.85), metastasis and prostate cancer. The cost signal depends strongly on survival (stroke 0.91 among survivors, 0.71 among the dying), which is why the death probability sits next to it in the features. Within the dying, the models already reach the best univariate separability for cause of death (AUROC 0.87–0.97); the remaining AP gap is the low within-group prevalence (4–19%), not an unused feature. Pneumonia deaths are dementia patients (care-plan recency and MMSE counts, AUROC 0.92).</p>
+<p><strong>Why not a sequence model.</strong> Under the same protocol the Transformer reaches OOF 0.17, a multi-task tabular MLP 0.22, a piecewise-linear-encoded MLP 0.22, a residual network trained on top of the best booster adds nothing (−0.002), and a temporal Transformer whose tokens are the yearly state vectors reaches 0.21. The gap is sample efficiency: the signals are thresholds on sparse counts and a few dense fields, which depth-3 trees capture with a handful of splits, and event order carries no information (the baseline's own ablations on context length and pre-training were flat). A death-gated mixture of experts, a competing-risk softmax, level-2 stacking as the final model, and hierarchical shrinkage of the ensemble weights were all neutral or negative.</p>
+<p><strong>Effect of the optional modalities</strong> (same members and assembly, cross-fitted OOF / validation mAP):</p>
+<table>
+<thead>
+<tr>
+<th>Inputs</th>
+<th style="text-align: right;">OOF</th>
+<th style="text-align: right;">val</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>structured tables only</td>
+<td style="text-align: right;">0.238</td>
+<td style="text-align: right;">0.283</td>
+</tr>
+<tr>
+<td>+ genomics and imaging</td>
+<td style="text-align: right;">0.267</td>
+<td style="text-align: right;">0.316</td>
+</tr>
+<tr>
+<td>+ cost fields (submitted three-member model)</td>
+<td style="text-align: right;">0.306</td>
+<td style="text-align: right;">0.350</td>
+</tr>
+<tr>
+<td>+ cost fields, 41-candidate ensemble (not submitted)</td>
+<td style="text-align: right;">0.316</td>
+<td style="text-align: right;">0.368</td>
+</tr>
+</tbody>
+</table>
+<p>The gains are concentrated where the audit predicted: stroke 0.24 → 0.87, lung-cancer triad 0.30 → 0.84–0.89, MI 0.67 → 0.76. The 41-candidate ensemble we built along the way scores 0.316; we submit the three-member version because it loses 0.01 and can be explained, reproduced and exported in full.</p>
+<p><strong>Validation versus OOF.</strong> The validation split is +0.04 to +0.05 easier than the training OOF for every model from the first baseline to the final one, with the same prevalence and death share; with 365 patients this is sampling, not a modelling effect. Adversarial validation says test resembles train, so the OOF column is the number to expect.</p>
+<h2>Reproducibility</h2>
+<p>Code: GitHub repository <a href="https://github.com/celestial1122/synthea-5y-first-onset-forecast">celestial1122/synthea-5y-first-onset-forecast</a> (<code>python reproduce.py all</code>). Trained boosters, screened column indices and assembly weights: Hugging Face <a href="https://huggingface.co/Chengxiang1122/synthea-5y-first-onset-forecast">Chengxiang1122/synthea-5y-first-onset-forecast</a> (<code>python predict.py --export &lt;bundle&gt;</code> regenerates <code>predictions.csv</code> and the validation metrics). Training curves and metrics: wandb project linked in Section 2. Full experimental record: <code>docs/diagnosis_and_improvement_plan.md</code> (12 rounds, including all negative results) and <code>docs/data_audit.md</code>.</p></body></html>
